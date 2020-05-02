@@ -19,4 +19,3 @@ namespace BEL
         public string Etat_reclamation { get; set; }
     }
 }
-}
