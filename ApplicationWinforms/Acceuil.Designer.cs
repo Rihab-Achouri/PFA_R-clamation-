@@ -47,6 +47,7 @@
             this.button11 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -128,7 +129,7 @@
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(391, 158);
+            this.button4.Location = new System.Drawing.Point(391, 182);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(140, 51);
             this.button4.TabIndex = 94;
@@ -204,7 +205,7 @@
             // 
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button15.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(581, 260);
+            this.button15.Location = new System.Drawing.Point(581, 268);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(140, 51);
             this.button15.TabIndex = 105;
@@ -216,7 +217,7 @@
             // 
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button14.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(581, 123);
+            this.button14.Location = new System.Drawing.Point(581, 161);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(140, 44);
             this.button14.TabIndex = 103;
@@ -228,7 +229,7 @@
             // 
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button11.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(581, 191);
+            this.button11.Location = new System.Drawing.Point(581, 211);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(140, 51);
             this.button11.TabIndex = 102;
@@ -256,12 +257,25 @@
             this.pictureBox3.TabIndex = 95;
             this.pictureBox3.TabStop = false;
             // 
+            // button9
+            // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button9.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(560, 114);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(172, 41);
+            this.button9.TabIndex = 106;
+            this.button9.Text = "Taux de satisfaction ";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // Acceuil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(744, 420);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -311,5 +325,6 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button button9;
     }
 }

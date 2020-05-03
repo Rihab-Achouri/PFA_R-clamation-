@@ -363,29 +363,29 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button button5;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Button button4;
+        public System.Windows.Forms.Button button3;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.RichTextBox richTextBox1;
+        public System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.PictureBox pictureBox5;
+        public System.Windows.Forms.PictureBox pictureBox4;
+        public System.Windows.Forms.PictureBox pictureBox3;
+        public System.Windows.Forms.CheckBox checkBox4;
+        public System.Windows.Forms.CheckBox checkBox3;
+        public System.Windows.Forms.CheckBox checkBox2;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.CheckBox checkBox1;
+        public System.Windows.Forms.PictureBox pictureBox6;
+        public System.Windows.Forms.Button button5;
     }
 }
