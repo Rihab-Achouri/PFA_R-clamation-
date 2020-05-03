@@ -249,6 +249,7 @@
             this.button9.TabIndex = 69;
             this.button9.Text = "Afficher la liste des missions cloturées";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -260,6 +261,7 @@
             this.button8.TabIndex = 68;
             this.button8.Text = "Retour";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -272,6 +274,7 @@
             this.button7.TabIndex = 67;
             this.button7.Text = "Quiter";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -282,6 +285,7 @@
             this.button6.TabIndex = 66;
             this.button6.Text = "Afficher la liste des missions non traitées";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // vScrollBar1
             // 
@@ -308,6 +312,7 @@
             this.button5.TabIndex = 62;
             this.button5.Text = "Afficher la liste de toutes les missions";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button3
             // 
@@ -318,6 +323,7 @@
             this.button3.TabIndex = 61;
             this.button3.Text = "Supprimer";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label12
             // 
@@ -339,6 +345,7 @@
             this.button1.TabIndex = 59;
             this.button1.Text = "Rechercher";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label13
             // 

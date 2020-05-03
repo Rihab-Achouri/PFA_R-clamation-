@@ -113,6 +113,7 @@
             this.button5.TabIndex = 18;
             this.button5.Text = "Confirmer";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -124,6 +125,7 @@
             this.button4.TabIndex = 30;
             this.button4.Text = "Quiter";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -134,6 +136,7 @@
             this.button3.TabIndex = 29;
             this.button3.Text = "Retour";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label8
             // 
@@ -275,6 +278,7 @@
             this.button6.TabIndex = 20;
             this.button6.Text = "Modifier";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // comboBox2
             // 
@@ -297,6 +301,7 @@
             this.button2.TabIndex = 15;
             this.button2.Text = "Consulter";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // richTextBox1
             // 
@@ -344,6 +349,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Envoyer";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 

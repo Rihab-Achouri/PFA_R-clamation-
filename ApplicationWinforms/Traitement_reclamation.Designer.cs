@@ -115,6 +115,7 @@
             this.button10.TabIndex = 37;
             this.button10.Text = "Supprimer";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // textBox7
             // 
@@ -142,6 +143,7 @@
             this.button11.TabIndex = 36;
             this.button11.Text = "Supprimer toutes les réclamations annulées";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button9
             // 
@@ -152,6 +154,7 @@
             this.button9.TabIndex = 49;
             this.button9.Text = "Afficher la liste des réclamations anullées";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -175,6 +178,7 @@
             this.button7.TabIndex = 47;
             this.button7.Text = "Quiter";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -185,6 +189,7 @@
             this.button6.TabIndex = 46;
             this.button6.Text = "Afficher la liste des réclamations non traitées";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // vScrollBar1
             // 
@@ -211,6 +216,7 @@
             this.button5.TabIndex = 42;
             this.button5.Text = "Afficher la liste de toutes les réclamations";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -221,6 +227,7 @@
             this.button4.TabIndex = 41;
             this.button4.Text = "Confirmer";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
@@ -231,6 +238,7 @@
             this.button2.TabIndex = 40;
             this.button2.Text = "Modifier";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox2
             // 
@@ -313,6 +321,7 @@
             this.button1.TabIndex = 39;
             this.button1.Text = "Rechercher";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
