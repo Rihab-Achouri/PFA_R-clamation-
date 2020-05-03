@@ -16,7 +16,7 @@ namespace ApplicationWinforms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_acceuil()); 
+            Application.Run(new Acceuil()); 
         }
     }
 }
