@@ -78,6 +78,7 @@
             this.button2.TabIndex = 51;
             this.button2.Text = "Afficher toutes mes commandes";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox3
             // 
@@ -114,22 +115,24 @@
             // 
             this.button4.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.DarkRed;
-            this.button4.Location = new System.Drawing.Point(805, 412);
+            this.button4.Location = new System.Drawing.Point(797, 408);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(80, 28);
+            this.button4.Size = new System.Drawing.Size(88, 32);
             this.button4.TabIndex = 53;
             this.button4.Text = "Quiter";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(719, 412);
+            this.button3.Location = new System.Drawing.Point(698, 408);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 28);
+            this.button3.Size = new System.Drawing.Size(80, 32);
             this.button3.TabIndex = 52;
             this.button3.Text = "Retour";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // groupBox1
             // 
@@ -180,6 +183,7 @@
             this.button6.TabIndex = 17;
             this.button6.Text = "Consulter";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -190,6 +194,7 @@
             this.button5.TabIndex = 15;
             this.button5.Text = "Confirmer";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button1
             // 
@@ -200,6 +205,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Modifier";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dateTimePicker2
             // 

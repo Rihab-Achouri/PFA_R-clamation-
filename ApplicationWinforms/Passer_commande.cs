@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BEL;
+using DAL;
+using System.Data.OleDb;
 
 namespace ApplicationWinforms
 {
@@ -15,6 +18,96 @@ namespace ApplicationWinforms
         public Passer_commande()
         {
             InitializeComponent();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Acceuil f1 = new Acceuil();
+            f1.ShowDialog();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                List<Commande> Listcommande = CommandeDAO.Get_commande_Id_client(int.Parse(textBox1.Text));
+                dataGridView1.DataSource = Listcommande;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Commande p = CommandeDAO.Get_commande_reference(int.Parse(textBox3.Text));
+                textBox3.Text = p.Num_commande.ToString();
+                comboBox1.Text = p.Reference_produit.ToString();
+                textBox2.Text = p.Qt.ToString();
+                dateTimePicker1.Text = p.Date_commande.ToString();
+                dateTimePicker2.Text = p.Date_livraison_souhaité.ToString();
+
+                List<Commande> L = new List<Commande>();
+                L.Add(p);
+                dataGridView1.DataSource = L;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string requete = String.Format("select prix_unitaire from produit where reference = '{0}';", int.Parse(comboBox1.Text));
+                OleDbDataReader rd = utils.lire(requete);
+                int prix = rd.GetInt32(0) * int.Parse(textBox2.Text);
+                utils.Disconnect();
+
+                CommandeDAO.Update_commande(int.Parse(textBox1.Text), int.Parse(comboBox1.Text), int.Parse(textBox2.Text), prix, DateTime.Parse(dateTimePicker1.Text), DateTime.Parse(dateTimePicker2.Text));
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string requete = String.Format("select prix_unitaire from produit where reference = '{0}';", int.Parse(comboBox1.Text));
+                OleDbDataReader rd = utils.lire(requete);
+                int prix = rd.GetInt32(0) * int.Parse(textBox2.Text);
+                utils.Disconnect();
+
+                CommandeDAO.passer_commande(int.Parse(textBox1.Text), int.Parse(comboBox1.Text), int.Parse(textBox2.Text), prix, DateTime.Parse(dateTimePicker1.Text), DateTime.Parse(dateTimePicker2.Text));
+
+                string requet = String.Format("select max (num_commande) from commande;");
+                OleDbDataReader RD = utils.lire(requet);
+                int num = rd.GetInt32(0) * int.Parse(textBox2.Text);
+                utils.Disconnect();
+
+                string Message1 = num.ToString();
+                string Message2 = prix.ToString();
+                MessageBox.Show("Le numéro de votre commande est:" + Message1 + "\n Le prix à payer est: " + Message2);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

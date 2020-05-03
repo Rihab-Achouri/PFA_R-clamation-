@@ -68,7 +68,7 @@ namespace ApplicationWinforms
 
         private void button8_Click(object sender, EventArgs e)
         {
-            Accueil f1 = new Accueil();
+            Acceuil f1 = new Acceuil();
             f1.ShowDialog();
             this.Hide();
         }

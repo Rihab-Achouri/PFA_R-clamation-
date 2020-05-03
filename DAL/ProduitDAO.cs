@@ -19,7 +19,7 @@ namespace DAL
             return utils.miseajour(requete);
         }
 
-        public static bool Update_produitl(int RF, int qt, int prix)
+        public static bool Update_produit(int RF, int qt, int prix)
         {
             string requete = String.Format("update produit set qt_stock='{0}', prix_unitaire='{1}'," +
                 " where reference={3};", qt, prix, RF);

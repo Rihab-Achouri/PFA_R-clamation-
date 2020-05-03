@@ -83,6 +83,7 @@
             this.button4.TabIndex = 23;
             this.button4.Text = "Retour";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -93,6 +94,7 @@
             this.button3.TabIndex = 22;
             this.button3.Text = "Annuler";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -105,6 +107,7 @@
             this.button2.TabIndex = 21;
             this.button2.Text = "Quiter";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
@@ -122,6 +125,7 @@
             this.button1.TabIndex = 19;
             this.button1.Text = "Envoyer";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -313,6 +317,7 @@
             this.button5.TabIndex = 27;
             this.button5.Text = "Envoyer";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Suggestion_Taux_satisfaction
             // 

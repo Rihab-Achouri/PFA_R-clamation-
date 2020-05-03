@@ -16,5 +16,12 @@ namespace ApplicationWinforms
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Acceuil f1 = new Acceuil();
+            f1.ShowDialog();
+            this.Hide();
+        }
     }
 }
