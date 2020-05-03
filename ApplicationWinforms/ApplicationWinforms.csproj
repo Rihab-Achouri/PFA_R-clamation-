@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acceuil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acceuil.Designer.cs">
+      <DependentUpon>Acceuil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentification.Designer.cs">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </Compile>
     <Compile Include="cabinetdentaireDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -61,11 +73,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>cabinetdentaireDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Fichech_de_traitement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fichech_de_traitement.Designer.cs">
+      <DependentUpon>Fichech_de_traitement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Géré_mission.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Géré_mission.Designer.cs">
       <DependentUpon>Géré_mission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Géré_personnel_client_produit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Géré_personnel_client_produit.Designer.cs">
+      <DependentUpon>Géré_personnel_client_produit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mes_informations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mes_informations.Designer.cs">
+      <DependentUpon>Mes_informations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passer_commande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passer_commande.Designer.cs">
+      <DependentUpon>Passer_commande.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,14 +111,38 @@
     <Compile Include="Reclamation_client.Designer.cs">
       <DependentUpon>Reclamation_client.cs</DependentUpon>
     </Compile>
+    <Compile Include="Suggestion_Taux_satisfaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suggestion_Taux_satisfaction.Designer.cs">
+      <DependentUpon>Suggestion_Taux_satisfaction.cs</DependentUpon>
+    </Compile>
     <Compile Include="Traitement_reclamation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Traitement_reclamation.Designer.cs">
       <DependentUpon>Traitement_reclamation.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Acceuil.resx">
+      <DependentUpon>Acceuil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentification.resx">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fichech_de_traitement.resx">
+      <DependentUpon>Fichech_de_traitement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Géré_mission.resx">
       <DependentUpon>Géré_mission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Géré_personnel_client_produit.resx">
+      <DependentUpon>Géré_personnel_client_produit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mes_informations.resx">
+      <DependentUpon>Mes_informations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passer_commande.resx">
+      <DependentUpon>Passer_commande.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,6 +155,9 @@
     </Compile>
     <EmbeddedResource Include="Reclamation_client.resx">
       <DependentUpon>Reclamation_client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suggestion_Taux_satisfaction.resx">
+      <DependentUpon>Suggestion_Taux_satisfaction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Traitement_reclamation.resx">
       <DependentUpon>Traitement_reclamation.cs</DependentUpon>
