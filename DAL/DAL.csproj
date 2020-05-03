@@ -42,8 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="patientDAO.cs" />
-    <Compile Include="rdvDAO.cs" />
+    <Compile Include="Taux_service.cs" />
+    <Compile Include="ReclamationDAO.cs" />
+    <Compile Include="PersonnelDAO.cs" />
+    <Compile Include="ProduitDAO.cs" />
+    <Compile Include="MissionDAO.cs" />
+    <Compile Include="ClientDAO.cs" />
+    <Compile Include="CommandeDAO.cs" />
     <Compile Include="utils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
