@@ -193,6 +193,8 @@ namespace ApplicationWinforms
             f1.button2.Visible = false;
             f1.button11.Visible = false;
             f1.button10.Visible = false;
+            f1.label6.Visible = false;
+            f1.textBox6.Visible = false;
             f1.ShowDialog();
             this.Hide();
         }
