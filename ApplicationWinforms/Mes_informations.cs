@@ -23,5 +23,18 @@ namespace ApplicationWinforms
             f1.ShowDialog();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Mes_informations f1 = new Mes_informations();
+            f1.button5.Visible = false;
+            f1.button3.Visible = false;
+            f1.button7.Visible = false;
+            f1.textBox6.Visible = false;
+            f1.label6.Visible = false;    
+            
+            f1.ShowDialog();
+            this.Hide();
+        }
     }
 }

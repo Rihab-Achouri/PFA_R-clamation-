@@ -97,11 +97,11 @@
     <Compile Include="Mes_informations.Designer.cs">
       <DependentUpon>Mes_informations.cs</DependentUpon>
     </Compile>
-    <Compile Include="Passer_commande.cs">
+    <Compile Include="Passer_Gérer_commande.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Passer_commande.Designer.cs">
-      <DependentUpon>Passer_commande.cs</DependentUpon>
+    <Compile Include="Passer_Gérer_commande.Designer.cs">
+      <DependentUpon>Passer_Gérer_commande.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -141,8 +141,8 @@
     <EmbeddedResource Include="Mes_informations.resx">
       <DependentUpon>Mes_informations.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Passer_commande.resx">
-      <DependentUpon>Passer_commande.cs</DependentUpon>
+    <EmbeddedResource Include="Passer_Gérer_commande.resx">
+      <DependentUpon>Passer_Gérer_commande.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

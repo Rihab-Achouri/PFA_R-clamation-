@@ -58,6 +58,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -70,7 +72,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(370, 239);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(597, 176);
+            this.dataGridView1.Size = new System.Drawing.Size(597, 198);
             this.dataGridView1.TabIndex = 32;
             // 
             // groupBox1
@@ -119,7 +121,7 @@
             // 
             this.button4.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.DarkRed;
-            this.button4.Location = new System.Drawing.Point(863, 440);
+            this.button4.Location = new System.Drawing.Point(865, 452);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(102, 33);
             this.button4.TabIndex = 30;
@@ -130,7 +132,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(743, 441);
+            this.button3.Location = new System.Drawing.Point(743, 452);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(102, 32);
             this.button3.TabIndex = 29;
@@ -199,6 +201,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.comboBox1);
@@ -216,7 +220,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(11, 113);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(353, 361);
+            this.groupBox2.Size = new System.Drawing.Size(353, 372);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Le contexe de la réclamation";
@@ -224,7 +228,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 178);
+            this.label4.Location = new System.Drawing.Point(13, 216);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 18);
             this.label4.TabIndex = 26;
@@ -232,7 +236,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(75, 175);
+            this.textBox3.Location = new System.Drawing.Point(86, 209);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(255, 25);
             this.textBox3.TabIndex = 25;
@@ -240,21 +244,21 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(193, 66);
+            this.comboBox1.Location = new System.Drawing.Point(204, 106);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(137, 26);
             this.comboBox1.TabIndex = 24;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(75, 140);
+            this.dateTimePicker1.Location = new System.Drawing.Point(86, 178);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(255, 25);
             this.dateTimePicker1.TabIndex = 20;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(193, 29);
+            this.textBox4.Location = new System.Drawing.Point(204, 30);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(137, 25);
             this.textBox4.TabIndex = 22;
@@ -262,7 +266,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(9, 36);
+            this.label10.Location = new System.Drawing.Point(13, 37);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(176, 18);
             this.label10.TabIndex = 21;
@@ -272,7 +276,7 @@
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(232, 319);
+            this.button6.Location = new System.Drawing.Point(246, 330);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(95, 36);
             this.button6.TabIndex = 20;
@@ -286,7 +290,7 @@
             this.comboBox2.Items.AddRange(new object[] {
             " Réclamation logistique ",
             "Réclamation de non-conformités"});
-            this.comboBox2.Location = new System.Drawing.Point(193, 104);
+            this.comboBox2.Location = new System.Drawing.Point(204, 141);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(137, 26);
             this.comboBox2.TabIndex = 3;
@@ -295,7 +299,7 @@
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(122, 319);
+            this.button2.Location = new System.Drawing.Point(135, 330);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(95, 36);
             this.button2.TabIndex = 15;
@@ -306,16 +310,16 @@
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(13, 211);
+            this.richTextBox1.Location = new System.Drawing.Point(13, 240);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(317, 91);
+            this.richTextBox1.Size = new System.Drawing.Size(328, 84);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "Votre message";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 143);
+            this.label3.Location = new System.Drawing.Point(13, 183);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 18);
             this.label3.TabIndex = 2;
@@ -324,7 +328,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 69);
+            this.label1.Location = new System.Drawing.Point(13, 114);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 18);
             this.label1.TabIndex = 1;
@@ -333,7 +337,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 107);
+            this.label2.Location = new System.Drawing.Point(13, 149);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 18);
             this.label2.TabIndex = 0;
@@ -343,7 +347,7 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 319);
+            this.button1.Location = new System.Drawing.Point(13, 330);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 36);
             this.button1.TabIndex = 11;
@@ -361,12 +365,28 @@
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(204, 68);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(137, 25);
+            this.textBox5.TabIndex = 27;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(13, 75);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(185, 18);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "La commande consernée";
+            // 
             // Reclamation_client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(982, 485);
+            this.ClientSize = new System.Drawing.Size(982, 497);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);
@@ -424,5 +444,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }

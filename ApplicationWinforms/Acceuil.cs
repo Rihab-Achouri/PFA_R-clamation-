@@ -21,6 +21,9 @@ namespace ApplicationWinforms
         private void button4_Click_1(object sender, EventArgs e)
         {
             Mes_informations f1 = new Mes_informations();
+            f1.button2.Visible = false;
+            f1.button11.Visible = false;
+            f1.button10.Visible = false;
             f1.ShowDialog();
             this.Hide();
         }
@@ -41,7 +44,13 @@ namespace ApplicationWinforms
 
         private void button11_Click(object sender, EventArgs e)
         {
-            Passer_commande f1 = new Passer_commande();
+            Passer_Gérer_commande f1 = new Passer_Gérer_commande();
+            f1.groupBox3.Visible = false;
+            f1.groupBox2.Visible = false;
+            f1.groupBox5.Visible = false;
+            f1.button12.Visible = false;
+            f1.button13.Visible = false;
+
             f1.ShowDialog();
             this.Hide();
         }
@@ -161,6 +170,29 @@ namespace ApplicationWinforms
             f1.label5.Visible = false;
             f1.richTextBox1.Visible = false;
 
+            f1.ShowDialog();
+            this.Hide();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Passer_Gérer_commande f1 = new Passer_Gérer_commande();
+            f1.groupBox1.Visible = false;
+            f1.groupBox4.Visible = false;
+            f1.button2.Visible = false;
+            f1.label1.Visible = false;
+            f1.textBox1.Visible = false;
+
+            f1.ShowDialog();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Mes_informations f1 = new Mes_informations();
+            f1.button2.Visible = false;
+            f1.button11.Visible = false;
+            f1.button10.Visible = false;
             f1.ShowDialog();
             this.Hide();
         }

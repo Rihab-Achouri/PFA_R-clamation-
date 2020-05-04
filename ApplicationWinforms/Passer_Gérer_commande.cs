@@ -13,9 +13,9 @@ using System.Data.OleDb;
 
 namespace ApplicationWinforms
 {
-    public partial class Passer_commande : Form
+    public partial class Passer_Gérer_commande : Form
     {
-        public Passer_commande()
+        public Passer_Gérer_commande()
         {
             InitializeComponent();
         }
@@ -103,6 +103,58 @@ namespace ApplicationWinforms
                 string Message1 = num.ToString();
                 string Message2 = prix.ToString();
                 MessageBox.Show("Le numéro de votre commande est:" + Message1 + "\n Le prix à payer est: " + Message2);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void Passer_commande_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            try
+            {
+             
+                CommandeDAO.Delete_commande(int.Parse(textBox9.Text));
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Vous ne pouvez pas annuler une commande sans appeler directement le service d'achat");
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                List<Commande> Listcommande = CommandeDAO.Get_commande_non_traitée();
+                dataGridView1.DataSource = Listcommande;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                List<Commande> Listcommande = CommandeDAO.Get_commande();
+                dataGridView1.DataSource = Listcommande;
             }
             catch (Exception ex)
             {

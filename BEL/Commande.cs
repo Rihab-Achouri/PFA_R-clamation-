@@ -16,5 +16,6 @@ namespace BEL
         public DateTime Date_commande { get; set; }
         public DateTime Date_livraison_réel { get; set; }
         public DateTime Date_livraison_souhaité { get; set; }
+        public string Etat_commande { get; set; }
     }
 }
