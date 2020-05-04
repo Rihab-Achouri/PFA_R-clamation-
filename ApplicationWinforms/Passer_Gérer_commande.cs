@@ -161,5 +161,50 @@ namespace ApplicationWinforms
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Commande p = CommandeDAO.Get_commande_reference(int.Parse(textBox5.Text));
+            textBox5.Text = p.Num_commande.ToString();
+            textBox8.Text = p.Reference_produit.ToString();
+            textBox7.Text = p.Qt.ToString();
+            textBox7.Text = p.ID_cl.ToString();
+            dateTimePicker4.Text = p.Date_commande.ToString();
+            dateTimePicker3.Text = p.Date_livraison_souhaité.ToString();
+            dateTimePicker5.Text = p.Date_livraison_réel.ToString();
+            comboBox2.Text = p.Etat_commande.ToString();
+
+            List<Commande> L = new List<Commande>();
+            L.Add(p);
+            dataGridView1.DataSource = L;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                CommandeDAO.date_livraison(int.Parse(textBox9.Text),DateTime.Parse(dateTimePicker5.Text), comboBox2.Text);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                CommandeDAO.date_livraison(int.Parse(textBox9.Text), DateTime.Parse(dateTimePicker5.Text), comboBox2.Text);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
