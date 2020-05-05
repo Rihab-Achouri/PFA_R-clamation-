@@ -58,10 +58,7 @@ namespace ApplicationWinforms
         private void button14_Click(object sender, EventArgs e)
         {
             Suggestion_Taux_satisfaction f1 = new Suggestion_Taux_satisfaction();
-            f1.checkBox1.Visible = false;
-            f1.checkBox2.Visible = false;
-            f1.checkBox3.Visible = false;
-            f1.checkBox4.Visible = false;
+            
             f1.pictureBox6.Visible = false;
             f1.pictureBox3.Visible = false;
             f1.pictureBox4.Visible = false;
@@ -70,6 +67,10 @@ namespace ApplicationWinforms
             f1.button5.Visible = false;
             f1.label6.Visible = false;
             f1.label7.Visible = false;
+            f1.label8.Visible = false;
+            f1.textBox2.Visible = false;
+            f1.groupBox1.Visible = false;
+            f1.groupBox2.Visible = false;
 
             f1.ShowDialog();
             this.Hide();

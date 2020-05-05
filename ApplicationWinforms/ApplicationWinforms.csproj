@@ -79,6 +79,12 @@
     <Compile Include="Fichech_de_traitement.Designer.cs">
       <DependentUpon>Fichech_de_traitement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Géré_mission.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Fichech_de_traitement.resx">
       <DependentUpon>Fichech_de_traitement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Géré_mission.resx">
       <DependentUpon>Géré_mission.cs</DependentUpon>

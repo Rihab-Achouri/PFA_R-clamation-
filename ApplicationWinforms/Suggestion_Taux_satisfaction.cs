@@ -48,5 +48,236 @@ namespace ApplicationWinforms
         {
             this.Close();
         }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            string log;
+            string qualité;
+
+            if (radioButton1.Checked && radioButton8.Checked )
+            {
+                log = "Très satisfait";
+                qualité = "Très satisfait";
+                try
+                {
+                    Taux_satisfactionDAO.Insert_Taux_satisfaction(int.Parse(textBox2.Text), log, qualité);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            if (radioButton1.Checked && radioButton7.Checked)
+            {
+                log = "Très satisfait";
+                qualité = "Assez satisfait";
+                try
+                {
+                    Taux_satisfactionDAO.Insert_Taux_satisfaction(int.Parse(textBox2.Text), log, qualité);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            if (radioButton1.Checked && radioButton6.Checked)
+            {
+                log = "Très satisfait";
+                qualité = "Peu satisfait";
+                try
+                {
+                    Taux_satisfactionDAO.Insert_Taux_satisfaction(int.Parse(textBox2.Text), log, qualité);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            if (radioButton1.Checked && radioButton5.Checked)
+            {
+                log = "Très satisfait";
+                qualité = "Pas du tout satisfait";
+                try
+                {
+                    Taux_satisfactionDAO.Insert_Taux_satisfaction(int.Parse(textBox2.Text), log, qualité);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            if (radioButton2.Checked && radioButton8.Checked)
+            {
+                log = "Assez satisfait";
+                qualité = "Très satisfait";
+                try
+                {
+                    Taux_satisfactionDAO.Insert_Taux_satisfaction(int.Parse(textBox2.Text), log, qualité);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            if (radioButton2.Checked && radioButton7.Checked)
+            {
+                log = "Assez satisfait";
+                qualité = "Assez satisfait";
+                try
+                {
+                    Taux_satisfactionDAO.Insert_Taux_satisfaction(int.Parse(textBox2.Text), log, qualité);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            if (radioButton2.Checked && radioButton6.Checked)
+            {
+                log = "Assez satisfait";
+                qualité = "Peu satisfait";
+                try
+                {
+                    Taux_satisfactionDAO.Insert_Taux_satisfaction(int.Parse(textBox2.Text), log, qualité);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            if (radioButton2.Checked && radioButton5.Checked)
+            {
+                log = "Assez satisfait";
+                qualité = "Pas du tout satisfait";
+                try
+                {
+                    Taux_satisfactionDAO.Insert_Taux_satisfaction(int.Parse(textBox2.Text), log, qualité);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            if (radioButton3.Checked && radioButton8.Checked)
+            {
+                log = "Pas du tout satisfait";
+                qualité = "Très satisfait";
+                try
+                {
+                    Taux_satisfactionDAO.Insert_Taux_satisfaction(int.Parse(textBox2.Text), log, qualité);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            if (radioButton3.Checked && radioButton7.Checked)
+            {
+                log = "Peu satisfait";
+                qualité = "Assez satisfait";
+                try
+                {
+                    Taux_satisfactionDAO.Insert_Taux_satisfaction(int.Parse(textBox2.Text), log, qualité);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            if (radioButton3.Checked && radioButton6.Checked)
+            {
+                log = "Peu satisfait";
+                qualité = "Peu satisfait";
+                try
+                {
+                    Taux_satisfactionDAO.Insert_Taux_satisfaction(int.Parse(textBox2.Text), log, qualité);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            if (radioButton3.Checked && radioButton5.Checked)
+            {
+                log = "Peu satisfait";
+                qualité = "Pas du tout satisfait";
+                try
+                {
+                    Taux_satisfactionDAO.Insert_Taux_satisfaction(int.Parse(textBox2.Text), log, qualité);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            if (radioButton4.Checked && radioButton7.Checked)
+            {
+                log = "Pas du tout satisfait";
+                qualité = "Assez satisfait";
+                try
+                {
+                    Taux_satisfactionDAO.Insert_Taux_satisfaction(int.Parse(textBox2.Text), log, qualité);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            if (radioButton4.Checked && radioButton8.Checked)
+            {
+                log = "Pas du tout satisfait";
+                qualité = "Très satisfait";
+                try
+                {
+                    Taux_satisfactionDAO.Insert_Taux_satisfaction(int.Parse(textBox2.Text), log, qualité);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            if (radioButton4.Checked && radioButton6.Checked)
+            {
+                log = "Pas du tout satisfait";
+                qualité = "Peu satisfait";
+                try
+                {
+                    Taux_satisfactionDAO.Insert_Taux_satisfaction(int.Parse(textBox2.Text), log, qualité);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            if (radioButton4.Checked && radioButton8.Checked)
+            {
+                log = "Pas du tout satisfait";
+                qualité = "Pas du tout satisfait";
+                try
+                {
+                    Taux_satisfactionDAO.Insert_Taux_satisfaction(int.Parse(textBox2.Text), log, qualité);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
