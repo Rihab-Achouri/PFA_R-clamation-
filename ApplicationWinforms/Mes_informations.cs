@@ -38,5 +38,25 @@ namespace ApplicationWinforms
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

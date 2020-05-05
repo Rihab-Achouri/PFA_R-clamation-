@@ -68,6 +68,7 @@
             this.button4.TabIndex = 77;
             this.button4.Text = "Quiter";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button1
             // 
@@ -171,6 +172,7 @@
             this.button10.TabIndex = 64;
             this.button10.Text = "Annuler";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // label1
             // 
@@ -242,6 +244,7 @@
             this.button7.TabIndex = 62;
             this.button7.Text = "Annuler";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label6
             // 
@@ -269,6 +272,7 @@
             this.button3.TabIndex = 60;
             this.button3.Text = "Modifier";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox5
             // 

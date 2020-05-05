@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
+using BEL;
+using System.Data.OleDb;
 
 namespace ApplicationWinforms
 {
@@ -22,6 +27,11 @@ namespace ApplicationWinforms
             Acceuil f1 = new Acceuil();
             f1.ShowDialog();
             this.Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

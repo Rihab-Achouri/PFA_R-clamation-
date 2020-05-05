@@ -147,6 +147,7 @@
             this.button3.TabIndex = 92;
             this.button3.Text = "Quiter";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button5
             // 
@@ -275,7 +276,7 @@
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(391, 191);
+            this.button2.Location = new System.Drawing.Point(391, 196);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(140, 51);
             this.button2.TabIndex = 108;

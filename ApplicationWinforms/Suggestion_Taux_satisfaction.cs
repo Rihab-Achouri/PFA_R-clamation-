@@ -279,5 +279,10 @@ namespace ApplicationWinforms
                 }
             }
         }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

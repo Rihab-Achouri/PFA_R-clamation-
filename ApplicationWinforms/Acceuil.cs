@@ -199,5 +199,10 @@ namespace ApplicationWinforms
             f1.ShowDialog();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -77,6 +77,7 @@
             this.button7.TabIndex = 82;
             this.button7.Text = "Quiter";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label8
             // 
