@@ -24,6 +24,8 @@ namespace ApplicationWinforms
             f1.button2.Visible = false;
             f1.button11.Visible = false;
             f1.button10.Visible = false;
+            f1.groupBox2.Visible = false;
+            f1.pictureBox3.Visible = false;
             f1.ShowDialog();
             this.Hide();
         }
@@ -196,6 +198,8 @@ namespace ApplicationWinforms
             f1.button10.Visible = false;
             f1.label6.Visible = false;
             f1.textBox6.Visible = false;
+            f1.groupBox2.Visible = false;
+            f1.pictureBox3.Visible = false;
             f1.ShowDialog();
             this.Hide();
         }
@@ -203,6 +207,15 @@ namespace ApplicationWinforms
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Mes_informations f1 = new Mes_informations();
+            f1.groupBox1.Visible = false;
+            f1.pictureBox2.Visible = false;
+            f1.ShowDialog();
+            this.Hide();
         }
     }
 }
