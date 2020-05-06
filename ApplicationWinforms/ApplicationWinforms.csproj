@@ -58,21 +58,6 @@
     <Compile Include="Authentification.Designer.cs">
       <DependentUpon>Authentification.cs</DependentUpon>
     </Compile>
-    <Compile Include="cabinetdentaireDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>cabinetdentaireDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="cabinetdentaireDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>cabinetdentaireDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="cabinetdentaireDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>cabinetdentaireDataSet2.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Fichech_de_traitement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +101,11 @@
     </Compile>
     <Compile Include="Reclamation_client.Designer.cs">
       <DependentUpon>Reclamation_client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reclamation_ClientDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reclamation_ClientDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Suggestion_Taux_satisfaction.cs">
       <SubType>Form</SubType>
@@ -172,39 +162,6 @@
       <DependentUpon>Traitement_reclamation.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
-    <None Include="cabinetdentaireDataSet.xsc">
-      <DependentUpon>cabinetdentaireDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="cabinetdentaireDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>cabinetdentaireDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="cabinetdentaireDataSet.xss">
-      <DependentUpon>cabinetdentaireDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="cabinetdentaireDataSet1.xsc">
-      <DependentUpon>cabinetdentaireDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="cabinetdentaireDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>cabinetdentaireDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="cabinetdentaireDataSet1.xss">
-      <DependentUpon>cabinetdentaireDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="cabinetdentaireDataSet2.xsc">
-      <DependentUpon>cabinetdentaireDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="cabinetdentaireDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>cabinetdentaireDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="cabinetdentaireDataSet2.xss">
-      <DependentUpon>cabinetdentaireDataSet2.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -214,6 +171,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Reclamation_ClientDataSet.xsc">
+      <DependentUpon>Reclamation_ClientDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reclamation_ClientDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reclamation_ClientDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reclamation_ClientDataSet.xss">
+      <DependentUpon>Reclamation_ClientDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BEL\BEL.csproj">
@@ -224,11 +192,6 @@
       <Project>{1ca36bef-33b5-4c82-8e03-a40abe53c39e}</Project>
       <Name>DAL</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="cabinetdentaire.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
