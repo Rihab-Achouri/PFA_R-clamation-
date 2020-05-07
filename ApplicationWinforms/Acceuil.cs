@@ -20,7 +20,7 @@ namespace ApplicationWinforms
        
         private void button4_Click_1(object sender, EventArgs e)
         {
-            Mes_informations f1 = new Mes_informations();
+            Mes_informations_créer_compte f1 = new Mes_informations_créer_compte();
             f1.button2.Visible = false;
             f1.button11.Visible = false;
             f1.button10.Visible = false;
@@ -192,7 +192,7 @@ namespace ApplicationWinforms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Mes_informations f1 = new Mes_informations();
+            Mes_informations_créer_compte f1 = new Mes_informations_créer_compte();
             f1.button2.Visible = false;
             f1.button11.Visible = false;
             f1.button10.Visible = false;
@@ -211,7 +211,7 @@ namespace ApplicationWinforms
 
         private void button12_Click(object sender, EventArgs e)
         {
-            Mes_informations f1 = new Mes_informations();
+            Mes_informations_créer_compte f1 = new Mes_informations_créer_compte();
             f1.groupBox1.Visible = false;
             f1.pictureBox2.Visible = false;
             f1.ShowDialog();

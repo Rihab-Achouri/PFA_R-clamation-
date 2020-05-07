@@ -195,7 +195,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Lucida Calligraphy", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label9.Location = new System.Drawing.Point(252, 23);
+            this.label9.Location = new System.Drawing.Point(252, 18);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(413, 23);
             this.label9.TabIndex = 129;
@@ -204,9 +204,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(690, 44);
+            this.button1.Location = new System.Drawing.Point(648, 44);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(265, 32);
+            this.button1.Size = new System.Drawing.Size(307, 32);
             this.button1.TabIndex = 117;
             this.button1.Text = "Afficher toutes les réponses des clients";
             this.button1.UseVisualStyleBackColor = true;
