@@ -186,25 +186,19 @@ namespace DAL
             return utils.miseajour(requete);
         }
 
-        public static List<Reclamation> Get_reclamation_groubby_client()
+        public static List<Client2> Get_reclamation_groupby_client()
         {
             string requete = String.Format("select count(num), id_client from Reclamation group by id_client order by count(num);");
             OleDbDataReader rd = utils.lire(requete);
-            List<Reclamation> L = new List<Reclamation>();
-            Reclamation c;
+            List<Client2> L = new List<Client2>();
+            Client2 c;
             while (rd.Read())
             {
-                c = new Reclamation
+                c = new Client2
                 {
-                    Num = rd.GetInt32(0),
-                    Sujet = rd.GetString(1),
-                    Departement = rd.GetString(2),
-                    Id_client = rd.GetInt32(3),
-                    Ref_prod = rd.GetInt32(4),
-                    Decision = rd.GetString(5),
-                    Date_ouverture = rd.GetDateTime(6),
-                    Date_cloture = rd.GetDateTime(7),
-                    Etat_reclamation = rd.GetString(8),
+                    Num2 = rd.GetInt32(0),
+                    Reclamation2 = rd.GetString(1),
+                   
                 };
                 L.Add(c);
             }

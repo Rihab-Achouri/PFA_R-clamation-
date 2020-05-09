@@ -152,5 +152,18 @@ namespace ApplicationWinforms
             f1.ShowDialog();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                List<Client2> Listreclamations = ReclamationDAO.Get_reclamation_groupby_client();
+                dataGridView1.DataSource = Listreclamations;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

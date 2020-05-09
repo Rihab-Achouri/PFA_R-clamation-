@@ -21,9 +21,9 @@ namespace ApplicationWinforms
         private void button4_Click_1(object sender, EventArgs e)
         {
             Mes_informations_créer_compte f1 = new Mes_informations_créer_compte();
-            f1.button2.Visible = false;
-            f1.button11.Visible = false;
-            f1.button10.Visible = false;
+            f1.button5.Visible = false;
+            f1.button3.Visible = false;
+            f1.button7.Visible = false;
             f1.groupBox2.Visible = false;
             f1.pictureBox3.Visible = false;
             f1.ShowDialog();

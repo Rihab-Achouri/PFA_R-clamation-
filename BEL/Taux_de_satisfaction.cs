@@ -13,4 +13,10 @@ namespace BEL
         public string Taux_satisfaction_qualité { get; set; }
         
     }
+
+    public class Client2
+    {
+        public int Num2 { get; set; }
+        public string Reclamation2 { get; set; }
+    }
 }
