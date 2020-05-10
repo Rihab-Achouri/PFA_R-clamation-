@@ -15,9 +15,9 @@ using System.Data.OleDb;
 
 namespace ApplicationWinforms
 {
-    public partial class Fichech_de_traitement : Form
+    public partial class Fiche_de_traitement : Form
     {
-        public Fichech_de_traitement()
+        public Fiche_de_traitement()
         {
             InitializeComponent();
         }
@@ -32,6 +32,11 @@ namespace ApplicationWinforms
         private void button7_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

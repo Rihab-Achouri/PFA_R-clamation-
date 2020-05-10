@@ -107,5 +107,12 @@ namespace ApplicationWinforms
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Fiche_de_traitement f2 = new Fiche_de_traitement();
+            f2.ShowDialog();
+            this.Hide();
+        }
     }
 }
