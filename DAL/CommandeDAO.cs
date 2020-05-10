@@ -13,33 +13,33 @@ namespace DAL
     {
         public static bool passer_commande(int id, int reference_produit, int qt, int prix, DateTime date_1, DateTime date_2)
         {
-            string req = String.Format("select max (Num_commande) from commande");
+            string req = String.Format("select max (Num_commande) from Commande");
             OleDbDataReader rd = utils.lire(req);
             int N = rd.GetInt32(0);
             utils.Disconnect();
 
             int num = N + 1;
-            string requete = String.Format("insert into commande (Num_commande, ID_cl, Reference_produit, Qt, Prix, Date_commande, Date_livraison_souhaité, Etat)" +
+            string requete = String.Format("insert into Commande (Num_commande, ID_cl, Reference_produit, Qt, Prix, Date_commande, Date_livraison_souhaité, Etat)" +
                 " values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}');", num, id, reference_produit, qt, prix, date_1, date_2,"Non traitée");
             return utils.miseajour(requete);
         }
 
         public static bool Update_commande(int num, int reference_produit, int qt, int prix, DateTime date_1, DateTime date_2)
         {
-            string requete = String.Format("update commande set Reference_produit='{0}', Qt='{1}',Prix ='{2}',Date_commande ='{3}'," +
+            string requete = String.Format("update Commande set Reference_produit='{0}', Qt='{1}',Prix ='{2}',Date_commande ='{3}'," +
                 " Date_livraison_souhaité ='{4}' where Num_commande = '{5}';", reference_produit, qt, prix, date_1, date_2, num);
             return utils.miseajour(requete);
         }
 
         public static bool Delete_commande(int rf)
         {
-            string requete = String.Format("delete from commande where Num_commande={0};", rf);
+            string requete = String.Format("delete from Commande where Num_commande={0};", rf);
             return utils.miseajour(requete);
         }
 
         public static Commande Get_commande_reference(int rf)
         {
-            string requete = String.Format("select * from commande where Num_commande={0};", rf);
+            string requete = String.Format("select * from Commande where Num_commande={0};", rf);
             OleDbDataReader rd = utils.lire(requete);
             Commande c = new Commande();
             if (rd.HasRows)
@@ -64,7 +64,7 @@ namespace DAL
 
         public static List<Commande> Get_commande()
         {
-            string requete = String.Format("select * from commande;");
+            string requete = String.Format("select * from Commande;");
             OleDbDataReader rd = utils.lire(requete);
             List<Commande> L = new List<Commande>();
             Commande c;
@@ -90,7 +90,7 @@ namespace DAL
         }
         public static List<Commande> Get_commande_Id_client(int id_client)
         {
-            string requete = String.Format("select * from commande where ID_cl = '{0}';", id_client);
+            string requete = String.Format("select * from Commande where ID_cl = '{0}';", id_client);
             OleDbDataReader rd = utils.lire(requete);
             List<Commande> L = new List<Commande>();
             Commande c;
@@ -116,7 +116,7 @@ namespace DAL
         }
         public static List<Commande> Get_commande_non_traitée()
         {
-            string requete = String.Format("select * from commande where Etat = 'Non traitée';");
+            string requete = String.Format("select * from Commande where Etat = 'Non traitée';");
             OleDbDataReader rd = utils.lire(requete);
             List<Commande> L = new List<Commande>();
             Commande c;
@@ -142,7 +142,7 @@ namespace DAL
         }
         public static bool date_livraison(int num, DateTime date_1, string etat)
         {
-            string requete = String.Format("update commande set Date_livraison_réel ='{0}', Etat ='{1}'," +
+            string requete = String.Format("update Commande set Date_livraison_réel ='{0}', Etat ='{1}'," +
                 " where Num_commande = '{2}';", date_1,etat, num);
             return utils.miseajour(requete);
         }

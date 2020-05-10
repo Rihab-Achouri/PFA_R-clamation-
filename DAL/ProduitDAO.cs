@@ -14,27 +14,27 @@ namespace DAL
 
         public static bool Insert_produit(int RF, int qt, int prix)
         {
-            string requete = String.Format("insert into produit (reference, qt_stock,prix_unitaire)" +
+            string requete = String.Format("insert into Produit (Reference, Qt_stock, Prix_unitaire)" +
                 " values ('{0}','{1}','{2}');", RF, qt, prix);
             return utils.miseajour(requete);
         }
 
         public static bool Update_produit(int RF, int qt, int prix)
         {
-            string requete = String.Format("update produit set qt_stock='{0}', prix_unitaire='{1}'," +
-                " where reference={3};", qt, prix, RF);
+            string requete = String.Format("update Produit set Qt_stock='{0}', Prix_unitaire='{1}'," +
+                " where Reference={3};", qt, prix, RF);
             return utils.miseajour(requete);
         }
 
         public static bool Delete_produit(int RF)
         {
-            string requete = String.Format("delete from produit where reference={0};", RF);
+            string requete = String.Format("delete from Produit where Reference={0};", RF);
             return utils.miseajour(requete);
         }
 
         public static Produit Get_produit_reference(int RF)
         {
-            string requete = String.Format("select * from produit where reference={0};", RF);
+            string requete = String.Format("select * from Produit where Reference={0};", RF);
             OleDbDataReader rd = utils.lire(requete);
             Produit c = new Produit();
             if (rd.HasRows)
@@ -54,7 +54,7 @@ namespace DAL
 
         public static List<Produit> Get_produit()
         {
-            string requete = String.Format("select * from produit;");
+            string requete = String.Format("select * from Produit;");
             OleDbDataReader rd = utils.lire(requete);
             List<Produit> L = new List<Produit>();
             Produit c;

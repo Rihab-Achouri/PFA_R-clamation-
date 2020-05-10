@@ -14,27 +14,27 @@ namespace DAL
 
         public static bool Insert_personnel(int id, string nom, string prenom, int tel, string adresse_mail, string poste)
         {
-            string requete = String.Format("insert into personnel (ID, nom, prenom, tel, adresse_mail, poste)" +
+            string requete = String.Format("insert into Personnel (ID, Nom, Prenom, Tel, Adresse_mail, Poste)" +
                 " values ('{0}','{1}','{2}','{3}','{4}',{5}');", id, nom, prenom, tel, adresse_mail, poste);
             return utils.miseajour(requete);
         }
 
         public static bool Update_personnel(int id, string nom, string prenom, int tel, string adresse_mail, string poste)
         {
-            string requete = String.Format("update personnel set nom='{0}', prenom='{1}'," +
-                " tel='{2}', adresse_mail='{3}', poste='{4}' where ID={5};", nom, prenom, tel, adresse_mail, poste, id);
+            string requete = String.Format("update Personnel set Nom='{0}', Prenom='{1}'," +
+                " Tel='{2}', Adresse_mail='{3}', Poste='{4}' where ID={5};", nom, prenom, tel, adresse_mail, poste, id);
             return utils.miseajour(requete);
         }
 
         public static bool Delete_personnel(int id)
         {
-            string requete = String.Format("delete from personnel where ID={0};", id);
+            string requete = String.Format("delete from Personnel where ID={0};", id);
             return utils.miseajour(requete);
         }
 
         public static Personnel Get_personnel_ID(int id)
         {
-            string requete = String.Format("select * from personnel where ID={0};", id);
+            string requete = String.Format("select * from Personnel where ID={0};", id);
             OleDbDataReader rd = utils.lire(requete);
             Personnel c = new Personnel();
             if (rd.HasRows)
@@ -56,7 +56,7 @@ namespace DAL
 
         public static List<Personnel> Get_personnel()
         {
-            string requete = String.Format("select * from personnel;");
+            string requete = String.Format("select * from Personnel;");
             OleDbDataReader rd = utils.lire(requete);
             List<Personnel> L = new List<Personnel>();
             Personnel c;

@@ -43,5 +43,27 @@ namespace ApplicationWinforms.Properties {
                 return ((string)(this["Reclamation_ClientConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\pc\\Source\\Repos\\PFA_Reclam" +
+            "ation_client\\BEL\\Reclamation_Client.accdb")]
+        public string Reclamation_ClientConnectionString1 {
+            get {
+                return ((string)(this["Reclamation_ClientConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\Reclamation_Client." +
+            "accdb")]
+        public string Reclamation_ClientConnectionString2 {
+            get {
+                return ((string)(this["Reclamation_ClientConnectionString2"]));
+            }
+        }
     }
 }

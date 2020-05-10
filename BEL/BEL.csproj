@@ -54,35 +54,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Reclamation.cs" />
-    <Compile Include="Reclamation_ClientDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reclamation_ClientDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Suggestion.cs" />
     <Compile Include="Taux_de_satisfaction.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Reclamation_Client.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Reclamation_ClientDataSet.xsc">
-      <DependentUpon>Reclamation_ClientDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Reclamation_ClientDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Reclamation_ClientDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Reclamation_ClientDataSet.xss">
-      <DependentUpon>Reclamation_ClientDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -365,6 +365,7 @@
             this.button15.TabIndex = 19;
             this.button15.Text = "Ajouter";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // label10
             // 
