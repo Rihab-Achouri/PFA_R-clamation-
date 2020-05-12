@@ -9,9 +9,8 @@ using BEL;
 
 namespace DAL
 {
-    class ActionDAO
+    public class ActionDAO
     {
-
         public static bool Insert_Action(int Num, string Etat, string Description)
         {
             string requete = String.Format("insert into Action (Num, Etat, Description)" +
@@ -19,33 +18,31 @@ namespace DAL
             return utils.miseajour(requete);
         }
 
-        public static bool Update_client(int id, string nom, string prenom, int tel, string adresse_mail)
+        public static bool Update_Action(int Num, string Etat, string Description)
         {
-            string requete = String.Format("update client set nom_cl='{0}', prenom_cl='{1}'," +
-                " tel_cl='{2}', adresse_mail_cl='{3}' where ID_cl={4};", nom, prenom, tel, adresse_mail, id);
+            string requete = String.Format("update Action set Etat='{0}'," +
+                " Description='{1}' where Num={2};", Etat, Description, Num);
             return utils.miseajour(requete);
         }
 
-        public static bool Delete_client(int id)
+        public static bool Delete_Action(int Num)
         {
-            string requete = String.Format("delete from client where ID_cl={0};", id);
+            string requete = String.Format("delete from Action where Num={0};", Num);
             return utils.miseajour(requete);
         }
 
-        public static Client Get_client_ID(int id)
+        public static Action Get_Action_Num(int Num)
         {
-            string requete = String.Format("select * from client where ID_cl={0};", id);
+            string requete = String.Format("select * from Action where Num={0};", Num);
             OleDbDataReader rd = utils.lire(requete);
-            Client c = new Client();
+            Action c = new Action();
             if (rd.HasRows)
             {
                 while (rd.Read())
                 {
-                    c.ID_cl = rd.GetInt32(0);
-                    c.Prenom_cl = rd.GetString(1);
-                    c.Nom_cl = rd.GetString(2);
-                    c.Tel_cl = rd.GetInt32(3);
-                    c.Adresse_mail_cl = rd.GetString(4);
+                    c.Num = rd.GetInt32(0);
+                    c.Etat = rd.GetString(1);                   
+                    c.Description = rd.GetString(2);
                 }
 
             }
@@ -53,21 +50,61 @@ namespace DAL
             return c;
         }
 
-        public static List<Client> Get_client()
+        public static List<Action> Get_Action_terminées()
         {
-            string requete = String.Format("select * from client;");
+            string requete = String.Format("select * from Action  where Etat=='Non Traitée';");
             OleDbDataReader rd = utils.lire(requete);
-            List<Client> L = new List<Client>();
-            Client c;
+            List<Action> L = new List<Action>();
+            Action c;
             while (rd.Read())
             {
-                c = new Client
+                c = new Action
                 {
-                    ID_cl = rd.GetInt32(0),
-                    Nom_cl = rd.GetString(1),
-                    Prenom_cl = rd.GetString(2),
-                    Tel_cl = rd.GetInt32(3),
-                    Adresse_mail_cl = rd.GetString(4),
+                    Num = rd.GetInt32(0),
+                    Etat = rd.GetString(1),
+                    Description = rd.GetString(2),
+                };
+                L.Add(c);
+            }
+            utils.Disconnect();
+            return L;
+
+        }
+
+        public static List<Action> Get_Action_en_cour()
+        {
+            string requete = String.Format("select * from Action  where Etat=='en_cour';");
+            OleDbDataReader rd = utils.lire(requete);
+            List<Action> L = new List<Action>();
+            Action c;
+            while (rd.Read())
+            {
+                c = new Action
+                {
+                    Num = rd.GetInt32(0),
+                    Etat = rd.GetString(1),
+                    Description = rd.GetString(2),
+                };
+                L.Add(c);
+            }
+            utils.Disconnect();
+            return L;
+
+        }
+
+        public static List<Action> Get_Action()
+        {
+            string requete = String.Format("select * from Action;");
+            OleDbDataReader rd = utils.lire(requete);
+            List<Action> L = new List<Action>();
+            Action c;
+            while (rd.Read())
+            {
+                c = new Action
+                {
+                    Num = rd.GetInt32(0),
+                    Etat = rd.GetString(1),
+                    Description = rd.GetString(5),
 
                 };
                 L.Add(c);
