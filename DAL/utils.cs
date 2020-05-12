@@ -22,14 +22,14 @@ namespace DAL
         public static void Connect()
         {
             string cnstr = "provider = Microsoft.JET.OLEDB.4.0;" +
-                "Data Source =C:\\Users\\pc\\source\\repos\\PFA_Reclamation_client.mdb;";
+                "Data Source =C:\\Users\\pc\\source\repos\\PFA_Reclamation_client\\Reclamation_Client.accdb;";
             cn = new OleDbConnection(cnstr);
             cn.Open();
         }
         public static string Connect1()
         {
             string cnstr = "provider = Microsoft.JET.OLEDB.4.0;" +
-                "Data Source =C:\\Users\\pc\\source\\repos\\PFA_Reclamation_client.mdb;";
+                "Data Source =C:\\Users\\pc\\source\repos\\PFA_Reclamation_client\\Reclamation_Client.accdb;";
             return cnstr; 
         }
 

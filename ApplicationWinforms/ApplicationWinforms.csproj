@@ -103,6 +103,11 @@
     <Compile Include="Reclamation_client.Designer.cs">
       <DependentUpon>Reclamation_client.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reclamation_ClientDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reclamation_ClientDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Suggestion_Taux_satisfaction.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +172,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Reclamation_ClientDataSet.xsc">
+      <DependentUpon>Reclamation_ClientDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reclamation_ClientDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reclamation_ClientDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reclamation_ClientDataSet.xss">
+      <DependentUpon>Reclamation_ClientDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BEL\BEL.csproj">
@@ -177,6 +193,11 @@
       <Project>{1ca36bef-33b5-4c82-8e03-a40abe53c39e}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reclamation_Client.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

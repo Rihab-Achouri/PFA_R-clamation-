@@ -53,15 +53,10 @@
             this.button7 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.reclamation_ClientDataSet3 = new ApplicationWinforms.Reclamation_ClientDataSet3();
-            this.tauxsatisfactionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.taux_satisfactionTableAdapter = new ApplicationWinforms.Reclamation_ClientDataSet3TableAdapters.Taux_satisfactionTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reclamation_ClientDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tauxsatisfactionBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox9
@@ -147,7 +142,6 @@
             // 
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.DataSource = this.tauxsatisfactionBindingSource;
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(439, 245);
@@ -168,7 +162,6 @@
             // 
             chartArea2.Name = "ChartArea1";
             this.chart2.ChartAreas.Add(chartArea2);
-            this.chart2.DataSource = this.tauxsatisfactionBindingSource;
             legend2.Name = "Legend1";
             this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(12, 245);
@@ -228,20 +221,6 @@
             this.button1.Text = "Afficher toutes les réponses des clients";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // reclamation_ClientDataSet3
-            // 
-            this.reclamation_ClientDataSet3.DataSetName = "Reclamation_ClientDataSet3";
-            this.reclamation_ClientDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tauxsatisfactionBindingSource
-            // 
-            this.tauxsatisfactionBindingSource.DataMember = "Taux_satisfaction";
-            this.tauxsatisfactionBindingSource.DataSource = this.reclamation_ClientDataSet3;
-            // 
-            // taux_satisfactionTableAdapter
-            // 
-            this.taux_satisfactionTableAdapter.ClearBeforeFill = true;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -269,8 +248,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reclamation_ClientDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tauxsatisfactionBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,8 +269,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label9;
         public System.Windows.Forms.Button button1;
-        private Reclamation_ClientDataSet3 reclamation_ClientDataSet3;
-        private System.Windows.Forms.BindingSource tauxsatisfactionBindingSource;
-        private Reclamation_ClientDataSet3TableAdapters.Taux_satisfactionTableAdapter taux_satisfactionTableAdapter;
+       
     }
 }

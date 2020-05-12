@@ -24,8 +24,7 @@ namespace ApplicationWinforms
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'reclamation_ClientDataSet3.Taux_satisfaction'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.taux_satisfactionTableAdapter.Fill(this.reclamation_ClientDataSet3.Taux_satisfaction);
+            
 
         }
     }
