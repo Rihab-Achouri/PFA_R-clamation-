@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BEL
 {
-    public class Action
+    public class Action_reclamation
     {
         public int Num { get; set; }
         public string Etat { get; set; }
