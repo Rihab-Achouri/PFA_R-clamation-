@@ -9,7 +9,7 @@ using BEL;
 
 namespace DAL
 {
-    public class ActionDAO
+    public class Action_reclamationDAO
     {
         public static bool Insert_Action(int Num, string Etat, string Description)
         {
@@ -31,11 +31,11 @@ namespace DAL
             return utils.miseajour(requete);
         }
 
-        public static Action Get_Action_Num(int Num)
+        public static Action_reclamation Get_Action_Num(int Num)
         {
             string requete = String.Format("select * from Action where Num={0};", Num);
             OleDbDataReader rd = utils.lire(requete);
-            Action c = new Action();
+            Action_reclamation c = new Action_reclamation();
             if (rd.HasRows)
             {
                 while (rd.Read())
@@ -50,15 +50,15 @@ namespace DAL
             return c;
         }
 
-        public static List<Action> Get_Action_terminées()
+        public static List<Action_reclamation> Get_Action_terminées()
         {
             string requete = String.Format("select * from Action  where Etat=='Non Traitée';");
             OleDbDataReader rd = utils.lire(requete);
-            List<Action> L = new List<Action>();
-            Action c;
+            List<Action_reclamation> L = new List<Action_reclamation>();
+            Action_reclamation c;
             while (rd.Read())
             {
-                c = new Action
+                c = new Action_reclamation
                 {
                     Num = rd.GetInt32(0),
                     Etat = rd.GetString(1),
@@ -71,15 +71,15 @@ namespace DAL
 
         }
 
-        public static List<Action> Get_Action_en_cour()
+        public static List<Action_reclamation> Get_Action_en_cour()
         {
             string requete = String.Format("select * from Action  where Etat=='en_cour';");
             OleDbDataReader rd = utils.lire(requete);
-            List<Action> L = new List<Action>();
-            Action c;
+            List<Action_reclamation> L = new List<Action_reclamation>();
+            Action_reclamation c;
             while (rd.Read())
             {
-                c = new Action
+                c = new Action_reclamation
                 {
                     Num = rd.GetInt32(0),
                     Etat = rd.GetString(1),
@@ -92,15 +92,15 @@ namespace DAL
 
         }
 
-        public static List<Action> Get_Action()
+        public static List<Action_reclamation> Get_Action()
         {
             string requete = String.Format("select * from Action;");
             OleDbDataReader rd = utils.lire(requete);
-            List<Action> L = new List<Action>();
-            Action c;
+            List<Action_reclamation> L = new List<Action_reclamation>();
+            Action_reclamation c;
             while (rd.Read())
             {
-                c = new Action
+                c = new Action_reclamation
                 {
                     Num = rd.GetInt32(0),
                     Etat = rd.GetString(1),
