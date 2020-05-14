@@ -57,6 +57,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -298,6 +299,7 @@
             this.button9.TabIndex = 90;
             this.button9.Text = "Afficher la liste des actions en cours";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button6
             // 
@@ -308,6 +310,7 @@
             this.button6.TabIndex = 89;
             this.button6.Text = "Afficher la liste des actions terminées";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -318,6 +321,7 @@
             this.button5.TabIndex = 88;
             this.button5.Text = "Afficher la liste de toutes les actions";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // vScrollBar1
             // 
@@ -328,6 +332,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.button1);
             this.groupBox4.Controls.Add(this.button14);
             this.groupBox4.Controls.Add(this.button15);
             this.groupBox4.Controls.Add(this.label10);
@@ -339,22 +344,35 @@
             this.groupBox4.Controls.Add(this.textBox12);
             this.groupBox4.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.Color.Black;
-            this.groupBox4.Location = new System.Drawing.Point(543, 77);
+            this.groupBox4.Location = new System.Drawing.Point(502, 77);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(334, 151);
+            this.groupBox4.Size = new System.Drawing.Size(428, 151);
             this.groupBox4.TabIndex = 92;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Gérer Action";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(324, 114);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 29);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Supprimer";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button14
             // 
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(235, 114);
+            this.button14.Location = new System.Drawing.Point(221, 114);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(92, 29);
             this.button14.TabIndex = 20;
             this.button14.Text = "Modifier";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -391,25 +409,26 @@
             // 
             this.textBox10.Location = new System.Drawing.Point(176, 81);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(139, 25);
+            this.textBox10.Size = new System.Drawing.Size(190, 25);
             this.textBox10.TabIndex = 16;
             // 
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(176, 50);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(139, 25);
+            this.textBox11.Size = new System.Drawing.Size(190, 25);
             this.textBox11.TabIndex = 15;
             // 
             // button16
             // 
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Location = new System.Drawing.Point(121, 114);
+            this.button16.Location = new System.Drawing.Point(117, 114);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(92, 29);
             this.button16.TabIndex = 14;
             this.button16.Text = "Rechercher";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // label14
             // 
@@ -425,7 +444,7 @@
             // 
             this.textBox12.Location = new System.Drawing.Point(176, 19);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(139, 25);
+            this.textBox12.Size = new System.Drawing.Size(190, 25);
             this.textBox12.TabIndex = 2;
             // 
             // Fiche_de_traitement
@@ -513,5 +532,6 @@
         public System.Windows.Forms.Button button16;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox12;
+        public System.Windows.Forms.Button button1;
     }
 }
