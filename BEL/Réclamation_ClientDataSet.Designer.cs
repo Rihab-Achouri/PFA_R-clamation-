@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace DAL {
+namespace BEL {
     
     
     /// <summary>
@@ -20,9 +20,9 @@ namespace DAL {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("Reclamation_ClientDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("Réclamation_ClientDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class Reclamation_ClientDataSet : global::System.Data.DataSet {
+    public partial class Réclamation_ClientDataSet : global::System.Data.DataSet {
         
         private AuthentificationDataTable tableAuthentification;
         
@@ -46,7 +46,7 @@ namespace DAL {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public Reclamation_ClientDataSet() {
+        public Réclamation_ClientDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -57,7 +57,7 @@ namespace DAL {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected Reclamation_ClientDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected Réclamation_ClientDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -247,7 +247,7 @@ namespace DAL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            Reclamation_ClientDataSet cln = ((Reclamation_ClientDataSet)(base.Clone()));
+            Réclamation_ClientDataSet cln = ((Réclamation_ClientDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -391,9 +391,9 @@ namespace DAL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "Reclamation_ClientDataSet";
+            this.DataSetName = "Réclamation_ClientDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/Reclamation_ClientDataSet.xsd";
+            this.Namespace = "http://tempuri.org/Réclamation_ClientDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableAuthentification = new AuthentificationDataTable();
@@ -481,7 +481,7 @@ namespace DAL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            Reclamation_ClientDataSet ds = new Reclamation_ClientDataSet();
+            Réclamation_ClientDataSet ds = new Réclamation_ClientDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -782,7 +782,7 @@ namespace DAL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Reclamation_ClientDataSet ds = new Reclamation_ClientDataSet();
+                Réclamation_ClientDataSet ds = new Réclamation_ClientDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1099,7 +1099,7 @@ namespace DAL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Reclamation_ClientDataSet ds = new Reclamation_ClientDataSet();
+                Réclamation_ClientDataSet ds = new Réclamation_ClientDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1470,7 +1470,7 @@ namespace DAL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Reclamation_ClientDataSet ds = new Reclamation_ClientDataSet();
+                Réclamation_ClientDataSet ds = new Réclamation_ClientDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1801,7 +1801,7 @@ namespace DAL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Reclamation_ClientDataSet ds = new Reclamation_ClientDataSet();
+                Réclamation_ClientDataSet ds = new Réclamation_ClientDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2133,7 +2133,7 @@ namespace DAL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Reclamation_ClientDataSet ds = new Reclamation_ClientDataSet();
+                Réclamation_ClientDataSet ds = new Réclamation_ClientDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2419,7 +2419,7 @@ namespace DAL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Reclamation_ClientDataSet ds = new Reclamation_ClientDataSet();
+                Réclamation_ClientDataSet ds = new Réclamation_ClientDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2793,7 +2793,7 @@ namespace DAL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Reclamation_ClientDataSet ds = new Reclamation_ClientDataSet();
+                Réclamation_ClientDataSet ds = new Réclamation_ClientDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3066,7 +3066,7 @@ namespace DAL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Reclamation_ClientDataSet ds = new Reclamation_ClientDataSet();
+                Réclamation_ClientDataSet ds = new Réclamation_ClientDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3357,7 +3357,7 @@ namespace DAL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Reclamation_ClientDataSet ds = new Reclamation_ClientDataSet();
+                Réclamation_ClientDataSet ds = new Réclamation_ClientDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5001,7 +5001,7 @@ namespace DAL {
         }
     }
 }
-namespace DAL.Reclamation_ClientDataSetTableAdapters {
+namespace BEL.Réclamation_ClientDataSetTableAdapters {
     
     
     /// <summary>
@@ -5168,7 +5168,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
+            this._connection.ConnectionString = global::BEL.Properties.Settings.Default.Réclamation_ClientConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5185,7 +5185,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Reclamation_ClientDataSet.AuthentificationDataTable dataTable) {
+        public virtual int Fill(Réclamation_ClientDataSet.AuthentificationDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5198,9 +5198,9 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Reclamation_ClientDataSet.AuthentificationDataTable GetData() {
+        public virtual Réclamation_ClientDataSet.AuthentificationDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Reclamation_ClientDataSet.AuthentificationDataTable dataTable = new Reclamation_ClientDataSet.AuthentificationDataTable();
+            Réclamation_ClientDataSet.AuthentificationDataTable dataTable = new Réclamation_ClientDataSet.AuthentificationDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5208,14 +5208,14 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet.AuthentificationDataTable dataTable) {
+        public virtual int Update(Réclamation_ClientDataSet.AuthentificationDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet dataSet) {
+        public virtual int Update(Réclamation_ClientDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Authentification");
         }
         
@@ -5560,7 +5560,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
+            this._connection.ConnectionString = global::BEL.Properties.Settings.Default.Réclamation_ClientConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5577,7 +5577,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Reclamation_ClientDataSet.ClientDataTable dataTable) {
+        public virtual int Fill(Réclamation_ClientDataSet.ClientDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5590,9 +5590,9 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Reclamation_ClientDataSet.ClientDataTable GetData() {
+        public virtual Réclamation_ClientDataSet.ClientDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Reclamation_ClientDataSet.ClientDataTable dataTable = new Reclamation_ClientDataSet.ClientDataTable();
+            Réclamation_ClientDataSet.ClientDataTable dataTable = new Réclamation_ClientDataSet.ClientDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5600,14 +5600,14 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet.ClientDataTable dataTable) {
+        public virtual int Update(Réclamation_ClientDataSet.ClientDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet dataSet) {
+        public virtual int Update(Réclamation_ClientDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Client");
         }
         
@@ -6037,7 +6037,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
+            this._connection.ConnectionString = global::BEL.Properties.Settings.Default.Réclamation_ClientConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6055,7 +6055,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Reclamation_ClientDataSet.CommandeDataTable dataTable) {
+        public virtual int Fill(Réclamation_ClientDataSet.CommandeDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6068,9 +6068,9 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Reclamation_ClientDataSet.CommandeDataTable GetData() {
+        public virtual Réclamation_ClientDataSet.CommandeDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Reclamation_ClientDataSet.CommandeDataTable dataTable = new Reclamation_ClientDataSet.CommandeDataTable();
+            Réclamation_ClientDataSet.CommandeDataTable dataTable = new Réclamation_ClientDataSet.CommandeDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6078,14 +6078,14 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet.CommandeDataTable dataTable) {
+        public virtual int Update(Réclamation_ClientDataSet.CommandeDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet dataSet) {
+        public virtual int Update(Réclamation_ClientDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Commande");
         }
         
@@ -6640,7 +6640,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
+            this._connection.ConnectionString = global::BEL.Properties.Settings.Default.Réclamation_ClientConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6658,7 +6658,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Reclamation_ClientDataSet.MissionDataTable dataTable) {
+        public virtual int Fill(Réclamation_ClientDataSet.MissionDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6671,9 +6671,9 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Reclamation_ClientDataSet.MissionDataTable GetData() {
+        public virtual Réclamation_ClientDataSet.MissionDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Reclamation_ClientDataSet.MissionDataTable dataTable = new Reclamation_ClientDataSet.MissionDataTable();
+            Réclamation_ClientDataSet.MissionDataTable dataTable = new Réclamation_ClientDataSet.MissionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6681,14 +6681,14 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet.MissionDataTable dataTable) {
+        public virtual int Update(Réclamation_ClientDataSet.MissionDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet dataSet) {
+        public virtual int Update(Réclamation_ClientDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Mission");
         }
         
@@ -7124,7 +7124,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
+            this._connection.ConnectionString = global::BEL.Properties.Settings.Default.Réclamation_ClientConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7141,7 +7141,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Reclamation_ClientDataSet.PersonnelDataTable dataTable) {
+        public virtual int Fill(Réclamation_ClientDataSet.PersonnelDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7154,9 +7154,9 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Reclamation_ClientDataSet.PersonnelDataTable GetData() {
+        public virtual Réclamation_ClientDataSet.PersonnelDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Reclamation_ClientDataSet.PersonnelDataTable dataTable = new Reclamation_ClientDataSet.PersonnelDataTable();
+            Réclamation_ClientDataSet.PersonnelDataTable dataTable = new Réclamation_ClientDataSet.PersonnelDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7164,14 +7164,14 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet.PersonnelDataTable dataTable) {
+        public virtual int Update(Réclamation_ClientDataSet.PersonnelDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet dataSet) {
+        public virtual int Update(Réclamation_ClientDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Personnel");
         }
         
@@ -7590,7 +7590,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
+            this._connection.ConnectionString = global::BEL.Properties.Settings.Default.Réclamation_ClientConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7607,7 +7607,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Reclamation_ClientDataSet.ProduitDataTable dataTable) {
+        public virtual int Fill(Réclamation_ClientDataSet.ProduitDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7620,9 +7620,9 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Reclamation_ClientDataSet.ProduitDataTable GetData() {
+        public virtual Réclamation_ClientDataSet.ProduitDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Reclamation_ClientDataSet.ProduitDataTable dataTable = new Reclamation_ClientDataSet.ProduitDataTable();
+            Réclamation_ClientDataSet.ProduitDataTable dataTable = new Réclamation_ClientDataSet.ProduitDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7630,14 +7630,14 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet.ProduitDataTable dataTable) {
+        public virtual int Update(Réclamation_ClientDataSet.ProduitDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet dataSet) {
+        public virtual int Update(Réclamation_ClientDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Produit");
         }
         
@@ -8011,7 +8011,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
+            this._connection.ConnectionString = global::BEL.Properties.Settings.Default.Réclamation_ClientConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8029,7 +8029,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Reclamation_ClientDataSet.ReclamationDataTable dataTable) {
+        public virtual int Fill(Réclamation_ClientDataSet.ReclamationDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8042,9 +8042,9 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Reclamation_ClientDataSet.ReclamationDataTable GetData() {
+        public virtual Réclamation_ClientDataSet.ReclamationDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Reclamation_ClientDataSet.ReclamationDataTable dataTable = new Reclamation_ClientDataSet.ReclamationDataTable();
+            Réclamation_ClientDataSet.ReclamationDataTable dataTable = new Réclamation_ClientDataSet.ReclamationDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8052,14 +8052,14 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet.ReclamationDataTable dataTable) {
+        public virtual int Update(Réclamation_ClientDataSet.ReclamationDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet dataSet) {
+        public virtual int Update(Réclamation_ClientDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Reclamation");
         }
         
@@ -8587,7 +8587,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
+            this._connection.ConnectionString = global::BEL.Properties.Settings.Default.Réclamation_ClientConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8604,7 +8604,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Reclamation_ClientDataSet.SuggestionDataTable dataTable) {
+        public virtual int Fill(Réclamation_ClientDataSet.SuggestionDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8617,9 +8617,9 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Reclamation_ClientDataSet.SuggestionDataTable GetData() {
+        public virtual Réclamation_ClientDataSet.SuggestionDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Reclamation_ClientDataSet.SuggestionDataTable dataTable = new Reclamation_ClientDataSet.SuggestionDataTable();
+            Réclamation_ClientDataSet.SuggestionDataTable dataTable = new Réclamation_ClientDataSet.SuggestionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8627,14 +8627,14 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet.SuggestionDataTable dataTable) {
+        public virtual int Update(Réclamation_ClientDataSet.SuggestionDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet dataSet) {
+        public virtual int Update(Réclamation_ClientDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Suggestion");
         }
         
@@ -8937,7 +8937,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
+            this._connection.ConnectionString = global::BEL.Properties.Settings.Default.Réclamation_ClientConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8955,7 +8955,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Reclamation_ClientDataSet.Taux_satisfactionDataTable dataTable) {
+        public virtual int Fill(Réclamation_ClientDataSet.Taux_satisfactionDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8968,9 +8968,9 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Reclamation_ClientDataSet.Taux_satisfactionDataTable GetData() {
+        public virtual Réclamation_ClientDataSet.Taux_satisfactionDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Reclamation_ClientDataSet.Taux_satisfactionDataTable dataTable = new Reclamation_ClientDataSet.Taux_satisfactionDataTable();
+            Réclamation_ClientDataSet.Taux_satisfactionDataTable dataTable = new Réclamation_ClientDataSet.Taux_satisfactionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8978,14 +8978,14 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet.Taux_satisfactionDataTable dataTable) {
+        public virtual int Update(Réclamation_ClientDataSet.Taux_satisfactionDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Reclamation_ClientDataSet dataSet) {
+        public virtual int Update(Réclamation_ClientDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Taux_satisfaction");
         }
         
@@ -9401,7 +9401,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateUpdatedRows(Reclamation_ClientDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(Réclamation_ClientDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._authentificationTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Authentification.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -9492,7 +9492,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateInsertedRows(Reclamation_ClientDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(Réclamation_ClientDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._authentificationTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Authentification.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -9574,7 +9574,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateDeletedRows(Reclamation_ClientDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(Réclamation_ClientDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._taux_satisfactionTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Taux_satisfaction.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -9680,7 +9680,7 @@ namespace DAL.Reclamation_ClientDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public virtual int UpdateAll(Reclamation_ClientDataSet dataSet) {
+        public virtual int UpdateAll(Réclamation_ClientDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
