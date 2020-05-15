@@ -54,16 +54,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Reclamation.cs" />
-    <Compile Include="Réclamation_ClientDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Réclamation_ClientDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Réclamation_ClientDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Réclamation_ClientDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Suggestion.cs" />
     <Compile Include="Taux_de_satisfaction.cs" />
   </ItemGroup>
@@ -72,28 +62,6 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Réclamation_ClientDataSet.xsc">
-      <DependentUpon>Réclamation_ClientDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Réclamation_ClientDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Réclamation_ClientDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Réclamation_ClientDataSet.xss">
-      <DependentUpon>Réclamation_ClientDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Réclamation_ClientDataSet1.xsc">
-      <DependentUpon>Réclamation_ClientDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="Réclamation_ClientDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Réclamation_ClientDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Réclamation_ClientDataSet1.xss">
-      <DependentUpon>Réclamation_ClientDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -206,7 +206,7 @@ namespace ApplicationWinforms
             {
                 Client c = ClientDAO.Get_client_ID(int.Parse(textBox1.Text));
                 textBox2.Text = c.Nom_cl;
-                textBox4.Text = c.Tel_cl;
+                textBox4.Text = c.Tel_cl.ToString();
                 textBox5.Text = c.Adresse_mail_cl;
                 
                 List<Client> L = new List<Client>();
