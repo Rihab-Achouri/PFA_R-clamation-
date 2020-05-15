@@ -103,10 +103,15 @@
     <Compile Include="Reclamation_client.Designer.cs">
       <DependentUpon>Reclamation_client.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reclamation_ClientDataSet.Designer.cs">
+    <Compile Include="Réclamation_ClientDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Reclamation_ClientDataSet.xsd</DependentUpon>
+      <DependentUpon>Réclamation_ClientDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Réclamation_ClientDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Réclamation_ClientDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Suggestion_Taux_satisfaction.cs">
       <SubType>Form</SubType>
@@ -172,16 +177,27 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Reclamation_ClientDataSet.xsc">
-      <DependentUpon>Reclamation_ClientDataSet.xsd</DependentUpon>
+    <None Include="Réclamation_ClientDataSet.xsc">
+      <DependentUpon>Réclamation_ClientDataSet.xsd</DependentUpon>
     </None>
-    <None Include="Reclamation_ClientDataSet.xsd">
+    <None Include="Réclamation_ClientDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Reclamation_ClientDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>Réclamation_ClientDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Reclamation_ClientDataSet.xss">
-      <DependentUpon>Reclamation_ClientDataSet.xsd</DependentUpon>
+    <None Include="Réclamation_ClientDataSet.xss">
+      <DependentUpon>Réclamation_ClientDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Réclamation_ClientDataSet1.xsc">
+      <DependentUpon>Réclamation_ClientDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Réclamation_ClientDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Réclamation_ClientDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Réclamation_ClientDataSet1.xss">
+      <DependentUpon>Réclamation_ClientDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -195,7 +211,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Reclamation_Client.accdb">
+    <Content Include="Réclamation_Client.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Réclamation_Client.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

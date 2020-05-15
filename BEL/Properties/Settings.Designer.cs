@@ -33,5 +33,27 @@ namespace BEL.Properties {
                 return ((string)(this["Reclamation_ClientConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\p\\Source\\Repos\\Rihab-Achou" +
+            "ri\\PFA_Reclamation_client\\ApplicationWinforms\\Réclamation_Client.accdb")]
+        public string Réclamation_ClientConnectionString {
+            get {
+                return ((string)(this["Réclamation_ClientConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\p\\Source\\Repos\\Rihab-Achour" +
+            "i\\PFA_Reclamation_client\\ApplicationWinforms\\Réclamation_Client.mdb")]
+        public string Réclamation_ClientConnectionString1 {
+            get {
+                return ((string)(this["Réclamation_ClientConnectionString1"]));
+            }
+        }
     }
 }
