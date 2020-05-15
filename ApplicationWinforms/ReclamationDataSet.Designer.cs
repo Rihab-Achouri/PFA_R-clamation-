@@ -1037,9 +1037,9 @@ namespace ApplicationWinforms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public AuthentificationRow FindByUser(string User) {
+            public AuthentificationRow FindByLogin(string Login) {
                 return ((AuthentificationRow)(this.Rows.Find(new object[] {
-                            User})));
+                            Login})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1074,10 +1074,10 @@ namespace ApplicationWinforms {
                 this.columnUser = new global::System.Data.DataColumn("User", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnUser);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnUser}, true));
+                                this.columnLogin}, true));
+                this.columnLogin.AllowDBNull = false;
+                this.columnLogin.Unique = true;
                 this.columnLogin.MaxLength = 255;
-                this.columnUser.AllowDBNull = false;
-                this.columnUser.Unique = true;
                 this.columnUser.MaxLength = 255;
             }
             
@@ -3897,12 +3897,7 @@ namespace ApplicationWinforms {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public string Login {
                 get {
-                    try {
-                        return ((string)(this[this.tableAuthentification.LoginColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Login\' dans la table \'Authentification\' est DBNull.", e);
-                    }
+                    return ((string)(this[this.tableAuthentification.LoginColumn]));
                 }
                 set {
                     this[this.tableAuthentification.LoginColumn] = value;
@@ -3930,23 +3925,16 @@ namespace ApplicationWinforms {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public string User {
                 get {
-                    return ((string)(this[this.tableAuthentification.UserColumn]));
+                    try {
+                        return ((string)(this[this.tableAuthentification.UserColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'User\' dans la table \'Authentification\' est DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableAuthentification.UserColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsLoginNull() {
-                return this.IsNull(this.tableAuthentification.LoginColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetLoginNull() {
-                this[this.tableAuthentification.LoginColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3959,6 +3947,18 @@ namespace ApplicationWinforms {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetMot_de_passeNull() {
                 this[this.tableAuthentification.Mot_de_passeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsUserNull() {
+                return this.IsNull(this.tableAuthentification.UserColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetUserNull() {
+                this[this.tableAuthentification.UserColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -6140,14 +6140,14 @@ namespace ApplicationWinforms.ReclamationDataSetTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM `Authentification` WHERE (((? = 1 AND `Login` IS NULL) OR (`Login` = " +
-                "?)) AND ((? = 1 AND `Mot_de_passe` IS NULL) OR (`Mot_de_passe` = ?)) AND (`User`" +
-                " = ?))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM `Authentification` WHERE ((`Login` = ?) AND ((? = 1 AND `Mot_de_passe" +
+                "` IS NULL) OR (`Mot_de_passe` = ?)) AND ((? = 1 AND `User` IS NULL) OR (`User` =" +
+                " ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Login", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Login", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Login", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Login", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Mot_de_passe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Mot_de_passe", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Mot_de_passe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Mot_de_passe", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_User", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_User", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
@@ -6160,16 +6160,16 @@ namespace ApplicationWinforms.ReclamationDataSetTableAdapters {
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = "UPDATE `Authentification` SET `Login` = ?, `Mot_de_passe` = ?, `User` = ? WHERE (" +
-                "((? = 1 AND `Login` IS NULL) OR (`Login` = ?)) AND ((? = 1 AND `Mot_de_passe` IS" +
-                " NULL) OR (`Mot_de_passe` = ?)) AND (`User` = ?))";
+                "(`Login` = ?) AND ((? = 1 AND `Mot_de_passe` IS NULL) OR (`Mot_de_passe` = ?)) A" +
+                "ND ((? = 1 AND `User` IS NULL) OR (`User` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Login", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Login", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Mot_de_passe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Mot_de_passe", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("User", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Login", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Login", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Login", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Login", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Mot_de_passe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Mot_de_passe", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Mot_de_passe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Mot_de_passe", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_User", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_User", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Original, false, null));
         }
         
@@ -6249,25 +6249,25 @@ namespace ApplicationWinforms.ReclamationDataSetTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
         public virtual int Delete(string Original_Login, global::System.Nullable<int> Original_Mot_de_passe, string Original_User) {
             if ((Original_Login == null)) {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[1].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_Login));
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_Login));
             }
             if ((Original_Mot_de_passe.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_Mot_de_passe.Value));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_Mot_de_passe.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[3].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             if ((Original_User == null)) {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_User));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
@@ -6349,25 +6349,25 @@ namespace ApplicationWinforms.ReclamationDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(User));
             }
             if ((Original_Login == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_Login));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Original_Login));
             }
             if ((Original_Mot_de_passe.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_Mot_de_passe.Value));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_Mot_de_passe.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             if ((Original_User == null)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_User));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
@@ -6390,8 +6390,8 @@ namespace ApplicationWinforms.ReclamationDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Login, global::System.Nullable<int> Mot_de_passe, string Original_Login, global::System.Nullable<int> Original_Mot_de_passe, string Original_User) {
-            return this.Update(Login, Mot_de_passe, Original_User, Original_Login, Original_Mot_de_passe, Original_User);
+        public virtual int Update(global::System.Nullable<int> Mot_de_passe, string User, string Original_Login, global::System.Nullable<int> Original_Mot_de_passe, string Original_User) {
+            return this.Update(Original_Login, Mot_de_passe, User, Original_Login, Original_Mot_de_passe, Original_User);
         }
     }
     
