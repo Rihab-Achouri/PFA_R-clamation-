@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
+using BEL;
+using System.Data.OleDb;
 
 namespace ApplicationWinforms
 {
@@ -17,9 +20,27 @@ namespace ApplicationWinforms
             InitializeComponent();
         }
 
+        
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Authentifier A = AuthentifierDAO.authentifier(textBox1.Text, int.Parse(textBox2.Text),comboBox1.Text);
+                Accueil form = new Accueil();
 
+                if (A!= null)
+                {
+                   
+                    form.ShowDialog();
+                    this.Hide();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

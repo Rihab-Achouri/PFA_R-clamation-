@@ -22,7 +22,7 @@ namespace ApplicationWinforms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Acceuil f1 = new Acceuil();
+            Accueil f1 = new Accueil();
             f1.ShowDialog();
             this.Hide();
         }
@@ -116,7 +116,7 @@ namespace ApplicationWinforms
 
         private void button8_Click(object sender, EventArgs e)
         {
-            string requete = String.Format("insert into Authentification (Login, Mot de passe, User)" +
+            string requete = String.Format("insert into Authentification (Login, Mot_de_passe, User)" +
              " values ('{0}','{1}','{2}');", textBox8.Text, textBox7.Text, comboBox1.Text);
             utils.miseajour(requete);
         }

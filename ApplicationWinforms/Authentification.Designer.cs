@@ -51,8 +51,8 @@
             "Client",
             "Admin",
             "Responsable Qualité",
-            "Responsable traitement",
-            "Responsable production"});
+            "Responsable Traitement",
+            "Responsable Production"});
             this.comboBox1.Location = new System.Drawing.Point(133, 204);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);

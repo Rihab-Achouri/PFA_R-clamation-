@@ -22,7 +22,7 @@ namespace ApplicationWinforms
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Acceuil f1 = new Acceuil();
+            Accueil f1 = new Accueil();
             f1.ShowDialog();
             this.Hide();
         }

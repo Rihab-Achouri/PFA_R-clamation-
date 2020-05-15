@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ApplicationWinforms
 {
-    public partial class Acceuil : Form
+    public partial class Accueil : Form
     {
-        public Acceuil()
+        public Accueil()
         {
             InitializeComponent();
         }
@@ -200,6 +200,9 @@ namespace ApplicationWinforms
             f1.textBox6.Visible = false;
             f1.groupBox2.Visible = false;
             f1.pictureBox3.Visible = false;
+            f1.textBox3.Visible = false;
+            f1.label3.Visible = false;
+            
             f1.ShowDialog();
             this.Hide();
         }
