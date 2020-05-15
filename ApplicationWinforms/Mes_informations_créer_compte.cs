@@ -52,7 +52,6 @@ namespace ApplicationWinforms
             {
                 Client c = ClientDAO.Get_client_ID(int.Parse(textBox1.Text));
                 textBox2.Text = c.Nom_cl;
-                textBox3.Text = c.Prenom_cl;
                 textBox4.Text = c.Tel_cl.ToString();
                 textBox5.Text = c.Adresse_mail_cl;
                 
@@ -81,7 +80,7 @@ namespace ApplicationWinforms
         {
             try
             {
-                ClientDAO.Update_client(int.Parse(textBox1.Text), textBox2.Text, textBox3.Text, int.Parse(textBox4.Text), textBox5.Text);
+                ClientDAO.Update_client(int.Parse(textBox1.Text), textBox2.Text, textBox4.Text, textBox5.Text);
                 MessageBox.Show("UPDATE DONE");
             }
             catch (Exception ex)

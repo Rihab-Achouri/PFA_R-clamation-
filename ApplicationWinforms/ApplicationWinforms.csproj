@@ -97,16 +97,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReclamationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReclamationDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reclamation_client.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reclamation_client.Designer.cs">
       <DependentUpon>Reclamation_client.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reclamation_ClientDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reclamation_ClientDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Suggestion_Taux_satisfaction.cs">
       <SubType>Form</SubType>
@@ -172,16 +172,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Reclamation_ClientDataSet.xsc">
-      <DependentUpon>Reclamation_ClientDataSet.xsd</DependentUpon>
+    <None Include="ReclamationDataSet.xsc">
+      <DependentUpon>ReclamationDataSet.xsd</DependentUpon>
     </None>
-    <None Include="Reclamation_ClientDataSet.xsd">
+    <None Include="ReclamationDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Reclamation_ClientDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>ReclamationDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Reclamation_ClientDataSet.xss">
-      <DependentUpon>Reclamation_ClientDataSet.xsd</DependentUpon>
+    <None Include="ReclamationDataSet.xss">
+      <DependentUpon>ReclamationDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -195,7 +195,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Reclamation_Client.accdb">
+    <Content Include="Reclamation.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

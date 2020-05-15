@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace ApplicationWinforms {
+namespace DAL {
     
     
     /// <summary>
@@ -5001,7 +5001,7 @@ namespace ApplicationWinforms {
         }
     }
 }
-namespace ApplicationWinforms.Reclamation_ClientDataSetTableAdapters {
+namespace DAL.Reclamation_ClientDataSetTableAdapters {
     
     
     /// <summary>
@@ -5168,7 +5168,7 @@ namespace ApplicationWinforms.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::ApplicationWinforms.Properties.Settings.Default.Reclamation_ClientConnectionString2;
+            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5560,7 +5560,7 @@ namespace ApplicationWinforms.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::ApplicationWinforms.Properties.Settings.Default.Reclamation_ClientConnectionString2;
+            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6037,7 +6037,7 @@ namespace ApplicationWinforms.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::ApplicationWinforms.Properties.Settings.Default.Reclamation_ClientConnectionString2;
+            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6640,7 +6640,7 @@ namespace ApplicationWinforms.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::ApplicationWinforms.Properties.Settings.Default.Reclamation_ClientConnectionString2;
+            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7124,7 +7124,7 @@ namespace ApplicationWinforms.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::ApplicationWinforms.Properties.Settings.Default.Reclamation_ClientConnectionString2;
+            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7590,7 +7590,7 @@ namespace ApplicationWinforms.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::ApplicationWinforms.Properties.Settings.Default.Reclamation_ClientConnectionString2;
+            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8011,7 +8011,7 @@ namespace ApplicationWinforms.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::ApplicationWinforms.Properties.Settings.Default.Reclamation_ClientConnectionString2;
+            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8587,7 +8587,7 @@ namespace ApplicationWinforms.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::ApplicationWinforms.Properties.Settings.Default.Reclamation_ClientConnectionString2;
+            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8937,7 +8937,7 @@ namespace ApplicationWinforms.Reclamation_ClientDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::ApplicationWinforms.Properties.Settings.Default.Reclamation_ClientConnectionString2;
+            this._connection.ConnectionString = global::DAL.Properties.Settings.Default.Reclamation_ClientConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

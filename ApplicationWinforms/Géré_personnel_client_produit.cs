@@ -121,7 +121,7 @@ namespace ApplicationWinforms
         {
             try
             {
-                ClientDAO.Insert_client(int.Parse(textBox1.Text), textBox2.Text, textBox3.Text, int.Parse(textBox4.Text), textBox5.Text);
+                ClientDAO.Insert_client(int.Parse(textBox1.Text), textBox2.Text, textBox4.Text, textBox5.Text);
             }
             catch (Exception ex)
             {
@@ -158,7 +158,7 @@ namespace ApplicationWinforms
         {
             try
             {
-                ClientDAO.Update_client(int.Parse(textBox1.Text), textBox2.Text, textBox3.Text, int.Parse(textBox4.Text), textBox5.Text);
+                ClientDAO.Update_client(int.Parse(textBox1.Text), textBox2.Text, textBox4.Text, textBox5.Text);
                 MessageBox.Show("UPDATE DONE");
             }
             catch (Exception ex)
@@ -206,8 +206,7 @@ namespace ApplicationWinforms
             {
                 Client c = ClientDAO.Get_client_ID(int.Parse(textBox1.Text));
                 textBox2.Text = c.Nom_cl;
-                textBox3.Text = c.Prenom_cl;
-                textBox4.Text = c.Tel_cl.ToString();
+                textBox4.Text = c.Tel_cl;
                 textBox5.Text = c.Adresse_mail_cl;
                 
                 List<Client> L = new List<Client>();
