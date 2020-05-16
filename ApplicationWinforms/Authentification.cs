@@ -25,22 +25,26 @@ namespace ApplicationWinforms
         {
             try
             {
-                Authentifier A = AuthentifierDAO.authentifier(textBox1.Text, int.Parse(textBox2.Text),comboBox1.Text);
-                Accueil form = new Accueil();
+                Authentifier A = new Authentifier();
 
-                if (A!= null)
+                A= AuthentifierDAO.verif(textBox1.Text, int.Parse(textBox2.Text), comboBox1.Text);
+                if (A.Login != "")
                 {
-                   
-                    form.ShowDialog();
-                    this.Hide();
+                    
+                    Accueil Form = new Accueil();
+                    Form.ShowDialog();
+
+                }
+                else
+                {
+                    MessageBox.Show("votre mot de passe et fause ");
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
 
-            
+            catch (Exception ex)
+            { MessageBox.Show(ex.Message); }
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)

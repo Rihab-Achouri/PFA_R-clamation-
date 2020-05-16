@@ -10,24 +10,23 @@ namespace DAL
 {
     public class AuthentifierDAO
     {
-        public static Authentifier authentifier (string login, int mot, string user)
+        public static Authentifier verif(string login, int passe, string user)
         {
-            string requete = String.Format("select * from Authentification where Login={0} and Mot_de_passe={1} and User={2};", login, mot,user);
+            string requete = string.Format("select Login,Mot_de_passe,User from Authentification where Login ='{0}'and Mot_de_passe='{1}'and User='{2}';", login, passe, user);
             OleDbDataReader rd = utils.lire(requete);
             Authentifier A = new Authentifier();
-            if (rd.HasRows)
-            {
-                while (rd.Read())
-                {
-                    A.Login = rd.GetString(0);
-                    A.Mot_de_passe = rd.GetInt32(1);
-                    A.User = rd.GetString(2);
-                    
-                }
+            A.Login = "";
 
+            while (rd.Read())
+            {
+                A.Login = rd.GetString(0);
+                A.Mot_de_passe = rd.GetInt32(1);
+                A.User = rd.GetString(2);
             }
             utils.Disconnect();
             return A;
+
         }
     }
+    
 }

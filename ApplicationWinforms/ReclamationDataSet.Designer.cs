@@ -1024,7 +1024,7 @@ namespace ApplicationWinforms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public AuthentificationRow AddAuthentificationRow(string Login, int Mot_de_passe, string User) {
+            public AuthentificationRow AddAuthentificationRow(string Login, short Mot_de_passe, string User) {
                 AuthentificationRow rowAuthentificationRow = ((AuthentificationRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Login,
@@ -1069,7 +1069,7 @@ namespace ApplicationWinforms {
             private void InitClass() {
                 this.columnLogin = new global::System.Data.DataColumn("Login", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLogin);
-                this.columnMot_de_passe = new global::System.Data.DataColumn("Mot_de_passe", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnMot_de_passe = new global::System.Data.DataColumn("Mot_de_passe", typeof(short), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMot_de_passe);
                 this.columnUser = new global::System.Data.DataColumn("User", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnUser);
@@ -3906,10 +3906,10 @@ namespace ApplicationWinforms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int Mot_de_passe {
+            public short Mot_de_passe {
                 get {
                     try {
-                        return ((int)(this[this.tableAuthentification.Mot_de_passeColumn]));
+                        return ((short)(this[this.tableAuthentification.Mot_de_passeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Mot_de_passe\' dans la table \'Authentification\' est DBN" +
@@ -6146,7 +6146,7 @@ namespace ApplicationWinforms.ReclamationDataSetTableAdapters {
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Login", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Login", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Mot_de_passe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Mot_de_passe", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Mot_de_passe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Mot_de_passe", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Mot_de_passe", global::System.Data.OleDb.OleDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Mot_de_passe", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_User", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_User", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
@@ -6155,7 +6155,7 @@ namespace ApplicationWinforms.ReclamationDataSetTableAdapters {
                 "";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Login", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Login", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Mot_de_passe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Mot_de_passe", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Mot_de_passe", global::System.Data.OleDb.OleDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Mot_de_passe", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("User", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
@@ -6164,11 +6164,11 @@ namespace ApplicationWinforms.ReclamationDataSetTableAdapters {
                 "ND ((? = 1 AND `User` IS NULL) OR (`User` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Login", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Login", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Mot_de_passe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Mot_de_passe", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Mot_de_passe", global::System.Data.OleDb.OleDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Mot_de_passe", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("User", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Login", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Login", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Mot_de_passe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Mot_de_passe", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Mot_de_passe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Mot_de_passe", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Mot_de_passe", global::System.Data.OleDb.OleDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Mot_de_passe", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_User", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_User", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Original, false, null));
         }
@@ -6247,7 +6247,7 @@ namespace ApplicationWinforms.ReclamationDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_Login, global::System.Nullable<int> Original_Mot_de_passe, string Original_User) {
+        public virtual int Delete(string Original_Login, global::System.Nullable<short> Original_Mot_de_passe, string Original_User) {
             if ((Original_Login == null)) {
                 this.Adapter.DeleteCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -6256,7 +6256,7 @@ namespace ApplicationWinforms.ReclamationDataSetTableAdapters {
             }
             if ((Original_Mot_de_passe.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_Mot_de_passe.Value));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((short)(Original_Mot_de_passe.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -6290,7 +6290,7 @@ namespace ApplicationWinforms.ReclamationDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Login, global::System.Nullable<int> Mot_de_passe, string User) {
+        public virtual int Insert(string Login, global::System.Nullable<short> Mot_de_passe, string User) {
             if ((Login == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -6298,7 +6298,7 @@ namespace ApplicationWinforms.ReclamationDataSetTableAdapters {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Login));
             }
             if ((Mot_de_passe.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(Mot_de_passe.Value));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((short)(Mot_de_passe.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -6329,7 +6329,7 @@ namespace ApplicationWinforms.ReclamationDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Login, global::System.Nullable<int> Mot_de_passe, string User, string Original_Login, global::System.Nullable<int> Original_Mot_de_passe, string Original_User) {
+        public virtual int Update(string Login, global::System.Nullable<short> Mot_de_passe, string User, string Original_Login, global::System.Nullable<short> Original_Mot_de_passe, string Original_User) {
             if ((Login == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -6337,7 +6337,7 @@ namespace ApplicationWinforms.ReclamationDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Login));
             }
             if ((Mot_de_passe.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(Mot_de_passe.Value));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((short)(Mot_de_passe.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -6356,7 +6356,7 @@ namespace ApplicationWinforms.ReclamationDataSetTableAdapters {
             }
             if ((Original_Mot_de_passe.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_Mot_de_passe.Value));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((short)(Original_Mot_de_passe.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(1));
@@ -6390,7 +6390,7 @@ namespace ApplicationWinforms.ReclamationDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> Mot_de_passe, string User, string Original_Login, global::System.Nullable<int> Original_Mot_de_passe, string Original_User) {
+        public virtual int Update(global::System.Nullable<short> Mot_de_passe, string User, string Original_Login, global::System.Nullable<short> Original_Mot_de_passe, string Original_User) {
             return this.Update(Original_Login, Mot_de_passe, User, Original_Login, Original_Mot_de_passe, Original_User);
         }
     }

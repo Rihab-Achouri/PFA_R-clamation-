@@ -21,8 +21,7 @@ namespace DAL
 
         public static void Connect()
         {
-            string cnstr = "Provider=Microsoft.ACE.OLEDB.12.0;"+
-                "Data Source=C:\\Users\\pc\\Desktop\\Reclamation.accdb";
+            string cnstr = "Provider = Microsoft.ACE.OLEDB.12.0; Data Source = C:\\Users\\pc\\Desktop\\Reclamation.accdb";
             cn = new OleDbConnection(cnstr);
             cn.Open();
         }
