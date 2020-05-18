@@ -27,7 +27,7 @@ namespace ApplicationWinforms
             {
                 Authentifier A = new Authentifier();
 
-                A= AuthentifierDAO.verif(textBox1.Text, int.Parse(textBox2.Text), comboBox1.Text);
+                A= AuthentifierDAO.verif(textBox1.Text, textBox2.Text, comboBox1.Text);
                 if (A.Login != "")
                 {
                     
@@ -37,7 +37,7 @@ namespace ApplicationWinforms
                 }
                 else
                 {
-                    MessageBox.Show("votre mot de passe et fause ");
+                    MessageBox.Show("votre mot de passe est fause ");
                 }
             }
 

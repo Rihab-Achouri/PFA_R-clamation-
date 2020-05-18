@@ -9,7 +9,7 @@ namespace BEL
     public class Authentifier
     {
         public string Login { get; set; }
-        public int Mot_de_passe { get; set; }
+        public string Mot_de_passe { get; set; }
         public string User { get; set; }
     }
 }
