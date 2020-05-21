@@ -127,5 +127,10 @@ namespace ApplicationWinforms
             textBox8.Text = "";
             textBox7.Text = "";
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
