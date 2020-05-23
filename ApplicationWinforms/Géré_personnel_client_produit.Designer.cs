@@ -80,6 +80,8 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.button17 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -480,6 +482,8 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.comboBox1);
+            this.groupBox4.Controls.Add(this.label14);
             this.groupBox4.Controls.Add(this.button14);
             this.groupBox4.Controls.Add(this.button15);
             this.groupBox4.Controls.Add(this.label11);
@@ -491,16 +495,16 @@
             this.groupBox4.Controls.Add(this.textBox12);
             this.groupBox4.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.Color.Black;
-            this.groupBox4.Location = new System.Drawing.Point(408, 89);
+            this.groupBox4.Location = new System.Drawing.Point(408, 65);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(334, 182);
+            this.groupBox4.Size = new System.Drawing.Size(334, 206);
             this.groupBox4.TabIndex = 78;
             this.groupBox4.TabStop = false;
             // 
             // button14
             // 
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(236, 136);
+            this.button14.Location = new System.Drawing.Point(236, 167);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(92, 29);
             this.button14.TabIndex = 20;
@@ -511,7 +515,7 @@
             // button15
             // 
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Location = new System.Drawing.Point(15, 136);
+            this.button15.Location = new System.Drawing.Point(15, 167);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(92, 29);
             this.button15.TabIndex = 19;
@@ -523,7 +527,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(12, 94);
+            this.label11.Location = new System.Drawing.Point(12, 130);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(88, 16);
             this.label11.TabIndex = 18;
@@ -533,7 +537,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(12, 63);
+            this.label12.Location = new System.Drawing.Point(12, 99);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(158, 16);
             this.label12.TabIndex = 17;
@@ -541,14 +545,14 @@
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(176, 90);
+            this.textBox10.Location = new System.Drawing.Point(176, 132);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(139, 25);
             this.textBox10.TabIndex = 16;
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(176, 59);
+            this.textBox11.Location = new System.Drawing.Point(176, 95);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(139, 25);
             this.textBox11.TabIndex = 15;
@@ -556,7 +560,7 @@
             // button16
             // 
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Location = new System.Drawing.Point(122, 136);
+            this.button16.Location = new System.Drawing.Point(123, 167);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(92, 29);
             this.button16.TabIndex = 14;
@@ -601,6 +605,53 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 79;
             this.pictureBox3.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(12, 68);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(117, 16);
+            this.label14.TabIndex = 21;
+            this.label14.Text = "Nom du produit";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Capots Pièces d’Aspect",
+            "Pièces Techniques",
+            "Pièces Flexibles",
+            "Housings Bi-Injection",
+            "Guides de Lumière – Pièces",
+            "Pièces Techniques Complex",
+            "Molettes de position-Double Surmoulage",
+            "Filtres Surmoulés",
+            "Inserts Surmoulés",
+            "Molettes Bi-Injection",
+            "Tableau de Bord Automobile",
+            "Surmoulage inserts",
+            "Surmoulage Connecteurs & Inserts",
+            "Surmoulage Câbles & Connecteurs Electriques",
+            "Ensemble de Pièces Assemblées",
+            "Pièces d’Aspect – Décoration Tamographie & peinture",
+            "Pièces Transparentes",
+            "Connecteurs",
+            "Couvercles",
+            "Inserts, Surmoulage & Connecteurs",
+            "Surmoulage",
+            "Connectique",
+            "Couvercle Connectique",
+            "Inserts & Pièces Techniques",
+            "Pièces Techniques",
+            "Décoration, Pièces Techniques, Pièces d’Aspect",
+            "Surmoulage",
+            "Pièces d’Aspect Automobile"});
+            this.comboBox1.Location = new System.Drawing.Point(176, 61);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(139, 26);
+            this.comboBox1.TabIndex = 22;
             // 
             // Géré_personnel_client_produit
             // 
@@ -711,5 +762,7 @@
         public System.Windows.Forms.Button button15;
         public System.Windows.Forms.Button button16;
         public System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label14;
     }
 }

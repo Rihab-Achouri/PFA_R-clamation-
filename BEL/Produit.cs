@@ -9,6 +9,7 @@ namespace BEL
     public class Produit
     {
         public int Reference { get; set; }
+        public string Nom_produit { get; set; }
         public int Qt_stock { get; set; }
         public int Prix_unitaire { get; set; }
     }

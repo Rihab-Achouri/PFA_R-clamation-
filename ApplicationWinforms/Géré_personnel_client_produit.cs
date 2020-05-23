@@ -133,7 +133,7 @@ namespace ApplicationWinforms
         {
             try
             {
-                ProduitDAO.Insert_produit(int.Parse(textBox12.Text), int.Parse(textBox11.Text), int.Parse(textBox10.Text));
+                ProduitDAO.Insert_produit(int.Parse(textBox12.Text), comboBox1.Text, int.Parse(textBox11.Text), int.Parse(textBox10.Text));
             }
             catch (Exception ex)
             {
@@ -171,7 +171,7 @@ namespace ApplicationWinforms
         {
             try
             {
-                ProduitDAO.Update_produit(int.Parse(textBox12.Text), int.Parse(textBox11.Text), int.Parse(textBox10.Text));
+                ProduitDAO.Update_produit(int.Parse(textBox12.Text), comboBox1.Text, int.Parse(textBox11.Text), int.Parse(textBox10.Text));
                 MessageBox.Show("UPDATE DONE");
             }
             catch (Exception ex)

@@ -12,17 +12,17 @@ namespace DAL
     public class ProduitDAO
     {
 
-        public static bool Insert_produit(int RF, int qt, int prix)
+        public static bool Insert_produit(int RF, string nom, int qt,int prix)
         {
-            string requete = String.Format("insert into Produit (Reference, Qt_stock, Prix_unitaire)" +
-                " values ('{0}','{1}','{2}');", RF, qt, prix);
+            string requete = String.Format("insert into Produit (Reference,Nom, Qt_stock, Prix_unitaire)" +
+                " values ('{0}','{1}','{2}');", RF, nom, qt, prix);
             return utils.miseajour(requete);
         }
 
-        public static bool Update_produit(int RF, int qt, int prix)
+        public static bool Update_produit(int RF,string nom, int qt, int prix)
         {
-            string requete = String.Format("update Produit set Qt_stock='{0}', Prix_unitaire='{1}'," +
-                " where Reference={3};", qt, prix, RF);
+            string requete = String.Format("update Produit set Nom= '{0}', Qt_stock='{1}', Prix_unitaire='{2}'," +
+                " where Reference={3};", nom, qt, prix, RF);
             return utils.miseajour(requete);
         }
 
@@ -42,8 +42,9 @@ namespace DAL
                 while (rd.Read())
                 {
                     c.Reference = rd.GetInt32(0);
-                    c.Qt_stock = rd.GetInt32(1);
-                    c.Prix_unitaire = rd.GetInt32(2);
+                    c.Nom_produit = rd.GetString(1);
+                    c.Qt_stock = rd.GetInt32(2);
+                    c.Prix_unitaire = rd.GetInt32(3);
 
                 }
 
@@ -63,8 +64,9 @@ namespace DAL
                 c = new Produit
                 {
                     Reference = rd.GetInt32(0),
-                    Qt_stock = rd.GetInt32(1),
-                    Prix_unitaire = rd.GetInt32(2),
+                    Nom_produit=rd.GetString(1),
+                    Qt_stock = rd.GetInt32(2),
+                    Prix_unitaire = rd.GetInt32(3),
 
                 };
                 L.Add(c);

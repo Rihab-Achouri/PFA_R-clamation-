@@ -14,14 +14,22 @@ namespace DAL
 
         public static bool Insert_reclamation_client(string sujet, string departement, int id_client, int ref_prod, DateTime date_ouverture)
         {
+            Reclamation N = new Reclamation();
+            N.Num = 0;
             string req = String.Format("select max (Num) from Reclamation");
             OleDbDataReader rd = utils.lire(req);
-            int N = rd.GetInt32(0);
+            if (rd.HasRows)
+            {
+                while (rd.Read())
+                {
+                    N.Num = rd.GetInt32(0);
+                }
+            }
             utils.Disconnect();
 
-            int num = N + 1;
-            string requete = String.Format("insert into Reclamation (Num, Sujet, Departement, Id_client, Ref_prod, Decision, Date_ouverture, Etat_reclamation)" +
-                " values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}');", num, sujet, departement, id_client, ref_prod, "Non traitée", date_ouverture, "Réclamation en attente");
+            int num = N.Num + 1;
+            string requete = String.Format("insert into Reclamation (Num, Sujet, Departement, Id_client, Ref_prod, Decision, Date_ouverture,Date_cloture, Etat_reclamation)" +
+                " values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}');", num, sujet, departement, id_client, ref_prod, "Non traitée", date_ouverture, date_ouverture, "Réclamation en attente");
             return utils.miseajour(requete);
         }
 
