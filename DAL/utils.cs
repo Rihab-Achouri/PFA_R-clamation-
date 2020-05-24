@@ -21,14 +21,13 @@ namespace DAL
 
         public static void Connect()
         {
-            string cnstr = "Provider = Microsoft.ACE.OLEDB.12.0; Data Source = C:\\Users\\p\\Source\\Repos\\Rihab-Achouri\\PFA_Reclamation_client\\ApplicationWinforms\\Reclamation.accdb";
+            string cnstr = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\pc\\Source\\Repos\\PFA_Reclamation_client\\ApplicationWinforms\\Reclamation.accdb";
             cn = new OleDbConnection(cnstr);
             cn.Open();
         }
         public static string Connect1()
         {
-            string cnstr = "Provider=Microsoft.ACE.OLEDB.12.0;" +
-                "Data Source= C:\\Users\\p\\Source\\Repos\\Rihab-Achouri\\PFA_Reclamation_client\\ApplicationWinforms\\Reclamation.accdb";
+            string cnstr = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\pc\\Source\\Repos\\PFA_Reclamation_client\\ApplicationWinforms\\Reclamation.accdb";
             return cnstr; 
         }
 

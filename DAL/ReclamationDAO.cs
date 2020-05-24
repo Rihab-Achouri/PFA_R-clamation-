@@ -12,25 +12,36 @@ namespace DAL
     public class ReclamationDAO
     {
 
-        public static bool Insert_reclamation_client(string sujet, string departement, int id_client, int ref_prod, DateTime date_ouverture)
+        public static string Insert_reclamation_client(string sujet, string departement, int id_client, int ref_prod, DateTime date_ouverture)
         {
-            Reclamation N = new Reclamation();
-            N.Num = 0;
+            int num;
             string req = String.Format("select max (Num) from Reclamation");
             OleDbDataReader rd = utils.lire(req);
             if (rd.HasRows)
             {
                 while (rd.Read())
                 {
-                    N.Num = rd.GetInt32(0);
+                    num = rd.GetInt32(0);
+                    string message1 = "Non traitée";
+                    string message2 = "Réclamation en attente";
+
+                    string requete = String.Format("insert into Reclamation (Num, Sujet, Departement, Id_client, Ref_prod, Decision, Date_ouverture,Date_cloture, Etat_reclamation)" +
+                        " values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}');", num+1, sujet, departement, id_client, ref_prod, message1, date_ouverture, date_ouverture, message2);
+                    utils.miseajour(requete);
                 }
             }
-            utils.Disconnect();
+            else
+            {
+                num = 0;
+                string message1 = "Non traitée";
+                string message2 = "Réclamation en attente";
 
-            int num = N.Num + 1;
-            string requete = String.Format("insert into Reclamation (Num, Sujet, Departement, Id_client, Ref_prod, Decision, Date_ouverture,Date_cloture, Etat_reclamation)" +
-                " values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}');", num, sujet, departement, id_client, ref_prod, "Non traitée", date_ouverture, date_ouverture, "Réclamation en attente");
-            return utils.miseajour(requete);
+                string requete = String.Format("insert into Reclamation (Num, Sujet, Departement, Id_client, Ref_prod, Decision, Date_ouverture,Date_cloture, Etat_reclamation)" +
+                    " values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}');", num+1, sujet, departement, id_client, ref_prod, message1, date_ouverture, date_ouverture, message2);
+                utils.miseajour(requete);
+            }
+            return ("");
+            
         }
 
         public static bool Update_reclamation_client(int num, string sujet, string departement, int ref_prod, DateTime date_ouverture)

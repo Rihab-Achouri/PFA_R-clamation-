@@ -38,9 +38,10 @@ namespace ApplicationWinforms
         {
             try
             {
+               
+
                 ReclamationDAO.Insert_reclamation_client(richTextBox1.Text, comboBox2.Text, int.Parse(textBox1.Text), int.Parse(comboBox1.Text), DateTime.Parse(dateTimePicker1.Text));
-                string requete = String.Format("select max (num) from reclamation;");
-                MessageBox.Show("Le numéro de votre reclamation est:", requete);
+               
             }
             catch (Exception ex)
             {
