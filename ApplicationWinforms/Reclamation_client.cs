@@ -29,9 +29,10 @@ namespace ApplicationWinforms
 
         private void button5_Click(object sender, EventArgs e)
         {
-            string requete = String.Format("update reclamation set etat_reclamtion='{0}'" +
-                " where num={1};", "Réclamation annulée", int.Parse(textBox2.Text));
+            string requete = String.Format("update Reclamation set Etat_reclamation='{0}'" +
+                " where Num={1};", "Réclamation annulée", int.Parse(textBox2.Text));
             utils.miseajour(requete);
+            MessageBox.Show("la modification a été effectuée avec succès");
         }
 
         private void button1_Click(object sender, EventArgs e)

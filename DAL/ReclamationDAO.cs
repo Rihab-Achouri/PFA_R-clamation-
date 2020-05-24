@@ -46,7 +46,7 @@ namespace DAL
 
         public static bool Update_reclamation_client(int num, string sujet, string departement, int ref_prod, DateTime date_ouverture)
         {
-            string requete = String.Format("update Reclamation set Sujet='{0}', Departemnt='{1}', Date_ouverture='{2}', Ref_prod = '{3}' " +
+            string requete = String.Format("update Reclamation set Sujet='{0}', Departement='{1}', Date_ouverture='{2}', Ref_prod = '{3}' " +
                 " where Num={4};", sujet, departement, date_ouverture, ref_prod, num);
             return utils.miseajour(requete);
         }
