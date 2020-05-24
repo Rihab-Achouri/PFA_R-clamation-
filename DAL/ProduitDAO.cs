@@ -15,13 +15,13 @@ namespace DAL
         public static bool Insert_produit(int RF, string nom, int qt,int prix)
         {
             string requete = String.Format("insert into Produit (Reference,Nom, Qt_stock, Prix_unitaire)" +
-                " values ('{0}','{1}','{2}');", RF, nom, qt, prix);
+                " values ('{0}','{1}','{2}','{3}');", RF, nom, qt, prix);
             return utils.miseajour(requete);
         }
 
         public static bool Update_produit(int RF,string nom, int qt, int prix)
         {
-            string requete = String.Format("update Produit set Nom= '{0}', Qt_stock='{1}', Prix_unitaire='{2}'," +
+            string requete = String.Format("update Produit set Nom= '{0}', Qt_stock='{1}', Prix_unitaire='{2}'" +
                 " where Reference={3};", nom, qt, prix, RF);
             return utils.miseajour(requete);
         }

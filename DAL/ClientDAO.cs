@@ -15,14 +15,14 @@ namespace DAL
         public static bool Insert_client(int id, string nom, string tel, string adresse_mail)
         {
             string requete = String.Format("insert into Client (ID_cl, Nom_cl, Tel, Adresse_mail_cl)" +
-                " values ('{0}','{1}','{2}','{3}','{4}');", id, nom, tel, adresse_mail);
+                " values ('{0}','{1}','{2}','{3}');", id, nom, tel, adresse_mail);
             return utils.miseajour(requete);
         }
 
-        public static bool Update_client(int id, string nom, string tel, string adresse_mail)
+        public static bool Update_client(int id, string nom,  string tel, string adresse_mail)
         {
-            string requete = String.Format("update Client set Nom_cl='{0}', ," +
-                " Tel_cl='{1}', Adresse_mail_cl='{2}' where ID_cl={3};", nom, tel, adresse_mail, id);
+            string requete = String.Format("update Client set Nom_cl='{0}'," +
+                " Tel='{1}', Adresse_mail_cl='{2}' where ID_cl={3};", nom, tel, adresse_mail,  id);
             return utils.miseajour(requete);
         }
 
@@ -66,13 +66,12 @@ namespace DAL
                     Nom_cl = rd.GetString(1),
                     Tel_cl = rd.GetString(2),
                     Adresse_mail_cl = rd.GetString(3),
-
+                   
                 };
                 L.Add(c);
             }
             utils.Disconnect();
             return L;
-
         }
     }
 }

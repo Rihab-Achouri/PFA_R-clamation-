@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Géré_personnel_client_produit));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -82,8 +81,6 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.button17 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.reclamationDataSet = new ApplicationWinforms.ReclamationDataSet();
-            this.reclamationDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -92,8 +89,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reclamationDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reclamationDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -387,10 +382,8 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.DataSource = this.reclamationDataSetBindingSource;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlText;
             this.dataGridView1.Location = new System.Drawing.Point(9, 310);
             this.dataGridView1.Name = "dataGridView1";
@@ -651,16 +644,6 @@
             this.pictureBox3.TabIndex = 79;
             this.pictureBox3.TabStop = false;
             // 
-            // reclamationDataSet
-            // 
-            this.reclamationDataSet.DataSetName = "ReclamationDataSet";
-            this.reclamationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // reclamationDataSetBindingSource
-            // 
-            this.reclamationDataSetBindingSource.DataSource = this.reclamationDataSet;
-            this.reclamationDataSetBindingSource.Position = 0;
-            // 
             // Géré_personnel_client_produit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -712,8 +695,6 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reclamationDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reclamationDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -772,7 +753,5 @@
         public System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.BindingSource reclamationDataSetBindingSource;
-        private ReclamationDataSet reclamationDataSet;
     }
 }

@@ -372,6 +372,8 @@
             // 
             this.dateTimePicker2.Font = new System.Drawing.Font("Maiandra GD", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Location = new System.Drawing.Point(142, 147);
+            this.dateTimePicker2.MaxDate = new System.DateTime(2052, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker2.MinDate = new System.DateTime(2017, 7, 3, 0, 0, 0, 0);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(203, 22);
             this.dateTimePicker2.TabIndex = 36;
