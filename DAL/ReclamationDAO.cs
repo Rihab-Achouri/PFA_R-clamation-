@@ -53,7 +53,7 @@ namespace DAL
 
         public static bool Update_reclamation_decision(int num, string decision, string etat, DateTime date_cloture)
         {
-            string requete = String.Format("update Reclamation set Decision='{0}', Etat_reclamation='{1}', Date_cloture='{2}'," +
+            string requete = String.Format("update Reclamation set Decision='{0}', Etat_reclamation='{1}', Date_cloture='{2}' " +
                 " where Num={3};", decision, etat, date_cloture, num);
             return utils.miseajour(requete);
         }
@@ -66,7 +66,7 @@ namespace DAL
 
         public static bool Delete_reclamation_annulée()
         {
-            string requete = String.Format("Delete from Reclamation where Etat_reclamation = 'Annulée';");
+            string requete = String.Format("Delete from Reclamation where Etat_reclamation = 'Réclamation annulée';");
             return utils.miseajour(requete);
         }
 
@@ -123,7 +123,7 @@ namespace DAL
 
         public static List<Reclamation> Get_reclamation_non_traitée()
         {
-            string requete = String.Format("select * from Reclamation  where Decision=='Non traitée';");
+            string requete = String.Format("select * from Reclamation  where Decision='Non traitée';");
             OleDbDataReader rd = utils.lire(requete);
             List<Reclamation> L = new List<Reclamation>();
             Reclamation c;
@@ -174,7 +174,7 @@ namespace DAL
         }
         public static List<Reclamation> Get_reclamation_annulée()
         {
-            string requete = String.Format("select * from Reclamation  where Etat_reclamation ='Annulée';");
+            string requete = String.Format("select * from Reclamation  where Etat_reclamation ='Réclamation annulée';");
             OleDbDataReader rd = utils.lire(requete);
             List<Reclamation> L = new List<Reclamation>();
             Reclamation c;
@@ -196,13 +196,6 @@ namespace DAL
             }
             utils.Disconnect();
             return L;
-        }
-
-        public static bool Insert_decision(string decision, int num, DateTime date_cloture, string etat)
-        {
-            string requete = String.Format("update Reclamation Decision='{0}', Date_cloture='{1}', " +
-               "Etat_reclamation='{2}' where Num={3};", decision, date_cloture, etat, num);
-            return utils.miseajour(requete);
         }
 
         public static List<Client2> Get_reclamation_groupby_client()

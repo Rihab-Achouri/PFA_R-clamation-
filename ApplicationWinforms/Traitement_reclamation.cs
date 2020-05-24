@@ -79,7 +79,7 @@ namespace ApplicationWinforms
                 textBox2.Text = p.Id_client.ToString();
                 richTextBox2.Text = p.Decision;
 
-                string requete = String.Format("select nom_cl from client where ID_cl = '{0}';", p.Id_client);
+                string requete = String.Format("select Nom_cl from Client where ID_cl = '{0}';", p.Id_client);
                 OleDbDataReader rd = utils.lire(requete);
                 textBox3.Text = rd.GetString(0);
                 utils.Disconnect();
@@ -98,8 +98,8 @@ namespace ApplicationWinforms
         {
             try
             {
-                ReclamationDAO.Insert_decision(richTextBox2.Text, int.Parse(textBox1.Text), DateTime.Parse(dateTimePicker1.Text), comboBox1.Text);
-
+                ReclamationDAO.Update_reclamation_decision(int.Parse(textBox1.Text), richTextBox2.Text, comboBox1.Text, DateTime.Parse(dateTimePicker1.Text));
+                
             }
             catch (Exception ex)
             {

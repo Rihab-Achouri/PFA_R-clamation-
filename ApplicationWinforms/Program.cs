@@ -16,7 +16,7 @@ namespace ApplicationWinforms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Reclamation_client()); 
+            Application.Run(new Accueil()); 
         }
     }
 }

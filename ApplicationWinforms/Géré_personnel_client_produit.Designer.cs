@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Géré_personnel_client_produit));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -69,6 +69,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -80,8 +82,8 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.button17 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.reclamationDataSet = new ApplicationWinforms.ReclamationDataSet();
+            this.reclamationDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -90,6 +92,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reclamationDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reclamationDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -284,14 +288,6 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(800, 310);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(23, 149);
-            this.vScrollBar1.TabIndex = 68;
-            this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll);
-            // 
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -391,8 +387,10 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.DataSource = this.reclamationDataSetBindingSource;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlText;
             this.dataGridView1.Location = new System.Drawing.Point(9, 310);
             this.dataGridView1.Name = "dataGridView1";
@@ -501,6 +499,53 @@
             this.groupBox4.TabIndex = 78;
             this.groupBox4.TabStop = false;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Capots Pièces d’Aspect",
+            "Pièces Techniques",
+            "Pièces Flexibles",
+            "Housings Bi-Injection",
+            "Guides de Lumière – Pièces",
+            "Pièces Techniques Complex",
+            "Molettes de position-Double Surmoulage",
+            "Filtres Surmoulés",
+            "Inserts Surmoulés",
+            "Molettes Bi-Injection",
+            "Tableau de Bord Automobile",
+            "Surmoulage inserts",
+            "Surmoulage Connecteurs & Inserts",
+            "Surmoulage Câbles & Connecteurs Electriques",
+            "Ensemble de Pièces Assemblées",
+            "Pièces d’Aspect – Décoration Tamographie & peinture",
+            "Pièces Transparentes",
+            "Connecteurs",
+            "Couvercles",
+            "Inserts, Surmoulage & Connecteurs",
+            "Surmoulage",
+            "Connectique",
+            "Couvercle Connectique",
+            "Inserts & Pièces Techniques",
+            "Pièces Techniques",
+            "Décoration, Pièces Techniques, Pièces d’Aspect",
+            "Surmoulage",
+            "Pièces d’Aspect Automobile"});
+            this.comboBox1.Location = new System.Drawing.Point(176, 61);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(139, 26);
+            this.comboBox1.TabIndex = 22;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(12, 68);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(117, 16);
+            this.label14.TabIndex = 21;
+            this.label14.Text = "Nom du produit";
+            // 
             // button14
             // 
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -606,52 +651,15 @@
             this.pictureBox3.TabIndex = 79;
             this.pictureBox3.TabStop = false;
             // 
-            // label14
+            // reclamationDataSet
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(12, 68);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(117, 16);
-            this.label14.TabIndex = 21;
-            this.label14.Text = "Nom du produit";
+            this.reclamationDataSet.DataSetName = "ReclamationDataSet";
+            this.reclamationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // comboBox1
+            // reclamationDataSetBindingSource
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Capots Pièces d’Aspect",
-            "Pièces Techniques",
-            "Pièces Flexibles",
-            "Housings Bi-Injection",
-            "Guides de Lumière – Pièces",
-            "Pièces Techniques Complex",
-            "Molettes de position-Double Surmoulage",
-            "Filtres Surmoulés",
-            "Inserts Surmoulés",
-            "Molettes Bi-Injection",
-            "Tableau de Bord Automobile",
-            "Surmoulage inserts",
-            "Surmoulage Connecteurs & Inserts",
-            "Surmoulage Câbles & Connecteurs Electriques",
-            "Ensemble de Pièces Assemblées",
-            "Pièces d’Aspect – Décoration Tamographie & peinture",
-            "Pièces Transparentes",
-            "Connecteurs",
-            "Couvercles",
-            "Inserts, Surmoulage & Connecteurs",
-            "Surmoulage",
-            "Connectique",
-            "Couvercle Connectique",
-            "Inserts & Pièces Techniques",
-            "Pièces Techniques",
-            "Décoration, Pièces Techniques, Pièces d’Aspect",
-            "Surmoulage",
-            "Pièces d’Aspect Automobile"});
-            this.comboBox1.Location = new System.Drawing.Point(176, 61);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(139, 26);
-            this.comboBox1.TabIndex = 22;
+            this.reclamationDataSetBindingSource.DataSource = this.reclamationDataSet;
+            this.reclamationDataSetBindingSource.Position = 0;
             // 
             // Géré_personnel_client_produit
             // 
@@ -669,7 +677,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -705,6 +712,8 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reclamationDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reclamationDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -739,7 +748,6 @@
         public System.Windows.Forms.Button button11;
         public System.Windows.Forms.Button button10;
         public System.Windows.Forms.Button button9;
-        public System.Windows.Forms.VScrollBar vScrollBar1;
         public System.Windows.Forms.Button button6;
         public System.Windows.Forms.Button button5;
         public System.Windows.Forms.TextBox textBox1;
@@ -764,5 +772,7 @@
         public System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.BindingSource reclamationDataSetBindingSource;
+        private ReclamationDataSet reclamationDataSet;
     }
 }
