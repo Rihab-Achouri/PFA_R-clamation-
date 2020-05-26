@@ -297,7 +297,7 @@
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
-            // Acceuil
+            // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -324,7 +324,7 @@
             this.Controls.Add(this.button11);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
-            this.Name = "Acceuil";
+            this.Name = "Accueil";
             this.Text = "Acceuil";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -336,27 +336,26 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button12;
+        public System.Windows.Forms.Button button6;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button button13;
+        public System.Windows.Forms.Button button8;
+        public System.Windows.Forms.Button button7;
+        public System.Windows.Forms.Button button4;
+        public System.Windows.Forms.PictureBox pictureBox5;
+        public System.Windows.Forms.Button button3;
+        public System.Windows.Forms.Button button5;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Button button15;
+        public System.Windows.Forms.Button button14;
+        public System.Windows.Forms.Button button11;
+        public System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.PictureBox pictureBox3;
+        public System.Windows.Forms.Button button9;
+        public System.Windows.Forms.Button button10;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Button button12;
     }
 }

@@ -21,19 +21,67 @@ namespace ApplicationWinforms
         }
 
         
+        
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
+                Accueil Form = new Accueil();
+                if (comboBox1.Text == "Client")
+                {
+                    Form.button13.Visible = false;
+                    Form.button7.Visible = false;
+                    Form.button10.Visible = false;
+                    Form.button6.Visible = false;
+                    Form.button12.Visible = false;
+                    Form.button1.Visible = false;
+                    Form.button8.Visible = false;
+                    Form.button4.Visible = false;
+                    Form.pictureBox3.Visible = false;
+                }
+                if (comboBox1.Text == "Admin")
+                {
+                    Form.button2.Visible = false;
+                    Form.button9.Visible = false;
+                    Form.button14.Visible = false;
+                    Form.button11.Visible = false;
+                    Form.button15.Visible = false;
+                    Form.pictureBox2.Visible = false;
+                }
+                if (comboBox1.Text == "Responsable Qualité")
+                {
+                    Form.button6.Visible = false;
+                    Form.button7.Visible = false;
+                    Form.button13.Visible = false;
+                    Form.button10.Visible = false;
+                    Form.button12.Visible = false;
+                    Form.button2.Visible = false;
+                    Form.button9.Visible = false;
+                    Form.button14.Visible = false;
+                    Form.button11.Visible = false;
+                    Form.button15.Visible = false;
+                    Form.pictureBox2.Visible = false;
+                }
+                if (comboBox1.Text == "Responsable Production")
+                {
+                    Form.button2.Visible = false;
+                    Form.button9.Visible = false;
+                    Form.button14.Visible = false;
+                    Form.button11.Visible = false;
+                    Form.button15.Visible = false;
+                    Form.pictureBox2.Visible = false;
+                    Form.button1.Visible = false;
+                    Form.button12.Visible = false;
+                    Form.button13.Visible = false;
+                    Form.button7.Visible = false;
+                    Form.button8.Visible = false; 
+                }
                 Authentifier A = new Authentifier();
 
                 A= AuthentifierDAO.verif(textBox1.Text, textBox2.Text, comboBox1.Text);
                 if (A.Login != "")
                 {
-                    
-                    Accueil Form = new Accueil();
                     Form.ShowDialog();
-
                 }
                 else
                 {

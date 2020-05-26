@@ -326,6 +326,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // groupBox1
             // 
@@ -377,6 +378,7 @@
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(203, 22);
             this.dateTimePicker2.TabIndex = 36;
+            this.dateTimePicker2.Value = new System.DateTime(2020, 5, 25, 2, 5, 21, 0);
             // 
             // label6
             // 
