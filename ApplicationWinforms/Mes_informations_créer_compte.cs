@@ -116,9 +116,15 @@ namespace ApplicationWinforms
 
         private void button8_Click(object sender, EventArgs e)
         {
-            string requete = String.Format("insert into Authentification (Login, Mot_de_passe, User)" +
-             " values ('{0}','{1}','{2}');", textBox8.Text, textBox7.Text, comboBox1.Text);
-            utils.miseajour(requete);
+            try
+            {
+                AuthentifierDAO.créer(textBox8.Text, textBox7.Text,comboBox1.Text);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -129,6 +135,21 @@ namespace ApplicationWinforms
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button11_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click_1(object sender, EventArgs e)
         {
 
         }

@@ -34,8 +34,17 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -54,20 +63,11 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button4
@@ -123,214 +123,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 73;
             this.pictureBox1.TabStop = false;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.pictureBox3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button10);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.button11);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(35, 112);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(457, 314);
-            this.groupBox1.TabIndex = 72;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Modifier informations ";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(-23, 21);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(340, 168);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 97;
-            this.pictureBox3.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(311, 62);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 32);
-            this.button2.TabIndex = 66;
-            this.button2.Text = "Consulter";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(311, 53);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(106, 32);
-            this.button5.TabIndex = 67;
-            this.button5.Text = "Consulter";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button10
-            // 
-            this.button10.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(311, 167);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(106, 32);
-            this.button10.TabIndex = 64;
-            this.button10.Text = "Annuler";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(30, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 16);
-            this.label1.TabIndex = 48;
-            this.label1.Text = "ID";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 88);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 16);
-            this.label2.TabIndex = 49;
-            this.label2.Text = "Nom";
-            // 
-            // button11
-            // 
-            this.button11.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(311, 120);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(106, 32);
-            this.button11.TabIndex = 65;
-            this.button11.Text = "Modifier";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 127);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 16);
-            this.label3.TabIndex = 50;
-            this.label3.Text = "Prenom";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 158);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 16);
-            this.label4.TabIndex = 51;
-            this.label4.Text = "Num de téléphone";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(30, 192);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 16);
-            this.label5.TabIndex = 52;
-            this.label5.Text = "Adresse mail";
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(311, 158);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(106, 32);
-            this.button7.TabIndex = 62;
-            this.button7.Text = "Annuler";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(30, 231);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 16);
-            this.label6.TabIndex = 53;
-            this.label6.Text = "Poste";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(170, 227);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 23);
-            this.textBox6.TabIndex = 54;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(311, 109);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 32);
-            this.button3.TabIndex = 60;
-            this.button3.Text = "Modifier";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(170, 188);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 23);
-            this.textBox5.TabIndex = 55;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(170, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 59;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(170, 154);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 56;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(170, 84);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 58;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(170, 118);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 57;
             // 
             // groupBox2
             // 
@@ -431,27 +223,232 @@
             this.comboBox1.TabIndex = 95;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(12, 133);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(313, 190);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 98;
+            this.pictureBox3.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.button5);
+            this.groupBox1.Controls.Add(this.button10);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.button11);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.button7);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
+            this.groupBox1.Location = new System.Drawing.Point(26, 101);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(457, 281);
+            this.groupBox1.TabIndex = 99;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Modifier informations ";
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(311, 62);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(106, 32);
+            this.button2.TabIndex = 66;
+            this.button2.Text = "Consulter";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(311, 53);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(106, 32);
+            this.button5.TabIndex = 67;
+            this.button5.Text = "Consulter";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(311, 167);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(106, 32);
+            this.button10.TabIndex = 64;
+            this.button10.Text = "Annuler";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(30, 53);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(23, 16);
+            this.label1.TabIndex = 48;
+            this.label1.Text = "ID";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(30, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 16);
+            this.label2.TabIndex = 49;
+            this.label2.Text = "Nom";
+            // 
+            // button11
+            // 
+            this.button11.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(311, 120);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(106, 32);
+            this.button11.TabIndex = 65;
+            this.button11.Text = "Modifier";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click_1);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(30, 127);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 16);
+            this.label3.TabIndex = 50;
+            this.label3.Text = "Prenom";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(30, 158);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(129, 16);
+            this.label4.TabIndex = 51;
+            this.label4.Text = "Num de téléphone";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(30, 192);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(89, 16);
+            this.label5.TabIndex = 52;
+            this.label5.Text = "Adresse mail";
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(311, 158);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(106, 32);
+            this.button7.TabIndex = 62;
+            this.button7.Text = "Annuler";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(30, 231);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 16);
+            this.label6.TabIndex = 53;
+            this.label6.Text = "Poste";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(170, 227);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 23);
+            this.textBox6.TabIndex = 54;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(311, 109);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(106, 32);
+            this.button3.TabIndex = 60;
+            this.button3.Text = "Modifier";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(170, 188);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 23);
+            this.textBox5.TabIndex = 55;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(170, 49);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 59;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(170, 154);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 23);
+            this.textBox4.TabIndex = 56;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(170, 84);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 23);
+            this.textBox2.TabIndex = 58;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(170, 118);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 23);
+            this.textBox3.TabIndex = 57;
+            // 
             // Mes_informations_créer_compte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 436);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.groupBox1);
             this.Name = "Mes_informations_créer_compte";
             this.Text = "Mes_informations";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -463,6 +460,18 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Button button6;
+        public System.Windows.Forms.Button button8;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.TextBox textBox7;
+        public System.Windows.Forms.TextBox textBox8;
+        public System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.GroupBox groupBox2;
+        public System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.PictureBox pictureBox3;
+        public System.Windows.Forms.GroupBox groupBox1;
         public System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button button5;
         public System.Windows.Forms.Button button10;
@@ -481,17 +490,5 @@
         public System.Windows.Forms.TextBox textBox4;
         public System.Windows.Forms.TextBox textBox2;
         public System.Windows.Forms.TextBox textBox3;
-        public System.Windows.Forms.Button button6;
-        public System.Windows.Forms.Button button8;
-        public System.Windows.Forms.Label label8;
-        public System.Windows.Forms.Label label7;
-        public System.Windows.Forms.TextBox textBox7;
-        public System.Windows.Forms.TextBox textBox8;
-        public System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox1;
-        public System.Windows.Forms.PictureBox pictureBox3;
-        public System.Windows.Forms.GroupBox groupBox2;
-        public System.Windows.Forms.PictureBox pictureBox2;
-        public System.Windows.Forms.GroupBox groupBox1;
     }
 }

@@ -27,6 +27,13 @@ namespace DAL
             return A;
 
         }
+
+        public static bool créer (string login, string mot, string user)
+        {
+            string requete = String.Format("insert into Authentification (Login,Mot_de_passe,User)" +
+                " values ('{0}','{1}','{2}');",login, mot, user);
+            return utils.miseajour(requete);
+        }
     }
     
 }
