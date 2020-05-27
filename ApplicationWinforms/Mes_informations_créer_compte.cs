@@ -138,20 +138,5 @@ namespace ApplicationWinforms
         {
 
         }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button11_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button10_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
