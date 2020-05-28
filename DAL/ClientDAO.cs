@@ -66,7 +66,7 @@ namespace DAL
                     Nom_cl = rd.GetString(1),
                     Tel_cl = rd.GetString(2),
                     Adresse_mail_cl = rd.GetString(3),
-                   
+
                 };
                 L.Add(c);
             }

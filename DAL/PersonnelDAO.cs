@@ -12,14 +12,14 @@ namespace DAL
     public class PersonnelDAO
     {
 
-        public static bool Insert_personnel(int id, string nom, string prenom, int tel, string adresse_mail, string poste)
+        public static bool Insert_personnel(int id, string nom, string prenom, string tel, string adresse_mail, string poste)
         {
             string requete = String.Format("insert into Personnel (ID, Nom, Prenom, Tel, Adresse_mail, Poste)" +
                 " values ('{0}','{1}','{2}','{3}','{4}','{5}');", id, nom, prenom, tel, adresse_mail, poste);
             return utils.miseajour(requete);
         }
 
-        public static bool Update_personnel(int id, string nom, string prenom, int tel, string adresse_mail, string poste)
+        public static bool Update_personnel(int id, string nom, string prenom, string tel, string adresse_mail, string poste)
         {
             string requete = String.Format("update Personnel set Nom='{0}', Prenom='{1}'," +
                 " Tel='{2}', Adresse_mail='{3}', Poste='{4}' where ID={5};", nom, prenom, tel, adresse_mail, poste, id);
@@ -44,7 +44,7 @@ namespace DAL
                     c.ID = rd.GetInt32(0);
                     c.Prenom = rd.GetString(1);
                     c.Nom = rd.GetString(2);
-                    c.Tel = rd.GetInt32(3);
+                    c.Tel = rd.GetString(3);
                     c.Adresse_mail = rd.GetString(4);
                     c.Poste = rd.GetString(5);
                 }
@@ -67,7 +67,7 @@ namespace DAL
                     ID = rd.GetInt32(0),
                     Nom = rd.GetString(1),
                     Prenom = rd.GetString(2),
-                    Tel = rd.GetInt32(3),
+                    Tel = rd.GetString(3),
                     Adresse_mail = rd.GetString(4),
                     Poste = rd.GetString(5),
                 };

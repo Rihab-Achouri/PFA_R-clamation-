@@ -282,6 +282,7 @@
             this.button5.TabIndex = 67;
             this.button5.Text = "Consulter";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
             // button10
             // 
@@ -364,6 +365,7 @@
             this.button7.TabIndex = 62;
             this.button7.Text = "Annuler";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click_1);
             // 
             // label6
             // 
@@ -391,6 +393,7 @@
             this.button3.TabIndex = 60;
             this.button3.Text = "Modifier";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // textBox5
             // 

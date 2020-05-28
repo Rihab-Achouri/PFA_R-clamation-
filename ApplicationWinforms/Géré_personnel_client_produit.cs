@@ -109,7 +109,7 @@ namespace ApplicationWinforms
         {
             try
             {
-                PersonnelDAO.Insert_personnel(int.Parse(textBox1.Text), textBox2.Text, textBox3.Text, int.Parse(textBox4.Text), textBox5.Text, textBox6.Text);
+                PersonnelDAO.Insert_personnel(int.Parse(textBox1.Text), textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text);
             }
             catch (Exception ex)
             {
@@ -145,7 +145,7 @@ namespace ApplicationWinforms
         {
             try
             {
-                PersonnelDAO.Update_personnel(int.Parse(textBox1.Text), textBox2.Text, textBox3.Text, int.Parse(textBox4.Text), textBox5.Text, textBox6.Text);
+                PersonnelDAO.Update_personnel(int.Parse(textBox1.Text), textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text);
                 MessageBox.Show("UPDATE DONE");
             }
             catch (Exception ex)
