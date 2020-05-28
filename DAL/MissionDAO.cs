@@ -55,7 +55,7 @@ namespace DAL
 
         public static List<Mission> Get_Mission_Non_Traitée()
         {
-            string requete = String.Format("select * from Mission  where Etat=='Non Traitée';");
+            string requete = String.Format("select * from Mission  where Etat ='Non Traitée';");
             OleDbDataReader rd = utils.lire(requete);
             List<Mission> L = new List<Mission>();
             Mission c;
@@ -79,7 +79,7 @@ namespace DAL
 
         public static List<Mission> Get_Mission_Cloturée()
         {
-            string requete = String.Format("select * from Mission  where Etat=='Cloturée';");
+            string requete = String.Format("select * from Mission  where Etat ='Cloturée';");
             OleDbDataReader rd = utils.lire(requete);
             List<Mission> L = new List<Mission>();
             Mission c;
