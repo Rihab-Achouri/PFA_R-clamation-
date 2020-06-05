@@ -70,12 +70,9 @@ namespace ApplicationWinforms
         {
             try
             {
-                string requete = String.Format("select prix_unitaire from produit where reference = '{0}';", int.Parse(comboBox1.Text));
-                OleDbDataReader rd = utils.lire(requete);
-                int prix = rd.GetInt32(0) * int.Parse(textBox2.Text);
-                utils.Disconnect();
+                
 
-                CommandeDAO.Update_commande(int.Parse(textBox1.Text), int.Parse(comboBox1.Text), int.Parse(textBox2.Text), prix, DateTime.Parse(dateTimePicker1.Text), DateTime.Parse(dateTimePicker2.Text));
+                CommandeDAO.Update_commande(int.Parse(textBox1.Text), int.Parse(comboBox1.Text), int.Parse(textBox2.Text), DateTime.Parse(dateTimePicker1.Text), DateTime.Parse(dateTimePicker2.Text));
 
             }
             catch (Exception ex)
@@ -88,21 +85,12 @@ namespace ApplicationWinforms
         {
             try
             {
-                string requete = String.Format("select prix_unitaire from produit where reference = '{0}';", int.Parse(comboBox1.Text));
-                OleDbDataReader rd = utils.lire(requete);
-                int prix = rd.GetInt32(0) * int.Parse(textBox2.Text);
-                utils.Disconnect();
+                
 
-                CommandeDAO.passer_commande(int.Parse(textBox1.Text), int.Parse(comboBox1.Text), int.Parse(textBox2.Text), prix, DateTime.Parse(dateTimePicker1.Text), DateTime.Parse(dateTimePicker2.Text));
+                CommandeDAO.passer_commande(int.Parse(textBox1.Text), int.Parse(comboBox1.Text), int.Parse(textBox2.Text), DateTime.Parse(dateTimePicker1.Text), DateTime.Parse(dateTimePicker2.Text));
 
-                string requet = String.Format("select max (num_commande) from commande;");
-                OleDbDataReader RD = utils.lire(requet);
-                int num = rd.GetInt32(0) * int.Parse(textBox2.Text);
-                utils.Disconnect();
-
-                string Message1 = num.ToString();
-                string Message2 = prix.ToString();
-                MessageBox.Show("Le numéro de votre commande est:" + Message1 + "\n Le prix à payer est: " + Message2);
+                
+                MessageBox.Show("Le numéro de votre commande est:" + "\n Le prix à payer est: " );
             }
             catch (Exception ex)
             {

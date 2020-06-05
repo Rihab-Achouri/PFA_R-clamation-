@@ -11,21 +11,67 @@ namespace DAL
 {
     public class CommandeDAO
     {
-        public static bool passer_commande(int id, int reference_produit, int qt, int prix, DateTime date_1, DateTime date_2)
+        public static string passer_commande(int id, int reference, int qt,  DateTime date_commande, DateTime date_livraison)
         {
-            string req = String.Format("select max (Num_commande) from Commande");
-            OleDbDataReader rd = utils.lire(req);
-            int N = rd.GetInt32(0);
+            string requet = String.Format("select Prix_unitaire from Produit where Reference={0};", reference);
+            OleDbDataReader x = utils.lire(requet);
+            Produit c = new Produit();
+            if (x.HasRows)
+            {
+                while (x.Read())
+                {
+                   
+                    c.Prix_unitaire = x.GetInt32(0);
+
+                }
+
+            }
             utils.Disconnect();
 
-            int num = N + 1;
-            string requete = String.Format("insert into Commande (Num_commande, ID_cl, Reference_produit, Qt, Prix, Date_commande, Date_livraison_souhaité, Etat)" +
-                " values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}');", num, id, reference_produit, qt, prix, date_1, date_2,"Non traitée");
-            return utils.miseajour(requete);
+            int num;
+            int prix = qt * c.Prix_unitaire;
+            string req = String.Format("select max (Num_commande) from Commande");
+            OleDbDataReader rd = utils.lire(req);
+            if (rd.HasRows)
+            {
+                while (rd.Read())
+                {
+                    num = rd.GetInt32(0);
+                    
+                    string requete = String.Format("insert into Commande (Num_commande, ID_cl, Reference_produit, Qt, Prix, Date_commande, Date_livraison_souhaité,Date_livraison_réel, Etat)" +
+                        " values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}');", num + 1, id, reference,qt, prix,  date_commande, date_livraison, date_livraison, "En attente");
+                    utils.miseajour(requete);
+                }
+            }
+            else
+            {
+                num = 0;
+                string requete = String.Format("insert into Commande (Num_commande, ID_cl, Reference_produit, Qt, Prix, Date_commande, Date_livraison_souhaité,Date_livraison_réel, Etat)" +
+                        " values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}');", num , id, reference, qt, prix, date_commande, date_livraison, date_livraison, "En attente");
+                utils.miseajour(requete);
+            }
+            return ("");
+
         }
 
-        public static bool Update_commande(int num, int reference_produit, int qt, int prix, DateTime date_1, DateTime date_2)
+        public static bool Update_commande(int num, int reference_produit, int qt,  DateTime date_1, DateTime date_2)
         {
+            string requet = String.Format("select Prix_unitaire from Produit where Reference={0};", reference_produit);
+            OleDbDataReader x = utils.lire(requet);
+            Produit c = new Produit();
+            if (x.HasRows)
+            {
+                while (x.Read())
+                {
+
+                    c.Prix_unitaire = x.GetInt32(0);
+
+                }
+
+            }
+            utils.Disconnect();
+            int prix = qt * c.Prix_unitaire;
+
             string requete = String.Format("update Commande set Reference_produit='{0}', Qt='{1}',Prix ='{2}',Date_commande ='{3}'," +
                 " Date_livraison_souhaité ='{4}' where Num_commande = '{5}';", reference_produit, qt, prix, date_1, date_2, num);
             return utils.miseajour(requete);

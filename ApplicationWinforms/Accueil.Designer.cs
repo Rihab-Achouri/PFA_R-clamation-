@@ -201,7 +201,7 @@
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(140, 51);
             this.button15.TabIndex = 105;
-            this.button15.Text = "Passer une réclamation";
+            this.button15.Text = "Gestion une réclamation";
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
@@ -325,7 +325,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
             this.Name = "Accueil";
-            this.Text = "Acceuil";
+            this.Text = "Accueil";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

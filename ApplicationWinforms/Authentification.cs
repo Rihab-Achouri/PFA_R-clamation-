@@ -78,14 +78,14 @@ namespace ApplicationWinforms
                 }
                 Authentifier A = new Authentifier();
 
-                A= AuthentifierDAO.verif(textBox1.Text, textBox2.Text, comboBox1.Text);
+                A= AuthentifierDAO.Verif(textBox1.Text, textBox2.Text, comboBox1.Text);
                 if (A.Login != "")
                 {
                     Form.ShowDialog();
                 }
                 else
                 {
-                    MessageBox.Show("votre mot de passe est fause ");
+                    MessageBox.Show("Authentification échouée vérifiez votre mot de passe!");
                 }
             }
 
@@ -108,6 +108,41 @@ namespace ApplicationWinforms
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Authentification_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+           
+
+            if ( checkBox1.Checked)
+            {
+                textBox2.UseSystemPasswordChar=false;
+            }
+            else
+            {
+                textBox2.UseSystemPasswordChar = true;
+            }
+            
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            textBox2.UseSystemPasswordChar = true;
         }
     }
 }
