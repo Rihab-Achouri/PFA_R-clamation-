@@ -49,6 +49,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="SuggestionDAO.cs" />
     <Compile Include="Taux_satisfactionDAO.cs" />
     <Compile Include="Taux_service.cs" />
     <Compile Include="ReclamationDAO.cs" />

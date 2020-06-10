@@ -50,6 +50,7 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -297,12 +298,25 @@
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
+            // button16
+            // 
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button16.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.Location = new System.Drawing.Point(197, 135);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(172, 41);
+            this.button16.TabIndex = 110;
+            this.button16.Text = "Gérer suggestions";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(744, 420);
+            this.Controls.Add(this.button16);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button10);
@@ -357,5 +371,6 @@
         public System.Windows.Forms.Button button10;
         public System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button button12;
+        public System.Windows.Forms.Button button16;
     }
 }

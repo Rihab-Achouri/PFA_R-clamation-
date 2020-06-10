@@ -284,5 +284,36 @@ namespace ApplicationWinforms
         {
 
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                List<Suggestion> Listreclamation = SuggestionDAO.Get_suggestion();
+                dataGridView1.DataSource = Listreclamation;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Suggestion s = SuggestionDAO.Get_suggestion_id_cl(int.Parse(textBox3.Text));
+                textBox3.Text = s.Id_client.ToString();
+                richTextBox2.Text = s.Message;
+                
+                List<Suggestion> L = new List<Suggestion>();
+                L.Add(s);
+                dataGridView1.DataSource = L;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

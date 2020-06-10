@@ -44,7 +44,7 @@ namespace ApplicationWinforms
         {
             try
             {
-                AuthentifierDAO.Créer(textBox8.Text, textBox7.Text, comboBox1.Text);
+                AuthentifierDAO.Insert_user(textBox8.Text, textBox7.Text, comboBox1.Text);
 
             }
             catch (Exception ex)
