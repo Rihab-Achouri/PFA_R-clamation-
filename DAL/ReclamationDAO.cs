@@ -86,7 +86,7 @@ namespace DAL
                     c.Ref_prod = rd.GetInt32(4);
                     c.Decision = rd.GetString(5);
                     c.Date_ouverture = rd.GetDateTime(6);
-                    c.Date_ouverture = rd.GetDateTime(7);
+                    c.Date_cloture = rd.GetDateTime(7);
                     c.Etat_reclamation = rd.GetString(8);
                 }
 
