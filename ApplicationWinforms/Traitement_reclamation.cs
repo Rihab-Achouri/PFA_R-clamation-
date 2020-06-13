@@ -79,11 +79,6 @@ namespace ApplicationWinforms
                 textBox2.Text = p.Id_client.ToString();
                 richTextBox2.Text = p.Decision;
 
-                string requete = String.Format("select Nom_cl from Client where ID_cl = '{0}';", p.Id_client);
-                OleDbDataReader rd = utils.lire(requete);
-                textBox3.Text = rd.GetString(0);
-                utils.Disconnect();
-
                 List<Reclamation> L = new List<Reclamation>();
                 L.Add(p);
                 dataGridView1.DataSource = L;

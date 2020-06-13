@@ -16,7 +16,7 @@ namespace ApplicationWinforms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Authentification()); 
+            Application.Run(new Form2()); 
         }
     }
 }

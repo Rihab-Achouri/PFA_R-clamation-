@@ -315,5 +315,10 @@ namespace ApplicationWinforms
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void Suggestion_Taux_satisfaction_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
