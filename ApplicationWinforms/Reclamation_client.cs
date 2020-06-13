@@ -32,17 +32,26 @@ namespace ApplicationWinforms
             string requete = String.Format("update Reclamation set Etat_reclamation='{0}'" +
                 " where Num={1};", "Réclamation annulée", int.Parse(textBox2.Text));
             utils.miseajour(requete);
-            MessageBox.Show("la modification a été effectuée avec succès");
+            MessageBox.Show("la réclamation a été annulée");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-               
-
                 ReclamationDAO.Insert_reclamation_client(richTextBox1.Text, comboBox2.Text, int.Parse(textBox1.Text), int.Parse(comboBox1.Text), DateTime.Parse(dateTimePicker1.Text));
-               
+
+                string requete = string.Format("select max(Num) from Reclamation;");
+                OleDbDataReader rd = utils.lire(requete);
+                int A = 0;
+                while (rd.Read())
+                {
+                    A = rd.GetInt32(0);
+                }
+                utils.Disconnect();
+
+                textBox4.Text = A.ToString();
+                MessageBox.Show("Le numéro de votre réclamation est: "+A);
             }
             catch (Exception ex)
             {
@@ -61,6 +70,8 @@ namespace ApplicationWinforms
                     comboBox1.Text = p.Ref_prod.ToString();
                     comboBox2.Text = p.Departement;
                     dateTimePicker1.Text = p.Date_ouverture.ToString();
+                    textBox3.Text = p.Etat_reclamation;
+
                     List<Reclamation> L = new List<Reclamation>();
                     L.Add(p);
                     dataGridView1.DataSource = L;
@@ -88,7 +99,7 @@ namespace ApplicationWinforms
             try
             {
                 ReclamationDAO.Update_reclamation_client(int.Parse(textBox4.Text), richTextBox1.Text, comboBox2.Text, int.Parse(comboBox1.Text), DateTime.Parse(dateTimePicker1.Text));
-                MessageBox.Show("UPDATE DONE");
+                MessageBox.Show("La modfication a été effectuée avec succès");
             }
             catch (Exception ex)
             {

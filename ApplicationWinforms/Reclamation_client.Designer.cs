@@ -58,8 +58,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -201,8 +199,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.comboBox1);
@@ -244,14 +240,54 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(204, 106);
+            this.comboBox1.Items.AddRange(new object[] {
+            "1000",
+            "1001",
+            "1002",
+            "1003",
+            "1004",
+            "1005",
+            "1006",
+            "1007",
+            "1008",
+            "1009",
+            "1010",
+            "1011",
+            "1012",
+            "1013",
+            "1014",
+            "1015",
+            "1016",
+            "1017",
+            "1018",
+            "1019",
+            "1020",
+            "1021",
+            "1022",
+            "1023",
+            "1024",
+            "1025",
+            "1026",
+            "1027",
+            "1028",
+            "1029",
+            "1030",
+            "1031",
+            "1032",
+            "1033",
+            "1034",
+            "1035",
+            "1036",
+            "1037",
+            "1038"});
+            this.comboBox1.Location = new System.Drawing.Point(204, 69);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(137, 26);
             this.comboBox1.TabIndex = 24;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(86, 178);
+            this.dateTimePicker1.Location = new System.Drawing.Point(86, 162);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(255, 25);
             this.dateTimePicker1.TabIndex = 20;
@@ -288,9 +324,9 @@
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            " Réclamation logistique ",
+            "Réclamation logistique ",
             "Réclamation de non-conformités"});
-            this.comboBox2.Location = new System.Drawing.Point(204, 141);
+            this.comboBox2.Location = new System.Drawing.Point(204, 116);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(137, 26);
             this.comboBox2.TabIndex = 3;
@@ -319,7 +355,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 183);
+            this.label3.Location = new System.Drawing.Point(13, 169);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 18);
             this.label3.TabIndex = 2;
@@ -328,7 +364,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 114);
+            this.label1.Location = new System.Drawing.Point(13, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 18);
             this.label1.TabIndex = 1;
@@ -337,7 +373,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 149);
+            this.label2.Location = new System.Drawing.Point(13, 119);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 18);
             this.label2.TabIndex = 0;
@@ -364,22 +400,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(204, 68);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(137, 25);
-            this.textBox5.TabIndex = 27;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(13, 75);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(185, 18);
-            this.label11.TabIndex = 28;
-            this.label11.Text = "La commande consernée";
             // 
             // Reclamation_client
             // 
@@ -444,7 +464,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox5;
     }
 }
