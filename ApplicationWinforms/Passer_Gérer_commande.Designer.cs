@@ -68,7 +68,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
@@ -80,7 +79,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -422,7 +420,7 @@
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.label18);
             this.groupBox2.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(8, 354);
+            this.groupBox2.Location = new System.Drawing.Point(3, 266);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(332, 123);
             this.groupBox2.TabIndex = 70;
@@ -489,7 +487,6 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.textBox8);
             this.groupBox3.Controls.Add(this.textBox7);
             this.groupBox3.Controls.Add(this.dateTimePicker3);
@@ -501,7 +498,6 @@
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.dateTimePicker4);
-            this.groupBox3.Controls.Add(this.textBox6);
             this.groupBox3.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(8, 97);
             this.groupBox3.Name = "groupBox3";
@@ -510,19 +506,9 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Commande arrivée";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(6, 59);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 16);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "Le client";
-            // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(9, 109);
+            this.textBox8.Location = new System.Drawing.Point(186, 65);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(141, 25);
             this.textBox8.TabIndex = 23;
@@ -584,7 +570,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(183, 90);
+            this.label12.Location = new System.Drawing.Point(6, 113);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(144, 16);
             this.label12.TabIndex = 9;
@@ -594,7 +580,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(6, 90);
+            this.label13.Location = new System.Drawing.Point(6, 69);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(77, 16);
             this.label13.TabIndex = 8;
@@ -617,13 +603,6 @@
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.Size = new System.Drawing.Size(191, 23);
             this.dateTimePicker4.TabIndex = 11;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(186, 55);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(141, 25);
-            this.textBox6.TabIndex = 2;
             // 
             // button12
             // 
@@ -717,7 +696,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker5;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
@@ -729,7 +707,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Button button11;

@@ -189,8 +189,7 @@ namespace DAL
         }
         public static bool date_livraison(int num, DateTime date_1, string etat)
         {
-            string requete = String.Format("update Commande set Date_livraison_réel ='{0}', Etat ='{1}'," +
-                " where Num_commande = '{2}';", date_1,etat, num);
+            string requete = String.Format("update Commande set Date_livraison_réel ='{0}', Etat ='{1}' where Num_commande = '{2}';", date_1,etat, num);
             return utils.miseajour(requete);
         }
 
