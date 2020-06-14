@@ -95,5 +95,18 @@ namespace ApplicationWinforms
             }
 
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Accueil f1 = new Accueil();
+            f1.ShowDialog();
+            this.Hide();
+            this.Visible = false;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

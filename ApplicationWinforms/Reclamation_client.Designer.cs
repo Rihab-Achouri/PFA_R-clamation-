@@ -351,6 +351,7 @@
             this.richTextBox1.Size = new System.Drawing.Size(328, 84);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "Votre message";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // label3
             // 

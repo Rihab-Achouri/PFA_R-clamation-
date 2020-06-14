@@ -28,6 +28,7 @@ namespace ApplicationWinforms
             f1.pictureBox3.Visible = false;
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -35,6 +36,7 @@ namespace ApplicationWinforms
             Géré_mission f1 = new Géré_mission();
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -42,6 +44,7 @@ namespace ApplicationWinforms
             Traitement_reclamation f1 = new Traitement_reclamation();
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -55,6 +58,7 @@ namespace ApplicationWinforms
 
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -77,6 +81,7 @@ namespace ApplicationWinforms
 
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
 
         private void button15_Click(object sender, EventArgs e)
@@ -91,6 +96,7 @@ namespace ApplicationWinforms
             Authentification f1 = new Authentification();
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -108,6 +114,7 @@ namespace ApplicationWinforms
 
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -127,6 +134,7 @@ namespace ApplicationWinforms
 
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -158,6 +166,7 @@ namespace ApplicationWinforms
 
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -177,6 +186,7 @@ namespace ApplicationWinforms
 
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -190,6 +200,7 @@ namespace ApplicationWinforms
 
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -207,6 +218,7 @@ namespace ApplicationWinforms
             
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -221,6 +233,7 @@ namespace ApplicationWinforms
             f1.pictureBox2.Visible = false;
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -250,6 +263,7 @@ namespace ApplicationWinforms
 
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
     }
 }

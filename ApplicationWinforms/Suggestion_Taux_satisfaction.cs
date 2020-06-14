@@ -27,8 +27,15 @@ namespace ApplicationWinforms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string requete = String.Format("insert into suggestion (id_client, Message) values ('{0}','{1}');", int.Parse(textBox1.Text), richTextBox1.Text);
-            utils.miseajour(requete);
+            try
+            {
+                string requete = String.Format("insert into suggestion (id_client, Message) values ('{0}','{1}');", int.Parse(textBox1.Text), richTextBox1.Text);
+                utils.miseajour(requete);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -42,6 +49,7 @@ namespace ApplicationWinforms
             Accueil f1 = new Accueil();
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)

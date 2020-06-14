@@ -134,9 +134,9 @@ namespace DAL
             utils.Disconnect();
             return L;
         }
-        public static List<Commande> Get_commande_Id_client(int id_client)
+        public static List<Commande> Get_commande_id(int id)
         {
-            string requete = String.Format("select * from Commande where ID_cl = '{0}';", id_client);
+            string requete = String.Format("select * from Commande where ID_cl='{0}';",id);
             OleDbDataReader rd = utils.lire(requete);
             List<Commande> L = new List<Commande>();
             Commande c;
@@ -160,9 +160,10 @@ namespace DAL
             utils.Disconnect();
             return L;
         }
+
         public static List<Commande> Get_commande_non_traitée()
         {
-            string requete = String.Format("select * from Commande where Etat = 'Non traitée';");
+            string requete = String.Format("select * from Commande where Etat = 'En attente';");
             OleDbDataReader rd = utils.lire(requete);
             List<Commande> L = new List<Commande>();
             Commande c;

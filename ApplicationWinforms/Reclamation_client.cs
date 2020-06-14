@@ -22,6 +22,7 @@ namespace ApplicationWinforms
             InitializeComponent();
         }
 
+        int i = 0;
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -112,6 +113,16 @@ namespace ApplicationWinforms
             Accueil f1 = new Accueil();
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            while (i == 0)
+            {
+                richTextBox1.Text = "";
+                i = 1;
+            }
         }
     }
 }

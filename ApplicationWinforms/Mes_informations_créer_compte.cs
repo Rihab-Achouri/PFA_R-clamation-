@@ -25,6 +25,7 @@ namespace ApplicationWinforms
             Accueil f1 = new Accueil();
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
 
        

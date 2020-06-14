@@ -33,7 +33,7 @@ namespace DAL
 
         public static Mission Get_Mission_Num(int Num)
         {
-            string requete = String.Format("select * from Mission where Num={0};", Num);
+            string requete = String.Format("select * from Mission where Num='{0}';", Num);
             OleDbDataReader rd = utils.lire(requete);
             Mission c = new Mission();
             if (rd.HasRows)

@@ -146,6 +146,7 @@ namespace ApplicationWinforms
             Accueil f1 = new Accueil();
             f1.ShowDialog();
             this.Hide();
+            this.Visible = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
