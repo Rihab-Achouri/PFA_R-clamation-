@@ -16,7 +16,7 @@ namespace BEL
 
     public class Client2
     {
-        public int Num2 { get; set; }
-        public string Reclamation2 { get; set; }
+        public int Nombre_de_reclamation { get; set; }
+        public int ID_Client { get; set; }
     }
 }

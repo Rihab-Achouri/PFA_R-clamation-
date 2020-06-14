@@ -200,7 +200,7 @@ namespace DAL
 
         public static List<Client2> Get_reclamation_groupby_client()
         {
-            string requete = String.Format("select count(Num), Id_client from Reclamation group by Id_client order by count(Num);");
+            string requete = String.Format("select Id_client, count(Num) from Reclamation group by Id_client ;");
             OleDbDataReader rd = utils.lire(requete);
             List<Client2> L = new List<Client2>();
             Client2 c;
@@ -208,8 +208,9 @@ namespace DAL
             {
                 c = new Client2
                 {
-                    Num2 = rd.GetInt32(0),
-                    Reclamation2 = rd.GetString(1),
+                    ID_Client = rd.GetInt32(0),
+                    Nombre_de_reclamation = rd.GetInt32(1),
+                    
                    
                 };
                 L.Add(c);
