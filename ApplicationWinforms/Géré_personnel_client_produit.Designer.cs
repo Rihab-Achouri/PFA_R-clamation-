@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Géré_personnel_client_produit));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -36,7 +37,6 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -59,6 +59,12 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.iDclDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomclDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adressemailclDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reclamationDataSet1 = new ApplicationWinforms.ReclamationDataSet1();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -81,14 +87,19 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.button17 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.clientTableAdapter = new ApplicationWinforms.ReclamationDataSet1TableAdapters.ClientTableAdapter();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reclamationDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -165,17 +176,6 @@
             this.button9.Text = "Rechercher";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(10, 255);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(239, 33);
-            this.button8.TabIndex = 73;
-            this.button8.Text = "Afficher la liste de tous les clients";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // label9
             // 
@@ -286,7 +286,7 @@
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(839, 356);
+            this.button6.Location = new System.Drawing.Point(686, 400);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(106, 32);
             this.button6.TabIndex = 67;
@@ -298,7 +298,7 @@
             // 
             this.button5.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.DarkRed;
-            this.button5.Location = new System.Drawing.Point(839, 417);
+            this.button5.Location = new System.Drawing.Point(686, 438);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(106, 32);
             this.button5.TabIndex = 66;
@@ -373,7 +373,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(794, 70);
+            this.pictureBox2.Location = new System.Drawing.Point(507, 287);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(162, 183);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -382,13 +382,54 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDclDataGridViewTextBoxColumn,
+            this.nomclDataGridViewTextBoxColumn,
+            this.telDataGridViewTextBoxColumn,
+            this.adressemailclDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.clientBindingSource;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlText;
-            this.dataGridView1.Location = new System.Drawing.Point(9, 310);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 257);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(814, 149);
+            this.dataGridView1.Size = new System.Drawing.Size(480, 202);
             this.dataGridView1.TabIndex = 56;
+            // 
+            // iDclDataGridViewTextBoxColumn
+            // 
+            this.iDclDataGridViewTextBoxColumn.DataPropertyName = "ID_cl";
+            this.iDclDataGridViewTextBoxColumn.HeaderText = "ID_cl";
+            this.iDclDataGridViewTextBoxColumn.Name = "iDclDataGridViewTextBoxColumn";
+            // 
+            // nomclDataGridViewTextBoxColumn
+            // 
+            this.nomclDataGridViewTextBoxColumn.DataPropertyName = "Nom_cl";
+            this.nomclDataGridViewTextBoxColumn.HeaderText = "Nom_cl";
+            this.nomclDataGridViewTextBoxColumn.Name = "nomclDataGridViewTextBoxColumn";
+            // 
+            // telDataGridViewTextBoxColumn
+            // 
+            this.telDataGridViewTextBoxColumn.DataPropertyName = "Tel";
+            this.telDataGridViewTextBoxColumn.HeaderText = "Tel";
+            this.telDataGridViewTextBoxColumn.Name = "telDataGridViewTextBoxColumn";
+            // 
+            // adressemailclDataGridViewTextBoxColumn
+            // 
+            this.adressemailclDataGridViewTextBoxColumn.DataPropertyName = "Adresse_mail_cl";
+            this.adressemailclDataGridViewTextBoxColumn.HeaderText = "Adresse_mail_cl";
+            this.adressemailclDataGridViewTextBoxColumn.Name = "adressemailclDataGridViewTextBoxColumn";
+            // 
+            // clientBindingSource
+            // 
+            this.clientBindingSource.DataMember = "Client";
+            this.clientBindingSource.DataSource = this.reclamationDataSet1;
+            // 
+            // reclamationDataSet1
+            // 
+            this.reclamationDataSet1.DataSetName = "ReclamationDataSet1";
+            this.reclamationDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label6
             // 
@@ -637,18 +678,31 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(784, 100);
+            this.pictureBox3.Location = new System.Drawing.Point(507, 288);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(172, 159);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 79;
             this.pictureBox3.TabStop = false;
             // 
+            // clientTableAdapter
+            // 
+            this.clientTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(9, 309);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(480, 150);
+            this.dataGridView2.TabIndex = 80;
+            // 
             // Géré_personnel_client_produit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(958, 472);
+            this.ClientSize = new System.Drawing.Size(804, 472);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -656,7 +710,6 @@
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button7);
@@ -683,6 +736,7 @@
             this.Controls.Add(this.button17);
             this.Name = "Géré_personnel_client_produit";
             this.Text = "Géré_personnel_client_produit";
+            this.Load += new System.EventHandler(this.Géré_personnel_client_produit_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -691,10 +745,13 @@
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reclamationDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -723,7 +780,6 @@
         public System.Windows.Forms.GroupBox groupBox4;
         public System.Windows.Forms.PictureBox pictureBox3;
         public System.Windows.Forms.Button button17;
-        public System.Windows.Forms.Button button8;
         public System.Windows.Forms.GroupBox groupBox3;
         public System.Windows.Forms.GroupBox groupBox1;
         public System.Windows.Forms.Button button11;
@@ -753,5 +809,13 @@
         public System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label14;
+        private ReclamationDataSet1 reclamationDataSet1;
+        private System.Windows.Forms.BindingSource clientBindingSource;
+        private ReclamationDataSet1TableAdapters.ClientTableAdapter clientTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDclDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomclDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adressemailclDataGridViewTextBoxColumn;
+        public System.Windows.Forms.DataGridView dataGridView2;
     }
 }

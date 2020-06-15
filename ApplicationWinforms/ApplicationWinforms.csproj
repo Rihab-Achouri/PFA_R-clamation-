@@ -102,6 +102,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ReclamationDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ReclamationDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReclamationDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reclamation_client.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +187,17 @@
     </None>
     <None Include="ReclamationDataSet.xss">
       <DependentUpon>ReclamationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReclamationDataSet1.xsc">
+      <DependentUpon>ReclamationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ReclamationDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReclamationDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReclamationDataSet1.xss">
+      <DependentUpon>ReclamationDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

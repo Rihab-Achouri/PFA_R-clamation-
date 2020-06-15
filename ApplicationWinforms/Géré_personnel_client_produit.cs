@@ -33,7 +33,7 @@ namespace ApplicationWinforms
             try
             {
                 List<Personnel> Listpersonnels = PersonnelDAO.Get_personnel();
-                dataGridView1.DataSource = Listpersonnels;
+                dataGridView2.DataSource = Listpersonnels;
             }
             catch (Exception ex)
             {
@@ -41,25 +41,14 @@ namespace ApplicationWinforms
             }
         }
 
-        private void button8_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                List<Client> Listclients = ClientDAO.Get_client();
-                dataGridView1.DataSource = Listclients;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+       
 
         private void button17_Click(object sender, EventArgs e)
         {
             try
             {
                 List<Produit> Listproduits = ProduitDAO.Get_produit();
-                dataGridView1.DataSource = Listproduits;
+                dataGridView2.DataSource = Listproduits;
             }
             catch (Exception ex)
             {
@@ -193,7 +182,7 @@ namespace ApplicationWinforms
                 textBox6.Text = p.Poste;
                 List<Personnel> L = new List<Personnel>();
                 L.Add(p);
-                dataGridView1.DataSource = L;
+                dataGridView2.DataSource = L;
             }
             catch (Exception ex)
             {
@@ -212,7 +201,7 @@ namespace ApplicationWinforms
                 
                 List<Client> L = new List<Client>();
                 L.Add(c);
-                dataGridView1.DataSource = L;
+                dataGridView2.DataSource = L;
             }
             catch (Exception ex)
             {
@@ -231,7 +220,7 @@ namespace ApplicationWinforms
                 
                 List<Produit> L = new List<Produit>();
                 L.Add(p);
-                dataGridView1.DataSource = L;
+                dataGridView2.DataSource = L;
             }
             catch (Exception ex)
             {
@@ -246,6 +235,13 @@ namespace ApplicationWinforms
 
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
+
+        }
+
+        private void Géré_personnel_client_produit_Load(object sender, EventArgs e)
+        {
+            // TODO: cette ligne de code charge les données dans la table 'reclamationDataSet1.Client'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.clientTableAdapter.Fill(this.reclamationDataSet1.Client);
 
         }
     }

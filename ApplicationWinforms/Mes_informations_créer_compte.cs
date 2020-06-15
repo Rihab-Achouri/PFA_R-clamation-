@@ -119,7 +119,7 @@ namespace ApplicationWinforms
         {
             try
             {
-                ClientDAO.Update_client(int.Parse(textBox1.Text), textBox2.Text, int.Parse(textBox4.Text), textBox5.Text);
+                ClientDAO.Update_client(int.Parse(textBox1.Text), textBox2.Text, textBox4.Text, textBox5.Text);
                 MessageBox.Show("UPDATE DONE");
             }
             catch (Exception ex)

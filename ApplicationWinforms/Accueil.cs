@@ -111,7 +111,7 @@ namespace ApplicationWinforms
             f1.groupBox4.Visible = false;
             f1.pictureBox3.Visible = false;
             f1.button17.Visible = false;
-            f1.button8.Visible = false;
+            f1.dataGridView1.Visible = false;
             f1.groupBox3.Visible = false;
             f1.groupBox1.Visible = false;
 
@@ -123,6 +123,8 @@ namespace ApplicationWinforms
         private void button7_Click(object sender, EventArgs e)
         {
             Géré_personnel_client_produit f1 = new Géré_personnel_client_produit();
+            f1.label3.Visible = false;
+            f1.textBox3.Visible = false;
             f1.groupBox4.Visible = false;
             f1.button9.Visible = false;
             f1.button10.Visible = false;
@@ -134,6 +136,7 @@ namespace ApplicationWinforms
             f1.groupBox3.Visible = false;
             f1.groupBox2.Visible = false;
             f1.pictureBox3.Visible = false;
+            f1.dataGridView2.Visible = false;
 
             f1.ShowDialog();
             this.Hide();
@@ -150,7 +153,7 @@ namespace ApplicationWinforms
             f1.button7.Visible = false;
             f1.button10.Visible = false;
             f1.button11.Visible = false;
-            f1.button8.Visible = false;
+            f1.dataGridView1.Visible = false;
             f1.textBox1.Visible = false;
             f1.textBox2.Visible = false;
             f1.textBox3.Visible = false;
