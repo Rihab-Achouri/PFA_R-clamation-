@@ -150,8 +150,8 @@ namespace DAL
                     Qt = rd.GetInt32(3),
                     Prix = rd.GetInt32(4),
                     Date_commande = rd.GetDateTime(5),
-                    Date_livraison_réel = rd.GetDateTime(6),
-                    Date_livraison_souhaité = rd.GetDateTime(7),
+                    Date_livraison_souhaité = rd.GetDateTime(6),
+                    Date_livraison_réel = rd.GetDateTime(7),
                     Etat_commande = rd.GetString(8),
 
                 };

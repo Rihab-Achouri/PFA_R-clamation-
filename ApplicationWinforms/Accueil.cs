@@ -265,5 +265,12 @@ namespace ApplicationWinforms
             this.Hide();
             this.Visible = false;
         }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            Form2 f1 = new Form2();
+            f1.ShowDialog();
+            this.Hide();
+        }
     }
 }
