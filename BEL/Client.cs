@@ -10,7 +10,7 @@ namespace BEL
     {
         public int ID_cl { get; set; }
         public string Nom_cl { get; set; }
-        public string Tel_cl { get; set; }
+        public int Tel_cl { get; set; }
         public string Adresse_mail_cl { get; set; }
 
     }

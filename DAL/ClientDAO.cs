@@ -12,14 +12,14 @@ namespace DAL
     public class ClientDAO
     {
 
-        public static bool Insert_client(int id, string nom, string tel, string adresse_mail)
+        public static bool Insert_client(int id, string nom, int tel, string adresse_mail)
         {
             string requete = String.Format("insert into Client (ID_cl, Nom_cl, Tel, Adresse_mail_cl)" +
                 " values ('{0}','{1}','{2}','{3}');", id, nom, tel, adresse_mail);
             return utils.miseajour(requete);
         }
 
-        public static bool Update_client(int id, string nom,  string tel, string adresse_mail)
+        public static bool Update_client(int id, string nom, int tel, string adresse_mail)
         {
             string requete = String.Format("update Client set Nom_cl='{0}'," +
                 " Tel='{1}', Adresse_mail_cl='{2}' where ID_cl={3};", nom, tel, adresse_mail,  id);
@@ -43,7 +43,7 @@ namespace DAL
                 {
                     c.ID_cl = rd.GetInt32(0);
                     c.Nom_cl = rd.GetString(1);
-                    c.Tel_cl = rd.GetString(2);
+                    c.Tel_cl = rd.GetInt32(2);
                     c.Adresse_mail_cl = rd.GetString(3);
                 }
 
@@ -64,7 +64,7 @@ namespace DAL
                 {
                     ID_cl = rd.GetInt32(0),
                     Nom_cl = rd.GetString(1),
-                    Tel_cl = rd.GetString(2),
+                    Tel_cl = rd.GetInt32(2),
                     Adresse_mail_cl = rd.GetString(3),
 
                 };
