@@ -229,6 +229,7 @@
             this.label4.Size = new System.Drawing.Size(42, 18);
             this.label4.TabIndex = 26;
             this.label4.Text = "Etat ";
+            this.label4.Visible = false;
             // 
             // textBox3
             // 
@@ -236,6 +237,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(255, 25);
             this.textBox3.TabIndex = 25;
+            this.textBox3.Visible = false;
             // 
             // comboBox1
             // 
@@ -326,9 +328,9 @@
             this.comboBox2.Items.AddRange(new object[] {
             "Réclamation logistique ",
             "Réclamation de non-conformités"});
-            this.comboBox2.Location = new System.Drawing.Point(204, 116);
+            this.comboBox2.Location = new System.Drawing.Point(86, 116);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(137, 26);
+            this.comboBox2.Size = new System.Drawing.Size(255, 26);
             this.comboBox2.TabIndex = 3;
             // 
             // button2

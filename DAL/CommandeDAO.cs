@@ -72,8 +72,8 @@ namespace DAL
             utils.Disconnect();
             int prix = qt * c.Prix_unitaire;
 
-            string requete = String.Format("update Commande set Reference_produit='{0}', Qt='{1}',Prix ='{2}',Date_commande ='{3}'," +
-                " Date_livraison_souhaité ='{4}' where Num_commande = '{5}';", reference_produit, qt, prix, date_1, date_2, num);
+            string requete = String.Format("update Commande set Reference_produit='{0}',Qt='{1}',Prix ='{2}',Date_commande ='{3}'," +
+                " Date_livraison_souhaité ='{4}' where Num_commande ={5};", reference_produit, qt, prix, date_1, date_2, num);
             return utils.miseajour(requete);
         }
 
@@ -136,7 +136,7 @@ namespace DAL
         }
         public static List<Commande> Get_commande_id(int id)
         {
-            string requete = String.Format("select * from Commande where ID_cl='{0}';",id);
+            string requete = String.Format("select * from Commande where ID_cl={0};",id);
             OleDbDataReader rd = utils.lire(requete);
             List<Commande> L = new List<Commande>();
             Commande c;
@@ -189,7 +189,7 @@ namespace DAL
         }
         public static bool date_livraison(int num, DateTime date_1, string etat)
         {
-            string requete = String.Format("update Commande set Date_livraison_réel ='{0}', Etat ='{1}' where Num_commande = '{2}';", date_1,etat, num);
+            string requete = String.Format("update Commande set Date_livraison_réel ='{0}', Etat ='{1}' where Num_commande ={2};", date_1,etat, num);
             return utils.miseajour(requete);
         }
 

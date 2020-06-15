@@ -166,5 +166,13 @@ namespace ApplicationWinforms
         {
 
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Géré_mission f1 = new Géré_mission();
+            f1.button10.Visible = false;
+            f1.ShowDialog();
+            this.Hide();
+        }
     }
 }

@@ -62,6 +62,8 @@ namespace ApplicationWinforms
 
         private void button2_Click(object sender, EventArgs e)
         {
+            textBox3.Visible = true;
+            label4.Visible = true;
             if (textBox4.Text != "")
                 try
                 {

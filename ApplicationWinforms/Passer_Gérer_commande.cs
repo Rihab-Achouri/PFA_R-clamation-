@@ -90,7 +90,7 @@ namespace ApplicationWinforms
 
                 CommandeDAO.passer_commande(int.Parse(textBox1.Text), int.Parse(comboBox1.Text), int.Parse(textBox2.Text), DateTime.Parse(dateTimePicker1.Text), DateTime.Parse(dateTimePicker2.Text));
 
-                string requete = string.Format("select max(Num_commande) from Commande;");
+                string requete = string.Format("select Max(Num_commande) from Commande;");
                 OleDbDataReader rd = utils.lire(requete);
                 int A = 0;
                 while (rd.Read())
@@ -98,17 +98,9 @@ namespace ApplicationWinforms
                     A = rd.GetInt32(0);
                 }
                 utils.Disconnect();
-
-                string requet = string.Format("select Prix from Commande where Num_commande='{0}';",A);
-                OleDbDataReader rdb = utils.lire(requet);
-                int B = 0;
-                while (rdb.Read())
-                {
-                    B = rd.GetInt32(0);
-                }
-                utils.Disconnect();
-
-                MessageBox.Show("Le numéro de votre commande est:" + "\n Le prix à payer est: ");
+                textBox3.Text = A.ToString();
+                
+                MessageBox.Show("Le numéro de votre commande est: "+A);
             }
             catch (Exception ex)
             {

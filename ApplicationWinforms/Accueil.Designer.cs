@@ -90,7 +90,7 @@
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(172, 41);
             this.button13.TabIndex = 98;
-            this.button13.Text = "Gérer personnels";
+            this.button13.Text = "Gérer personnel";
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
@@ -102,7 +102,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(172, 41);
             this.button8.TabIndex = 97;
-            this.button8.Text = "Gestion réclamations";
+            this.button8.Text = "Gestion des réclamations";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
@@ -203,7 +203,7 @@
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(140, 51);
             this.button15.TabIndex = 105;
-            this.button15.Text = "Gestion une réclamation";
+            this.button15.Text = "Gestion des réclamations";
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
@@ -255,11 +255,11 @@
             // 
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(560, 114);
+            this.button9.Location = new System.Drawing.Point(560, 105);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(172, 41);
+            this.button9.Size = new System.Drawing.Size(172, 50);
             this.button9.TabIndex = 106;
-            this.button9.Text = "Taux de satisfaction ";
+            this.button9.Text = "Mesure de satisfaction ";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
@@ -317,9 +317,9 @@
             this.button17.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button17.Location = new System.Drawing.Point(197, 325);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(172, 41);
+            this.button17.Size = new System.Drawing.Size(172, 46);
             this.button17.TabIndex = 111;
-            this.button17.Text = "Taux de satisfaction";
+            this.button17.Text = "Mesure de satisfaction";
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 

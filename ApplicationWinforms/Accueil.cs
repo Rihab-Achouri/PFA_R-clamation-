@@ -34,6 +34,9 @@ namespace ApplicationWinforms
         private void button1_Click(object sender, EventArgs e)
         {
             Géré_mission f1 = new Géré_mission();
+            f1.button2.Visible = false;
+            f1.button3.Visible = false;
+
             f1.ShowDialog();
             this.Hide();
             this.Visible = false;

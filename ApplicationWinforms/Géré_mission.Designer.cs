@@ -60,6 +60,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,7 +70,7 @@
             // button10
             // 
             this.button10.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(206, 489);
+            this.button10.Location = new System.Drawing.Point(230, 489);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(116, 32);
             this.button10.TabIndex = 72;
@@ -84,7 +85,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 32);
             this.button2.TabIndex = 60;
-            this.button2.Text = "Consulter ";
+            this.button2.Text = "Créer";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -207,7 +208,7 @@
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(242, 96);
             this.richTextBox2.TabIndex = 8;
-            this.richTextBox2.Text = "Votre message";
+            this.richTextBox2.Text = "";
             // 
             // textBox7
             // 
@@ -320,7 +321,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(40, 489);
+            this.button3.Location = new System.Drawing.Point(206, 489);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(116, 32);
             this.button3.TabIndex = 61;
@@ -342,7 +343,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(40, 441);
+            this.button1.Location = new System.Drawing.Point(36, 469);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 32);
             this.button1.TabIndex = 59;
@@ -381,11 +382,22 @@
             this.pictureBox2.TabIndex = 65;
             this.pictureBox2.TabStop = false;
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(230, 441);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(116, 32);
+            this.button4.TabIndex = 73;
+            this.button4.Text = "Confirmer";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // Géré_mission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 534);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox2);
@@ -416,10 +428,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -442,11 +450,15 @@
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.Button button10;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.GroupBox groupBox2;
+        public System.Windows.Forms.Button button3;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button button4;
     }
 }

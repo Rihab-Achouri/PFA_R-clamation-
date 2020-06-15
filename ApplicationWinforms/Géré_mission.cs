@@ -118,7 +118,16 @@ namespace ApplicationWinforms
 
         private void button2_Click(object sender, EventArgs e)
         {
+            try
+            {
+                MissionDAO.Insert_Mission(int.Parse(textBox10.Text),textBox7.Text,DateTime.Parse(dateTimePicker2.Text),richTextBox2.Text);
+                MessageBox.Show("Mission créée");
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

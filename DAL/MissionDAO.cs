@@ -11,10 +11,10 @@ namespace DAL
 {
     public class MissionDAO
     {
-        public static bool Insert_Mission(int Num, string Etat, string Département, DateTime Début_traitement, DateTime Date_cloture, string Description)
+        public static bool Insert_Mission(int Num, string Département, DateTime Début_traitement, string Description)
         {
             string requete = String.Format("insert into Mission (Num, Etat, Departement, Debut_traitement, Date_cloture, Description)" +
-                " values ('{0}','{1}','{2}','{3}','{4}','{5}');", Num, Etat, Département, Début_traitement, Date_cloture, Description);
+                " values ('{0}','{1}','{2}','{3}','{4}','{5}');", Num, "Non Traitée", Département, Début_traitement, Début_traitement, Description);
             return utils.miseajour(requete);
         }
 
@@ -33,7 +33,7 @@ namespace DAL
 
         public static Mission Get_Mission_Num(int Num)
         {
-            string requete = String.Format("select * from Mission where Num='{0}';", Num);
+            string requete = String.Format("select * from Mission where Num={0};", Num);
             OleDbDataReader rd = utils.lire(requete);
             Mission c = new Mission();
             if (rd.HasRows)
