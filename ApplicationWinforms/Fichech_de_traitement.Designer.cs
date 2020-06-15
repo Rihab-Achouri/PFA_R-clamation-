@@ -98,21 +98,21 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(251, 299);
+            this.dateTimePicker1.Location = new System.Drawing.Point(206, 299);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(217, 20);
             this.dateTimePicker1.TabIndex = 78;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(251, 155);
+            this.dateTimePicker2.Location = new System.Drawing.Point(206, 155);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(217, 20);
             this.dateTimePicker2.TabIndex = 77;
             // 
             // comboBox1
             // 
-            this.comboBox1.Location = new System.Drawing.Point(251, 187);
+            this.comboBox1.Location = new System.Drawing.Point(206, 187);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(217, 21);
             this.comboBox1.TabIndex = 76;
@@ -140,21 +140,21 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(251, 121);
+            this.textBox1.Location = new System.Drawing.Point(206, 121);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(217, 20);
             this.textBox1.TabIndex = 72;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(251, 223);
+            this.textBox3.Location = new System.Drawing.Point(206, 223);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(217, 20);
             this.textBox3.TabIndex = 71;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(251, 261);
+            this.textBox4.Location = new System.Drawing.Point(206, 261);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(217, 20);
             this.textBox4.TabIndex = 70;
@@ -255,7 +255,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(499, 178);
+            this.label10.Location = new System.Drawing.Point(465, 181);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(82, 16);
             this.label10.TabIndex = 18;
@@ -265,7 +265,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(499, 125);
+            this.label13.Location = new System.Drawing.Point(465, 128);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(33, 16);
             this.label13.TabIndex = 17;
@@ -273,9 +273,9 @@
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(587, 121);
+            this.textBox11.Location = new System.Drawing.Point(553, 110);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(190, 20);
+            this.textBox11.Size = new System.Drawing.Size(217, 20);
             this.textBox11.TabIndex = 15;
             // 
             // button1
@@ -321,9 +321,9 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(587, 155);
+            this.richTextBox1.Location = new System.Drawing.Point(553, 158);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(190, 160);
+            this.richTextBox1.Size = new System.Drawing.Size(217, 160);
             this.richTextBox1.TabIndex = 97;
             this.richTextBox1.Text = "";
             // 

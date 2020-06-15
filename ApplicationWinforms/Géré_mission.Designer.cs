@@ -37,8 +37,6 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -96,8 +94,6 @@
             this.groupBox2.Controls.Add(this.dateTimePicker1);
             this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.dateTimePicker2);
-            this.groupBox2.Controls.Add(this.button12);
-            this.groupBox2.Controls.Add(this.button13);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label10);
@@ -151,28 +147,6 @@
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(242, 23);
             this.dateTimePicker2.TabIndex = 41;
-            // 
-            // button12
-            // 
-            this.button12.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(15, 255);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(46, 32);
-            this.button12.TabIndex = 39;
-            this.button12.Text = "Précé";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.Black;
-            this.button13.Location = new System.Drawing.Point(85, 255);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(46, 32);
-            this.button13.TabIndex = 38;
-            this.button13.Text = "Suiv";
-            this.button13.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -336,7 +310,7 @@
             this.label12.ForeColor = System.Drawing.Color.MediumBlue;
             this.label12.Location = new System.Drawing.Point(431, 149);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(229, 16);
+            this.label12.Size = new System.Drawing.Size(236, 16);
             this.label12.TabIndex = 57;
             this.label12.Text = "C’est d’aimer ce que vous faites";
             // 
@@ -358,7 +332,7 @@
             this.label13.ForeColor = System.Drawing.Color.MediumBlue;
             this.label13.Location = new System.Drawing.Point(392, 112);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(282, 16);
+            this.label13.Size = new System.Drawing.Size(290, 16);
             this.label13.TabIndex = 56;
             this.label13.Text = "La seule manière de faire du bon travail";
             // 
@@ -433,8 +407,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;

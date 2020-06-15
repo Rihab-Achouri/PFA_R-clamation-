@@ -42,28 +42,14 @@ namespace ApplicationWinforms
 
         private void button15_Click(object sender, EventArgs e)
         {
-            try
-            {
-                Action_reclamationDAO.Insert_Action(int.Parse(textBox12.Text), textBox11.Text, textBox10.Text);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
             try
             {
-                Action_reclamation A = Action_reclamationDAO.Get_Action_Num(int.Parse(textBox12.Text));
-                textBox12.Text = A.Num.ToString();
-                textBox11.Text = A.Etat;
-                textBox10.Text = A.Description;
-
-                List<Action_reclamation> L = new List<Action_reclamation>();
-                L.Add(A);
-                dataGridView3.DataSource = L;
+                
             }
             catch (Exception ex)
             {
@@ -75,8 +61,7 @@ namespace ApplicationWinforms
         {
             try
             {
-                Action_reclamationDAO.Update_Action(int.Parse(textBox12.Text), textBox11.Text, textBox10.Text);
-                MessageBox.Show("UPDATE DONE");
+
             }
             catch (Exception ex)
             {
@@ -93,8 +78,6 @@ namespace ApplicationWinforms
         {
             try
             {
-                Action_reclamationDAO.Delete_Action(int.Parse(textBox10.Text));
-                MessageBox.Show("Action Supprimer");
 
             }
             catch (Exception ex)
