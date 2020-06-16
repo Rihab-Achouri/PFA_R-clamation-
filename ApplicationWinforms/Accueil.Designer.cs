@@ -52,10 +52,14 @@
             this.button12 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // button6
@@ -98,9 +102,9 @@
             // 
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(188, 211);
+            this.button8.Location = new System.Drawing.Point(227, 211);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(172, 59);
+            this.button8.Size = new System.Drawing.Size(135, 59);
             this.button8.TabIndex = 97;
             this.button8.Text = "Gestion des réclamations";
             this.button8.UseVisualStyleBackColor = true;
@@ -315,13 +319,33 @@
             // 
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button17.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(188, 290);
+            this.button17.Location = new System.Drawing.Point(227, 288);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(172, 46);
+            this.button17.Size = new System.Drawing.Size(135, 46);
             this.button17.TabIndex = 111;
             this.button17.Text = "Mesure de satisfaction";
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(-2, 120);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(234, 282);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 112;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(165, 119);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(230, 180);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 113;
+            this.pictureBox6.TabStop = false;
             // 
             // Accueil
             // 
@@ -330,6 +354,7 @@
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(744, 420);
             this.Controls.Add(this.button17);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button2);
@@ -338,7 +363,6 @@
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button13);
-            this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.pictureBox5);
@@ -352,12 +376,16 @@
             this.Controls.Add(this.button11);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox6);
             this.Name = "Accueil";
             this.Text = "Accueil";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,5 +415,7 @@
         public System.Windows.Forms.Button button12;
         public System.Windows.Forms.Button button16;
         public System.Windows.Forms.Button button17;
+        public System.Windows.Forms.PictureBox pictureBox4;
+        public System.Windows.Forms.PictureBox pictureBox6;
     }
 }
