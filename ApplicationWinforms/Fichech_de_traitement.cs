@@ -27,7 +27,7 @@ namespace ApplicationWinforms
             Géré_mission f1 = new Géré_mission();
             f1.ShowDialog();
             this.Hide();
-            this.Visible = false;
+            
         }
 
         private void button7_Click(object sender, EventArgs e)

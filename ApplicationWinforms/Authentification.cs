@@ -20,6 +20,7 @@ namespace ApplicationWinforms
             InitializeComponent();
         }
 
+
         
         
         private void button1_Click(object sender, EventArgs e)
@@ -45,6 +46,7 @@ namespace ApplicationWinforms
                 }
                 if (comboBox1.Text == "Admin")
                 {
+                    
                     Form.button2.Visible = false;
                     Form.button9.Visible = false;
                     Form.button14.Visible = false;
@@ -113,6 +115,7 @@ namespace ApplicationWinforms
                 if (A.Login != "")
                 {
                     Form.ShowDialog();
+                    this.Hide();
                 }
                 else
                 {
@@ -131,7 +134,7 @@ namespace ApplicationWinforms
             this.Close();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private static void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

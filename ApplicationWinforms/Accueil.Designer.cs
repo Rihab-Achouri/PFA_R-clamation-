@@ -66,7 +66,7 @@
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(12, 247);
+            this.button6.Location = new System.Drawing.Point(10, 305);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(172, 41);
             this.button6.TabIndex = 101;
@@ -90,7 +90,7 @@
             // 
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button13.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(10, 361);
+            this.button13.Location = new System.Drawing.Point(10, 242);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(172, 41);
             this.button13.TabIndex = 98;
@@ -114,7 +114,7 @@
             // 
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(10, 305);
+            this.button7.Location = new System.Drawing.Point(10, 182);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(172, 41);
             this.button7.TabIndex = 96;
@@ -271,7 +271,7 @@
             // 
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button10.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(10, 182);
+            this.button10.Location = new System.Drawing.Point(10, 361);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(172, 41);
             this.button10.TabIndex = 107;
@@ -340,9 +340,9 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(165, 119);
+            this.pictureBox6.Location = new System.Drawing.Point(42, 119);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(230, 180);
+            this.pictureBox6.Size = new System.Drawing.Size(321, 180);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 113;
             this.pictureBox6.TabStop = false;
