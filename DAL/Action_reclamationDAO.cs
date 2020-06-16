@@ -11,17 +11,17 @@ namespace DAL
 {
     public class Action_reclamationDAO
     {
-        public static bool Insert_Action(int Num, string Etat, string Description)
+        public static bool Insert_Action(int Num, string Etat, string Description, string resulta, int occurence, string locatisation, DateTime date_traitement,DateTime date_apparition)
         {
-            string requete = String.Format("insert into Action (Num, Etat, Description)" +
-                " values ('{0}','{1}','{2}');", Num, Etat, Description);
+            string requete = String.Format("insert into Action (Num, Etat, Description, Resultat_tri_securisation, Occurrence_probleme, Localisation_defaut, Debut_traitement, Date_apparition_défaut)" +
+                " values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}');", Num, Etat, Description, resulta, occurence, locatisation, date_traitement, date_apparition);
             return utils.miseajour(requete);
         }
 
-        public static bool Update_Action(int Num, string Etat, string Description)
+        public static bool Update_Action(int Num, string Etat, string Description, string resulta, int occurence, string locatisation, DateTime date_traitement, DateTime date_apparition)
         {
-            string requete = String.Format("update Action set Etat='{0}'," +
-                " Description='{1}' where Num={2};", Etat, Description, Num);
+            string requete = String.Format("update Action set Etat='{0}', Description='{1}', Resultat_tri_securisation='{2}', Occurrence_probleme='{3}', Localisation_defaut='{4}', Debut_traitement='{5}', Date_apparition_défaut='{6}'"+
+                " where Num={7};", Etat, Description, resulta, occurence, locatisation, date_traitement, date_apparition, Num);
             return utils.miseajour(requete);
         }
 
@@ -43,6 +43,11 @@ namespace DAL
                     c.Num = rd.GetInt32(0);
                     c.Etat = rd.GetString(1);                   
                     c.Description = rd.GetString(2);
+                    c.Resultat_tri_securisation = rd.GetString(3);
+                    c.Occurrence_probleme = rd.GetInt32(4);
+                    c.Localisation_defaut = rd.GetString(5);
+                    c.Début_traitement = rd.GetDateTime(6);
+                    c.Date_apparition_défaut = rd.GetDateTime(7);
                 }
 
             }
@@ -52,7 +57,7 @@ namespace DAL
 
         public static List<Action_reclamation> Get_Action_terminées()
         {
-            string requete = String.Format("select * from Action  where Etat=='Non Traitée';");
+            string requete = String.Format("select * from Action  where Etat='Non Traitée';");
             OleDbDataReader rd = utils.lire(requete);
             List<Action_reclamation> L = new List<Action_reclamation>();
             Action_reclamation c;
@@ -63,6 +68,11 @@ namespace DAL
                     Num = rd.GetInt32(0),
                     Etat = rd.GetString(1),
                     Description = rd.GetString(2),
+                    Resultat_tri_securisation = rd.GetString(3),
+                    Occurrence_probleme = rd.GetInt32(4),
+                    Localisation_defaut = rd.GetString(5),
+                    Début_traitement = rd.GetDateTime(6),
+                    Date_apparition_défaut = rd.GetDateTime(7),
                 };
                 L.Add(c);
             }
@@ -73,7 +83,7 @@ namespace DAL
 
         public static List<Action_reclamation> Get_Action_en_cour()
         {
-            string requete = String.Format("select * from Action  where Etat=='en_cour';");
+            string requete = String.Format("select * from Action  where Etat='en cours';");
             OleDbDataReader rd = utils.lire(requete);
             List<Action_reclamation> L = new List<Action_reclamation>();
             Action_reclamation c;
@@ -84,6 +94,11 @@ namespace DAL
                     Num = rd.GetInt32(0),
                     Etat = rd.GetString(1),
                     Description = rd.GetString(2),
+                    Resultat_tri_securisation = rd.GetString(3),
+                    Occurrence_probleme = rd.GetInt32(4),
+                    Localisation_defaut = rd.GetString(5),
+                    Début_traitement = rd.GetDateTime(6),
+                    Date_apparition_défaut = rd.GetDateTime(7),
                 };
                 L.Add(c);
             }
@@ -104,7 +119,12 @@ namespace DAL
                 {
                     Num = rd.GetInt32(0),
                     Etat = rd.GetString(1),
-                    Description = rd.GetString(5),
+                    Description = rd.GetString(2),
+                    Resultat_tri_securisation = rd.GetString(3),
+                    Occurrence_probleme = rd.GetInt32(4),
+                    Localisation_defaut = rd.GetString(5),
+                    Début_traitement = rd.GetDateTime(6),
+                    Date_apparition_défaut = rd.GetDateTime(7),
 
                 };
                 L.Add(c);

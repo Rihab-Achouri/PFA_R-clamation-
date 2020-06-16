@@ -47,14 +47,7 @@ namespace ApplicationWinforms
 
         private void button16_Click(object sender, EventArgs e)
         {
-            try
-            {
-                
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+         
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -76,14 +69,7 @@ namespace ApplicationWinforms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -127,7 +113,58 @@ namespace ApplicationWinforms
 
         private void button2_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Action_reclamationDAO.Insert_Action(int.Parse(textBox1.Text), textBox11.Text, richTextBox1.Text, comboBox1.Text,int.Parse(textBox3.Text),textBox4.Text,DateTime.Parse(dateTimePicker2.Text),DateTime.Parse(dateTimePicker1.Text));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                Action_reclamation p = Action_reclamationDAO.Get_Action_Num(int.Parse(textBox1.Text));
+                textBox1.Text = p.Num.ToString();
+                richTextBox1.Text = p.Description;
+                
+
+                List<Action_reclamation> L = new List<Action_reclamation>();
+                L.Add(p);
+                dataGridView3.DataSource = L;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Action_reclamationDAO.Update_Action(int.Parse(textBox1.Text), textBox11.Text, richTextBox1.Text, comboBox1.Text, int.Parse(textBox3.Text), textBox4.Text, DateTime.Parse(dateTimePicker2.Text), DateTime.Parse(dateTimePicker1.Text));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Action_reclamationDAO.Delete_Action(int.Parse(textBox1.Text));
+                    
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
