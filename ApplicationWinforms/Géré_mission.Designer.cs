@@ -310,7 +310,7 @@
             this.label12.ForeColor = System.Drawing.Color.MediumBlue;
             this.label12.Location = new System.Drawing.Point(431, 149);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(236, 16);
+            this.label12.Size = new System.Drawing.Size(229, 16);
             this.label12.TabIndex = 57;
             this.label12.Text = "C’est d’aimer ce que vous faites";
             // 
@@ -332,7 +332,7 @@
             this.label13.ForeColor = System.Drawing.Color.MediumBlue;
             this.label13.Location = new System.Drawing.Point(392, 112);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(290, 16);
+            this.label13.Size = new System.Drawing.Size(282, 16);
             this.label13.TabIndex = 56;
             this.label13.Text = "La seule manière de faire du bon travail";
             // 
@@ -365,6 +365,7 @@
             this.button4.TabIndex = 73;
             this.button4.Text = "Confirmer";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Géré_mission
             // 

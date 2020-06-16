@@ -11,29 +11,28 @@ namespace DAL
 {
     public class Action_reclamationDAO
     {
-        public static bool Insert_Action(int Num, string Etat, string Description, string resulta, int occurence, string locatisation, DateTime date_traitement,DateTime date_apparition)
+        public static bool Insert_action(int num, string etat, string description,string resultat,int occurence, string localisation,DateTime date_traitemant, DateTime date_apparition)
         {
-            string requete = String.Format("insert into Action (Num, Etat, Description, Resultat_tri_securisation, Occurrence_probleme, Localisation_defaut, Debut_traitement, Date_apparition_défaut)" +
-                " values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}');", Num, Etat, Description, resulta, occurence, locatisation, date_traitement, date_apparition);
+            string requete = String.Format("insert into Fiche values('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}');", num, etat, description, resultat,occurence,localisation,date_traitemant,date_apparition);
             return utils.miseajour(requete);
         }
 
         public static bool Update_Action(int Num, string Etat, string Description, string resulta, int occurence, string locatisation, DateTime date_traitement, DateTime date_apparition)
         {
-            string requete = String.Format("update Action set Etat='{0}', Description='{1}', Resultat_tri_securisation='{2}', Occurrence_probleme='{3}', Localisation_defaut='{4}', Debut_traitement='{5}', Date_apparition_défaut='{6}'"+
+            string requete = String.Format("update Fiche set Etat='{0}', Description='{1}', Resultat_tri_securisation='{2}', Occurrence_probleme='{3}', Localisation_defaut='{4}', Debut_traitement='{5}', Date_apparition_défaut='{6}'" +
                 " where Num={7};", Etat, Description, resulta, occurence, locatisation, date_traitement, date_apparition, Num);
             return utils.miseajour(requete);
         }
 
         public static bool Delete_Action(int Num)
         {
-            string requete = String.Format("delete from Action where Num={0};", Num);
+            string requete = String.Format("delete from Fiche where Num={0};", Num);
             return utils.miseajour(requete);
         }
 
         public static Action_reclamation Get_Action_Num(int Num)
         {
-            string requete = String.Format("select * from Action where Num={0};", Num);
+            string requete = String.Format("select * from Fiche where Num={0};", Num);
             OleDbDataReader rd = utils.lire(requete);
             Action_reclamation c = new Action_reclamation();
             if (rd.HasRows)
@@ -57,7 +56,7 @@ namespace DAL
 
         public static List<Action_reclamation> Get_Action_terminées()
         {
-            string requete = String.Format("select * from Action  where Etat='Non Traitée';");
+            string requete = String.Format("select * from Fiche  where Etat='Non Traitée';");
             OleDbDataReader rd = utils.lire(requete);
             List<Action_reclamation> L = new List<Action_reclamation>();
             Action_reclamation c;
@@ -83,7 +82,7 @@ namespace DAL
 
         public static List<Action_reclamation> Get_Action_en_cour()
         {
-            string requete = String.Format("select * from Action  where Etat='en cours';");
+            string requete = String.Format("select * from Fiche  where Etat='en cours';");
             OleDbDataReader rd = utils.lire(requete);
             List<Action_reclamation> L = new List<Action_reclamation>();
             Action_reclamation c;
@@ -109,7 +108,7 @@ namespace DAL
 
         public static List<Action_reclamation> Get_Action()
         {
-            string requete = String.Format("select * from Action;");
+            string requete = String.Format("select * from Fiche;");
             OleDbDataReader rd = utils.lire(requete);
             List<Action_reclamation> L = new List<Action_reclamation>();
             Action_reclamation c;

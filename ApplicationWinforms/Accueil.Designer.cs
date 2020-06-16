@@ -62,7 +62,7 @@
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(10, 323);
+            this.button6.Location = new System.Drawing.Point(10, 304);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(172, 41);
             this.button6.TabIndex = 101;
@@ -74,7 +74,7 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(197, 182);
+            this.button1.Location = new System.Drawing.Point(197, 161);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(172, 41);
             this.button1.TabIndex = 99;
@@ -86,7 +86,7 @@
             // 
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button13.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(10, 144);
+            this.button13.Location = new System.Drawing.Point(10, 120);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(172, 41);
             this.button13.TabIndex = 98;
@@ -98,9 +98,9 @@
             // 
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(197, 229);
+            this.button8.Location = new System.Drawing.Point(197, 211);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(172, 41);
+            this.button8.Size = new System.Drawing.Size(172, 59);
             this.button8.TabIndex = 97;
             this.button8.Text = "Gestion des réclamations";
             this.button8.UseVisualStyleBackColor = true;
@@ -110,7 +110,7 @@
             // 
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(10, 201);
+            this.button7.Location = new System.Drawing.Point(10, 182);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(172, 41);
             this.button7.TabIndex = 96;
@@ -199,11 +199,11 @@
             // 
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button15.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(581, 268);
+            this.button15.Location = new System.Drawing.Point(560, 268);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(140, 51);
+            this.button15.Size = new System.Drawing.Size(172, 44);
             this.button15.TabIndex = 105;
-            this.button15.Text = "Gestion des réclamations";
+            this.button15.Text = "Gérer réclamations";
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
@@ -211,9 +211,9 @@
             // 
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button14.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(581, 161);
+            this.button14.Location = new System.Drawing.Point(560, 161);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(140, 44);
+            this.button14.Size = new System.Drawing.Size(172, 44);
             this.button14.TabIndex = 103;
             this.button14.Text = "Mes suggestions";
             this.button14.UseVisualStyleBackColor = true;
@@ -223,11 +223,11 @@
             // 
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button11.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(581, 211);
+            this.button11.Location = new System.Drawing.Point(560, 218);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(140, 51);
+            this.button11.Size = new System.Drawing.Size(172, 44);
             this.button11.TabIndex = 102;
-            this.button11.Text = "Passer une commande";
+            this.button11.Text = "Gérer commandes";
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
@@ -267,7 +267,7 @@
             // 
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button10.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(10, 259);
+            this.button10.Location = new System.Drawing.Point(10, 242);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(172, 41);
             this.button10.TabIndex = 107;
@@ -283,7 +283,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(140, 51);
             this.button2.TabIndex = 108;
-            this.button2.Text = "Mes informations cl";
+            this.button2.Text = "Mes informations";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -291,7 +291,7 @@
             // 
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button12.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(197, 278);
+            this.button12.Location = new System.Drawing.Point(197, 351);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(172, 41);
             this.button12.TabIndex = 109;
@@ -303,7 +303,7 @@
             // 
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button16.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.Location = new System.Drawing.Point(197, 135);
+            this.button16.Location = new System.Drawing.Point(10, 361);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(172, 41);
             this.button16.TabIndex = 110;
@@ -315,7 +315,7 @@
             // 
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button17.Font = new System.Drawing.Font("Maiandra GD", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(197, 325);
+            this.button17.Location = new System.Drawing.Point(197, 288);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(172, 46);
             this.button17.TabIndex = 111;

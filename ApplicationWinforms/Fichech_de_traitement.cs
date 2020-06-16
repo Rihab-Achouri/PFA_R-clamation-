@@ -115,7 +115,7 @@ namespace ApplicationWinforms
         {
             try
             {
-                Action_reclamationDAO.Insert_Action(int.Parse(textBox1.Text), textBox11.Text, richTextBox1.Text, comboBox1.Text,int.Parse(textBox3.Text),textBox4.Text,DateTime.Parse(dateTimePicker2.Text),DateTime.Parse(dateTimePicker1.Text));
+                Action_reclamationDAO.Insert_action(int.Parse(textBox1.Text), textBox11.Text, richTextBox1.Text, comboBox1.Text,int.Parse(textBox3.Text),textBox4.Text,DateTime.Parse(dateTimePicker2.Text),DateTime.Parse(dateTimePicker1.Text));
             }
             catch (Exception ex)
             {
