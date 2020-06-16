@@ -16,7 +16,7 @@ namespace ApplicationWinforms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Fiche_de_traitement()); 
+            Application.Run(new Authentification()); 
         }
     }
 }
