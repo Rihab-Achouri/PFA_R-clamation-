@@ -46,10 +46,90 @@ namespace ApplicationWinforms
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Accueil f1 = new Accueil();
-            f1.ShowDialog();
+            Accueil Form = new Accueil();
+            Authentification f = new Authentification();
+            if (f.comboBox1.Text == "Client")
+            {
+                Form.button13.Visible = false;
+                Form.button17.Visible = false;
+                Form.button16.Visible = false;
+                Form.button7.Visible = false;
+                Form.button10.Visible = false;
+                Form.button6.Visible = false;
+                Form.button12.Visible = false;
+                Form.button1.Visible = false;
+                Form.button8.Visible = false;
+                Form.button4.Visible = false;
+                Form.pictureBox4.Visible = false;
+                Form.pictureBox3.Visible = false;
+                Form.pictureBox6.Visible = false;
+            }
+            if (f.comboBox1.Text == "Admin")
+            {
+                Form.button2.Visible = false;
+                Form.button9.Visible = false;
+                Form.button14.Visible = false;
+                Form.button11.Visible = false;
+                Form.button15.Visible = false;
+                Form.pictureBox2.Visible = false;
+                Form.pictureBox4.Visible = false;
+                Form.pictureBox6.Visible = false;
+            }
+            if (f.comboBox1.Text == "Responsable Qualité")
+            {
+                Form.button6.Visible = false;
+                Form.button1.Visible = false;
+                Form.button16.Visible = false;
+                Form.button7.Visible = false;
+                Form.button13.Visible = false;
+                Form.button10.Visible = false;
+                Form.button12.Visible = false;
+                Form.button2.Visible = false;
+                Form.button9.Visible = false;
+                Form.button14.Visible = false;
+                Form.button11.Visible = false;
+                Form.button15.Visible = false;
+                Form.pictureBox2.Visible = false;
+                Form.pictureBox6.Visible = false;
+
+            }
+            if (f.comboBox1.Text == "Responsable Production")
+            {
+                Form.button2.Visible = false;
+                Form.button16.Visible = false;
+                Form.button17.Visible = false;
+                Form.button9.Visible = false;
+                Form.button14.Visible = false;
+                Form.button11.Visible = false;
+                Form.button15.Visible = false;
+                Form.pictureBox2.Visible = false;
+                Form.button1.Visible = false;
+                Form.button12.Visible = false;
+                Form.button13.Visible = false;
+                Form.button7.Visible = false;
+                Form.button8.Visible = false;
+                Form.pictureBox4.Visible = false;
+            }
+            if (f.comboBox1.Text == "Responsable Traitement")
+            {
+                Form.button6.Visible = false;
+                Form.button17.Visible = false;
+                Form.button8.Visible = false;
+                Form.button16.Visible = false;
+                Form.button7.Visible = false;
+                Form.button13.Visible = false;
+                Form.button10.Visible = false;
+                Form.button12.Visible = false;
+                Form.button2.Visible = false;
+                Form.button9.Visible = false;
+                Form.button14.Visible = false;
+                Form.button11.Visible = false;
+                Form.button15.Visible = false;
+                Form.pictureBox4.Visible = false;
+                Form.pictureBox6.Visible = false;
+            }
+            Form.ShowDialog();
             this.Hide();
-            this.Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
